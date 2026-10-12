@@ -1,0 +1,80 @@
+[
+  {
+    "foreground": "#173f37",
+    "background": "#faf8f1",
+    "ratio": 10.96,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#173f37",
+    "background": "#ffffff",
+    "ratio": 11.65,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#173f37",
+    "background": "#dce8dc",
+    "ratio": 9.22,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#173f37",
+    "background": "#f3d5c7",
+    "ratio": 8.41,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#173f37",
+    "background": "#f4e3a5",
+    "ratio": 9.09,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#173f37",
+    "background": "#dbe8ef",
+    "ratio": 9.32,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#4c6055",
+    "background": "#faf8f1",
+    "ratio": 6.35,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#4c6055",
+    "background": "#ffffff",
+    "ratio": 6.75,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#4c6055",
+    "background": "#dce8dc",
+    "ratio": 5.34,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#4c6055",
+    "background": "#f3d5c7",
+    "ratio": 4.87,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#4c6055",
+    "background": "#f4e3a5",
+    "ratio": 5.26,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#4c6055",
+    "background": "#dbe8ef",
+    "ratio": 5.4,
+    "normalTextAA": true
+  },
+  {
+    "foreground": "#faf8f1",
+    "background": "#173f37",
+    "ratio": 10.96,
+    "normalTextAA": true
+  }
+]
