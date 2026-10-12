@@ -1,0 +1,18 @@
+{
+  "baseCommit": "9c9207ea2d846d755decfde0cc69853d1d4aa7f5",
+  "node": "v24.19.0",
+  "files": 76,
+  "byteIdentical": 74,
+  "htmlByteIdentical": 66,
+  "functionallyEqualAssets": [
+    "assets/site.css",
+    "assets/site.js"
+  ],
+  "verification": [
+    "HTML bytes include all text, links, section IDs, metadata and ordering.",
+    "CSS token stream (including selectors, values, strings and comments) unchanged.",
+    "JavaScript AST unchanged after removing source positions and quote metadata.",
+    "pages and quickLinks deep-equal; component export names unchanged; local-photo variants checked."
+  ],
+  "result": "passed"
+}

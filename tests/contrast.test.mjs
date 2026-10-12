@@ -1,4 +1,21 @@
-import test from 'node:test';import assert from 'node:assert/strict';import{readFile}from'node:fs/promises';
-const lum=hex=>{const c=[1,3,5].map(i=>parseInt(hex.slice(i,i+2),16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);return c.reduce((s,x,i)=>s+x*[.2126,.7152,.0722][i],0);};
-const ratio=(a,b)=>{const [hi,lo]=[lum(a),lum(b)].sort((a,b)=>b-a);return(hi+.05)/(lo+.05);};
-test('Core text colours meet 4.5:1 on every information surface',async()=>{const css=await readFile(new URL('../public/assets/site.css',import.meta.url),'utf8');const colour=name=>{const m=css.match(new RegExp(`--${name}:(#[0-9a-f]{3}(?:[0-9a-f]{3})?)`));assert(m,`CSS token ${name}`);return m[1].length===4?"#"+[...m[1].slice(1)].map(c=>c+c).join(""):m[1];};for(const text of ['ink','muted'])for(const surface of ['paper','white','green','peach','yellow','blue'])assert(ratio(colour(text),colour(surface))>=4.5,`${text} on ${surface}: ${ratio(colour(text),colour(surface))}`);assert(ratio(colour('paper'),colour('ink'))>=4.5);});
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+const lum = hex => {
+  const c = [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16) / 255).map(x => x <= .04045 ? x / 12.92 : ((x + .055) / 1.055) ** 2.4);
+  return c.reduce((s, x, i) => s + x * [.2126, .7152, .0722][i], 0);
+};
+const ratio = (a, b) => {
+  const [hi, lo] = [lum(a), lum(b)].sort((a, b) => b - a);
+  return (hi + .05) / (lo + .05);
+};
+test('Core text colours meet 4.5:1 on every information surface', async () => {
+  const css = await readFile(new URL('../public/assets/site.css', import.meta.url), 'utf8');
+  const colour = name => {
+    const m = css.match(new RegExp(`--${name}:(#[0-9a-f]{3}(?:[0-9a-f]{3})?)`));
+    assert(m, `CSS token ${name}`);
+    return m[1].length === 4 ? "#" + [...m[1].slice(1)].map(c => c + c).join("") : m[1];
+  };
+  for (const text of ['ink', 'muted']) for (const surface of ['paper', 'white', 'green', 'peach', 'yellow', 'blue']) assert(ratio(colour(text), colour(surface)) >= 4.5, `${text} on ${surface}: ${ratio(colour(text), colour(surface))}`);
+  assert(ratio(colour('paper'), colour('ink')) >= 4.5);
+});
