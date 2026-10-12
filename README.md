@@ -100,7 +100,7 @@ Die Originaldomain ist standardmäßig das Canonical-Ziel; `SITE_URL` kann für 
 
 ## Prüfung & Screenshots
 
-Die tatsächlich ausgeführten Prüfungen sowie Grenzen stehen in [docs/QA.md](docs/QA.md). GitHub Actions führt Build, Inhalts-/Linkprüfung und Browserprüfung aus und legt Screenshots samt maschinenlesbarem Bericht als Artefakt `hgs-browser-quality` ab. Der Workflow enthält **keinen Bereitstellungsschritt**.
+**Abschließender Chromium-Lauf erfolgreich:** 20 Ansichten und 16 Funktionsprüfungen. Fünf Node-Tests und 3.371 interne Verweise bestehen ebenfalls. Die tatsächlich ausgeführten Prüfungen sowie Grenzen stehen in [docs/QA.md](docs/QA.md). GitHub Actions führt Build, Inhalts-/Linkprüfung und Browserprüfung aus und legt Screenshots samt maschinenlesbarem Bericht als Artefakt `hgs-browser-quality` ab. Der Workflow enthält **keinen Bereitstellungsschritt**.
 
 Browserprüfung lokal optional (separate Testabhängigkeit, nicht für den Build erforderlich):
 
@@ -112,3 +112,13 @@ node scripts/browser-qa.mjs
 ```
 
 Geprüfte Größen: 320×740, 390×844, 768×1024 und 1440×1000. Der Test erzeugt 20 vollständige Seitenscreenshots plus vier Startseiten-Ausschnitte; er prüft horizontales Scrollen, Ressourcen, Konsolenfehler, Tastaturmenüs, Sprunglink, mobile Touch-Ziele, Suche, Filter, Kontaktalternative, externe Aktivierung, reduzierte Bewegung, JavaScript-Ausfall und Routing. Die automatisierten Tests ersetzen keine vollständige WCAG-2.2-AA-Prüfung und keine redaktionelle Freigabe.
+
+## Visuelle Vorschau
+
+Die Screenshots stammen aus dem erfolgreich geprüften Build; dies sind keine Design-Mockups.
+
+![Startseite Desktop](docs/qa/browser/home-1440-viewport.png)
+
+[Startseite mobil](docs/qa/browser/home-390-viewport.png) · [Ganztag mobil](docs/qa/browser/ganztag-390.png) · [Downloads mobil](docs/qa/browser/downloads-390.png) · [Kontakt mobil](docs/qa/browser/contact-390.png)
+
+Alle 24 Screenshots und der Prüfbericht sind in `docs/qa/browser/` dauerhaft versioniert.

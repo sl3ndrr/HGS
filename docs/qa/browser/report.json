@@ -1,0 +1,276 @@
+{
+  "timestamp": "2026-10-12T14:52:36.329Z",
+  "engine": "Chromium / Playwright 1.62.1",
+  "sourceCommit": "089718a6c2e81a80ecb8c3e61d42199765a4ef58",
+  "screens": [
+    {
+      "page": "home",
+      "url": "/",
+      "width": 320,
+      "height": 740,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/home-320.png"
+    },
+    {
+      "page": "ganztag",
+      "url": "/schulalltag/ganztag/",
+      "width": 320,
+      "height": 740,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/ganztag-320.png"
+    },
+    {
+      "page": "news",
+      "url": "/schulleben/nachrichten/",
+      "width": 320,
+      "height": 740,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/news-320.png"
+    },
+    {
+      "page": "downloads",
+      "url": "/downloads/",
+      "width": 320,
+      "height": 740,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/downloads-320.png"
+    },
+    {
+      "page": "contact",
+      "url": "/kontakt/",
+      "width": 320,
+      "height": 740,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/contact-320.png"
+    },
+    {
+      "page": "home",
+      "url": "/",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/home-390.png"
+    },
+    {
+      "page": "ganztag",
+      "url": "/schulalltag/ganztag/",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/ganztag-390.png"
+    },
+    {
+      "page": "news",
+      "url": "/schulleben/nachrichten/",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/news-390.png"
+    },
+    {
+      "page": "downloads",
+      "url": "/downloads/",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/downloads-390.png"
+    },
+    {
+      "page": "contact",
+      "url": "/kontakt/",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/contact-390.png"
+    },
+    {
+      "page": "home",
+      "url": "/",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/home-768.png"
+    },
+    {
+      "page": "ganztag",
+      "url": "/schulalltag/ganztag/",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/ganztag-768.png"
+    },
+    {
+      "page": "news",
+      "url": "/schulleben/nachrichten/",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/news-768.png"
+    },
+    {
+      "page": "downloads",
+      "url": "/downloads/",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/downloads-768.png"
+    },
+    {
+      "page": "contact",
+      "url": "/kontakt/",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/contact-768.png"
+    },
+    {
+      "page": "home",
+      "url": "/",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/home-1440.png"
+    },
+    {
+      "page": "ganztag",
+      "url": "/schulalltag/ganztag/",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/ganztag-1440.png"
+    },
+    {
+      "page": "news",
+      "url": "/schulleben/nachrichten/",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/news-1440.png"
+    },
+    {
+      "page": "downloads",
+      "url": "/downloads/",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/downloads-1440.png"
+    },
+    {
+      "page": "contact",
+      "url": "/kontakt/",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "consoleErrors": [],
+      "file": "docs/qa/browser/contact-1440.png"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Skip link 320",
+      "result": "passed",
+      "detail": "Keyboard focus moves to main content."
+    },
+    {
+      "name": "Mobile navigation 320",
+      "result": "passed",
+      "detail": "Open, disclosure, Escape and touch targets."
+    },
+    {
+      "name": "Skip link 390",
+      "result": "passed",
+      "detail": "Keyboard focus moves to main content."
+    },
+    {
+      "name": "Mobile navigation 390",
+      "result": "passed",
+      "detail": "Open, disclosure, Escape and touch targets."
+    },
+    {
+      "name": "Skip link 768",
+      "result": "passed",
+      "detail": "Keyboard focus moves to main content."
+    },
+    {
+      "name": "Mobile navigation 768",
+      "result": "passed",
+      "detail": "Open, disclosure, Escape and touch targets."
+    },
+    {
+      "name": "Skip link 1440",
+      "result": "passed",
+      "detail": "Keyboard focus moves to main content."
+    },
+    {
+      "name": "Desktop keyboard navigation",
+      "result": "passed",
+      "detail": "Enter opens native disclosure; Escape closes it."
+    },
+    {
+      "name": "Document filters",
+      "result": "passed",
+      "detail": "Language, topic, reset and empty state."
+    },
+    {
+      "name": "News archive filters",
+      "result": "passed",
+      "detail": "2024 yields two posts; Ukulelen yields one."
+    },
+    {
+      "name": "Search",
+      "result": "passed",
+      "detail": "Finds pages and multilingual SchoolFox documents."
+    },
+    {
+      "name": "Contact alternative and map activation",
+      "result": "passed",
+      "detail": "Mail/phone links; no false form submission; iframe only after action, removable."
+    },
+    {
+      "name": "Unavailable original image",
+      "result": "passed",
+      "detail": "Accessible error state retains exact original link."
+    },
+    {
+      "name": "Reduced motion",
+      "result": "passed",
+      "detail": "Smooth scrolling is disabled."
+    },
+    {
+      "name": "No JavaScript",
+      "result": "passed",
+      "detail": "All 70 resources and navigation remain available."
+    },
+    {
+      "name": "Routing",
+      "result": "passed",
+      "detail": "Legacy route redirects; real 404 status with useful error page."
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Viewport emulation, keine physischen Endgeräte.",
+    "Google Maps wird im Test abgefangen, nicht auf tatsächliche Fremdanbieter-Funktion geprüft.",
+    "Bildrechte, PDF-Inhalte und Rechtsfreigaben sind keine automatisierten Browserprüfungen."
+  ],
+  "result": "passed"
+}
