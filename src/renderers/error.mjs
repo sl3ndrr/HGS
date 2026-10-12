@@ -15,10 +15,8 @@ export function renderErrorPage({
     `<p class="eyebrow">404 · Seite nicht gefunden</p>`,
     `<h1>Hier wächst<br>noch nichts.</h1>`,
     `<p>Der Link ist möglicherweise veraltet. Wir helfen Ihnen beim Weiterfinden.</p>`,
-    [
-      `<div class="hero-actions">${C.buttonLink('Zur Startseite', '/')}${C.buttonLink('Website durchsuchen', '/suche/', 'secondary')}</div>${C.quickGrid(quickLinks, {
+    `<div class="hero-actions">${C.buttonLink('Zur Startseite', '/')}${C.buttonLink('Website durchsuchen', '/suche/', 'secondary')}</div>${C.quickGrid(quickLinks, {
         compact: true
       })}</main>`
-    ].join('')
   ].join(''));
 }

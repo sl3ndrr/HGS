@@ -14,9 +14,7 @@ export function createSpecialRenderer({
       `<form class="filters" data-filter-form="${type}" role="search">`,
       `<div class="filter-search">`,
       `<label for="filter-search">${type === 'news' ? 'Nachrichten suchen' : 'Dokument suchen'}</label>`,
-      [
-        `<div class="input-wrap">${C.icon('search')}<input type="search" id="filter-search" name="q" placeholder="${type === 'news' ? 'Titel oder Stichwort …' : 'z. B. Anmeldung, SchoolFox …'}" autocomplete="off">`
-      ].join(''),
+      `<div class="input-wrap">${C.icon('search')}<input type="search" id="filter-search" name="q" placeholder="${type === 'news' ? 'Titel oder Stichwort …' : 'z. B. Anmeldung, SchoolFox …'}" autocomplete="off">`,
       `</div>`,
       `</div>`,
       `<div>`,
@@ -27,15 +25,11 @@ export function createSpecialRenderer({
       `<div>`,
       `<label for="filter-extra">${type === 'news' ? 'Jahr' : 'Sprache'}</label>`,
       `<select id="filter-extra" name="${type === 'news' ? 'jahr' : 'sprache'}">`,
-      [
-        `<option value="">${type === 'news' ? 'Alle Jahre' : 'Alle Sprachen'}</option>${(type === 'news' ? ['2026', '2025', '2024'] : [...new Set(documents.map(d => d.language))]).map(x => `<option value="${x}">${x}</option>`).join('')}</select>`
-      ].join(''),
+      `<option value="">${type === 'news' ? 'Alle Jahre' : 'Alle Sprachen'}</option>${(type === 'news' ? ['2026', '2025', '2024'] : [...new Set(documents.map(d => d.language))]).map(x => `<option value="${x}">${x}</option>`).join('')}</select>`,
       `</div>`,
       `<button class="filter-reset" type="reset">Zurücksetzen</button>`,
       `</form>`,
-      [
-        `<p class="filter-count" role="status" aria-live="polite" aria-atomic="true">${type === 'news' ? news.length : documents.length} ${type === 'news' ? 'Beiträge' : 'Dokumente und Medienverweise'}</p>`
-      ].join(''),
+      `<p class="filter-count" role="status" aria-live="polite" aria-atomic="true">${type === 'news' ? news.length : documents.length} ${type === 'news' ? 'Beiträge' : 'Dokumente und Medienverweise'}</p>`,
       `<div class="filter-empty" hidden>`,
       `<h2>Keine passenden Ergebnisse</h2>`,
       `<p>Versuchen Sie ein anderes Stichwort oder setzen Sie die Filter zurück.</p>`,
@@ -46,28 +40,21 @@ export function createSpecialRenderer({
     ].join('');
   };
   function renderTeam() {
-    return [[
-        `<p class="small">${C.esc(people.stand)}</p>${people.groups.map((g, i) => [
+    return `<p class="small">${C.esc(people.stand)}</p>${people.groups.map((g, i) => [
           `<section class="content-section" id="team-${i}">`,
           `<h2>${C.esc(g.title)}</h2>`,
-          [
-            `<div class="people-grid">${g.people.map(p => [
+          `<div class="people-grid">${g.people.map(p => [
               `<article class="person-card">${p.imageId ? C.photo(p.imageId, media) : ''}<div>`,
-              [
-                `<h3>${C.esc(p.name)}</h3>${p.role ? `<p>${C.esc(p.role)}</p>` : ''}${p.email ? C.a(p.email, `mailto:${p.email}`) : ''}${p.phone ? C.a(p.phone, `tel:${p.phone.replaceAll(' ', '')}`) : ''}</div>`
-              ].join(''),
+              `<h3>${C.esc(p.name)}</h3>${p.role ? `<p>${C.esc(p.role)}</p>` : ''}${p.email ? C.a(p.email, `mailto:${p.email}`) : ''}${p.phone ? C.a(p.phone, `tel:${p.phone.replaceAll(' ', '')}`) : ''}</div>`,
               `</article>`
-            ].join('')).join('')}</div>`
-          ].join(''),
+            ].join('')).join('')}</div>`,
           `</section>`
-        ].join('')).join('')}`
-      ].join('')].join('');
+        ].join('')).join('')}`;
   }
   function renderClasses() {
     return [
       `<p class="small">${C.esc(classes.stand)}</p>`,
-      [
-        `<div class="class-grid">${classes.classes.map((c, i) => [
+      `<div class="class-grid">${classes.classes.map((c, i) => [
           `<article class="class-card tone-${i % 4}">`,
           `<span class="class-id">${C.esc(c.class)}</span>`,
           `<h2>${C.esc(c.name)}</h2>`,
@@ -75,7 +62,6 @@ export function createSpecialRenderer({
           `<p>${c.teachers.map(C.esc).join('<br>')}</p>`,
           `</article>`
         ].join('')).join('')}</div>`
-      ].join('')
     ].join('');
   }
   function renderParents() {
@@ -90,9 +76,7 @@ export function createSpecialRenderer({
   function renderDownloads() {
     return [
       `${filters('downloads')}<ul class="document-list filter-items">${documents.map(C.docCard).join('')}</ul>`,
-      [
-        `<p class="small">70 unterschiedliche Ressourcen aus 72 dokumentierten Verweisen. Mehrfachverlinkungen wurden zusammengeführt. Alle Originaladressen und Quellseiten sind im Repository erhalten. „Stand nicht angegeben“ bedeutet, dass keine verlässliche Versionsangabe erfasst wurde.</p>`
-      ].join('')
+      `<p class="small">70 unterschiedliche Ressourcen aus 72 dokumentierten Verweisen. Mehrfachverlinkungen wurden zusammengeführt. Alle Originaladressen und Quellseiten sind im Repository erhalten. „Stand nicht angegeben“ bedeutet, dass keine verlässliche Versionsangabe erfasst wurde.</p>`
     ].join('');
   }
   function renderChildren() {

@@ -78,9 +78,7 @@ export function createHomeRenderer({
       `<p class="eyebrow">Das macht uns aus</p>`,
       `<h2>Viele Persönlichkeiten.<br>Eine starke Gemeinschaft.</h2>`,
       `<p>Individuelle Entwicklung und Vielfalt stehen im Mittelpunkt unseres Leitbilds. Kinder übernehmen Verantwortung, gestalten mit und lernen mit allen Sinnen.</p>`,
-      [
-        `<p>Mitten in Rosdorf verbinden wir Grundschule, Schulkindergarten und offenen Ganztag. Familien und Schule bleiben im Gespräch.</p>${C.buttonLink('Profil & Leitbild entdecken', '/unsere-schule/', 'secondary')}</div>`
-      ].join(''),
+      `<p>Mitten in Rosdorf verbinden wir Grundschule, Schulkindergarten und offenen Ganztag. Familien und Schule bleiben im Gespräch.</p>${C.buttonLink('Profil & Leitbild entdecken', '/unsere-schule/', 'secondary')}</div>`,
       `</div>`,
       `</section>`,
       `<section class="news-section container" aria-labelledby="news-title">`,
@@ -97,13 +95,11 @@ export function createHomeRenderer({
       `<p class="eyebrow">Ein guter Anfang</p>`,
       `<h2>Hallo, neue Schulfamilien!</h2>`,
       `<p>Von den ersten Unterlagen bis zum Schulalltag: Hier finden Sie Orientierung für den Start.</p>${C.buttonLink('Zur Schulanmeldung', '/eltern/anmeldung/')}</div>`,
-      [
-        `<div class="welcome-links">${C.links([
+      `<div class="welcome-links">${C.links([
           ['Den Tagesablauf kennenlernen', '/schulalltag/'],
           ['Ganztag & Betreuung entdecken', '/schulalltag/ganztag/'],
           ['Alle Unterlagen herunterladen', '/downloads/']
-        ])}</div>`
-      ].join(''),
+        ])}</div>`,
       `</section>`,
       `<section class="photo-section container">`,
       `<div class="section-top">`,

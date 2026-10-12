@@ -19,9 +19,7 @@ export function createSectionRenderer({
     `<tbody>${schedules.map(([t, a]) => `<tr><th scope="row">${t}</th><td>${C.esc(a)}</td></tr>`).join('')}</tbody>`,
     `</table>`,
     `</div>`,
-    [
-      `<p class="small">Das ältere ABC nennt für den Schulkindergarten 08:30–12:05 Uhr und für Zeugnis-Ausgabetage Unterrichtsende 10:40 Uhr. Diese Angaben sind ebenfalls noch nicht aktuell bestätigt.</p>`
-    ].join('')
+    `<p class="small">Das ältere ABC nennt für den Schulkindergarten 08:30–12:05 Uhr und für Zeugnis-Ausgabetage Unterrichtsende 10:40 Uhr. Diese Angaben sind ebenfalls noch nicht aktuell bestätigt.</p>`
   ].join('');
   function renderValues(s) {
     return `<div class="values">${s.values.map(([t, d], i) => `<div><span class="value-number">0${i + 1}</span><h3>${C.esc(t)}</h3><p>${C.esc(d)}</p></div>`).join('')}</div>`;
@@ -54,9 +52,20 @@ export function createSectionRenderer({
   function section(s) {
     return [
       `<section id="${C.esc(s.id)}" class="content-section">`,
-      `<h2>`,
-      `${C.esc(s.title)}</h2>`,
-      `${(s.paragraphs || []).map(p => `<p>${C.esc(p)}</p>`).join('')}${s.note ? C.notice(s.note) : ''}${s.values ? renderValues(s) : ''}${s.facts ? renderFacts(s) : ''}${s.steps ? renderSteps(s) : ''}${s.schedule ? schedule() : ''}${s.contact ? C.contactCard(s.contact) : ''}${s.media ? `<div class="media-grid">${s.media.map(id => C.photo(id, media)).join('')}</div>` : ''}${s.documents ? C.docList(findDocs(s.documents)) : ''}${s.documentCategory ? C.docList(documents.filter(d => d.category === s.documentCategory)) : ''}${C.links(s.links)}${s.map ? renderMap(s) : ''}</section>`
+      `<h2>${C.esc(s.title)}</h2>`,
+      (s.paragraphs || []).map(p => `<p>${C.esc(p)}</p>`).join(''),
+      s.note ? C.notice(s.note) : '',
+      s.values ? renderValues(s) : '',
+      s.facts ? renderFacts(s) : '',
+      s.steps ? renderSteps(s) : '',
+      s.schedule ? schedule() : '',
+      s.contact ? C.contactCard(s.contact) : '',
+      s.media ? `<div class="media-grid">${s.media.map(id => C.photo(id, media)).join('')}</div>` : '',
+      s.documents ? C.docList(findDocs(s.documents)) : '',
+      s.documentCategory ? C.docList(documents.filter(d => d.category === s.documentCategory)) : '',
+      C.links(s.links),
+      s.map ? renderMap(s) : '',
+      `</section>`
     ].join('');
   }
   return section;

@@ -30,8 +30,7 @@ export function createPageRenderer({
       `<span class="heading-mark" aria-hidden="true">${C.icon(page.theme === 'green' ? 'leaf' : page.theme === 'yellow' ? 'sun' : page.theme === 'blue' ? 'chat' : 'spark')}</span>`,
       `</div>`,
       `</div>`,
-      [
-        `<div class="container page-content${wide ? ' wide' : ''}">${!wide ? sidebar : ''}<div class="page-body">${C.notice(page.notice)}${['parents', 'contact', 'search'].includes(page.kind) ? special(page) : ''}${page.imageId ? C.photo(page.imageId, media, {
+      `<div class="container page-content${wide ? ' wide' : ''}">${!wide ? sidebar : ''}<div class="page-body">${C.notice(page.notice)}${['parents', 'contact', 'search'].includes(page.kind) ? special(page) : ''}${page.imageId ? C.photo(page.imageId, media, {
           className: 'intro-photo'
         }) : ''}${page.sections.map(section).join('')}${!['parents', 'contact', 'search'].includes(page.kind) ? special(page) : ''}${page.documents ? C.docList(findDocs(page.documents)) : ''}${page.sourceUrls?.length ? [
           `<details class="source-note">`,
@@ -39,8 +38,7 @@ export function createPageRenderer({
           `<p>Webtexte auf Grundlage des Briefings vom 12.10.2026. Abweichende Schuljahre und ungeklärte Angaben sind an den betreffenden Stellen gekennzeichnet.</p>`,
           `<ul>${page.sourceUrls.map(u => `<li>${C.a('Originalseite ↗', u)}</li>`).join('')}</ul>`,
           `</details>`
-        ].join('') : ''}</div>`
-      ].join(''),
+        ].join('') : ''}</div>`,
       `</div>`,
       `</main>`
     ].join(''));

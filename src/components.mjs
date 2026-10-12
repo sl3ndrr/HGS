@@ -54,16 +54,14 @@ export function header(settings, navigation, url) {
     `<button class="menu-toggle" aria-expanded="false" aria-controls="hauptnavigation">${icon('menu')}<span>Menü</span>`,
     `</button>`,
     `</div>`,
-    [
-      `<nav id="hauptnavigation" class="main-nav" aria-label="Hauptnavigation">${navigation.map(n => [
+    `<nav id="hauptnavigation" class="main-nav" aria-label="Hauptnavigation">${navigation.map(n => [
         `<details class="nav-group"${url.startsWith(n.url) ? ' data-active="true"' : ''}>`,
         `<summary>${esc(n.title)}<span class="chevron" aria-hidden="true">`,
         `</span>`,
         `</summary>`,
         `<div class="nav-dropdown">${n.items.map(([t, u]) => `<a href="${u}"${url === u ? ' aria-current="page"' : ''}>${esc(t)}${icon('arrow')}</a>`).join('')}</div>`,
         `</details>`
-      ].join('')).join('')}<a class="nav-contact" href="/kontakt/"${url === '/kontakt/' ? ' aria-current="page"' : ''}>Kontakt${icon('arrow')}</a>`
-    ].join(''),
+      ].join('')).join('')}<a class="nav-contact" href="/kontakt/"${url === '/kontakt/' ? ' aria-current="page"' : ''}>Kontakt${icon('arrow')}</a>`,
     `</nav>`,
     `</div>`,
     `</header>`
@@ -93,22 +91,18 @@ export function footer(s) {
     `<h2>Besuchen Sie uns</h2>`,
     `<address>${esc(s.address)}<br>${esc(s.postalCode)} ${esc(s.place)}</address>${a('Kontakt & Anfahrt', '/kontakt/', 'footer-link')}</div>`,
     `<div>`,
-    [
-      `<h2>In Verbindung bleiben</h2>${a(s.phone, `tel:${s.phoneHref}`, 'footer-link')}${a(s.officeEmail, `mailto:${s.officeEmail}`, 'footer-link')}${a('Krankmeldung über SchoolFox', '/eltern/krankmeldung/', 'footer-link')}</div>`
-    ].join(''),
+    `<h2>In Verbindung bleiben</h2>${a(s.phone, `tel:${s.phoneHref}`, 'footer-link')}${a(s.officeEmail, `mailto:${s.officeEmail}`, 'footer-link')}${a('Krankmeldung über SchoolFox', '/eltern/krankmeldung/', 'footer-link')}</div>`,
     `</div>`,
     `<div class="container footer-bottom">`,
     `<p>Grundschule · Schulkindergarten · Offener Ganztag</p>`,
     `<div>${a('Impressum', '/impressum/')}${a('Datenschutz', '/datenschutz/')}${a('Nach oben ↑', '#oben')}</div>`,
     `</div>`,
     `</footer>`,
-    [
-      `<nav class="mobile-bar" aria-label="Schnellzugänge">${[
+    `<nav class="mobile-bar" aria-label="Schnellzugänge">${[
         ['Krankmeldung', '/eltern/krankmeldung/', 'heart'],
         ['Zeiten', '/schulalltag/', 'clock'],
         ['Kontakt', '/kontakt/', 'phone']
-      ].map(([t, u, i]) => `<a href="${u}">${icon(i)}<span>${t}</span></a>`).join('')}<button class="bottom-menu">${icon('menu')}<span>Menü</span>`
-    ].join(''),
+      ].map(([t, u, i]) => `<a href="${u}">${icon(i)}<span>${t}</span></a>`).join('')}<button class="bottom-menu">${icon('menu')}<span>Menü</span>`,
     `</button>`,
     `</nav>`
   ].join('');
@@ -134,12 +128,7 @@ export function photo(id, media, {
   const source = m.localFile || m.originalUrl;
   return [
     `<figure class="media-figure ${className}" data-media-id="${esc(id)}">`,
-    [
-      `<div class="photo-frame${m.localFile ? ' local' : ''}"${m.localFile ? '' : ' data-external-photo="true"'}>${m.localFile ? [
-        [
-          `<img src="${esc(source)}" width="${m.width || 960}" height="${m.height || 640}"${m.variants?.length ? ` srcset="${m.variants.map(v => `${esc(v.url)} ${v.width}w`).join(", ")}" sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1050px) 45vw, 800px"` : ""} alt="${esc(m.alt)}" loading="${eager ? 'eager' : 'lazy'}" decoding="async">`
-        ].join('')
-      ].join('') : [
+    `<div class="photo-frame${m.localFile ? ' local' : ''}"${m.localFile ? '' : ' data-external-photo="true"'}>${m.localFile ? `<img src="${esc(source)}" width="${m.width || 960}" height="${m.height || 640}"${m.variants?.length ? ` srcset="${m.variants.map(v => `${esc(v.url)} ${v.width}w`).join(", ")}" sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1050px) 45vw, 800px"` : ""} alt="${esc(m.alt)}" loading="${eager ? 'eager' : 'lazy'}" decoding="async">` : [
         `<img data-src="${esc(source)}" width="960" height="640" alt="${esc(m.alt)}" hidden decoding="async">`,
         `<div class="photo-placeholder">`,
         `<span class="placeholder-art" aria-hidden="true">${icon('leaf')}</span>`,
@@ -147,8 +136,7 @@ export function photo(id, media, {
         `<button type="button" class="photo-enable">Originalfoto laden ↗</button>`,
         `<span class="small">Externer Inhalt · nur nach Aktivierung</span>`,
         `</div>`
-      ].join('')}<div class="photo-error" hidden>`
-    ].join(''),
+      ].join('')}<div class="photo-error" hidden>`,
     `<p>Dieses Bild ist gerade nicht erreichbar.</p>${a('Originalressource öffnen ↗', m.originalUrl)}</div>`,
     `</div>`,
     `<figcaption>${esc(m.context)}</figcaption>`,
@@ -157,18 +145,14 @@ export function photo(id, media, {
 }
 export function docCard(d) {
   return [
-    [
-      `<li class="document" data-category="${esc(d.category)}" data-language="${esc(d.language)}" data-search="${esc([d.title, d.category, d.language, d.schoolYear, d.stand].join(' ').toLocaleLowerCase('de'))}">`
-    ].join(''),
+    `<li class="document" data-category="${esc(d.category)}" data-language="${esc(d.language)}" data-search="${esc([d.title, d.category, d.language, d.schoolYear, d.stand].join(' ').toLocaleLowerCase('de'))}">`,
     `<div class="doc-symbol" aria-hidden="true">${icon('file')}</div>`,
     `<div class="doc-body">`,
     `<h3>`,
     `<a href="${esc(d.originalUrl)}">${esc(d.title)}<span class="sr-only"> (${esc(d.type)}, externe Ressource)</span>`,
     `</a>`,
     `</h3>`,
-    [
-      `<p class="doc-meta">${esc(d.type)} · ${esc(d.language)} · ${esc(d.schoolYear ? `Schuljahr ${d.schoolYear}` : d.stand)}</p>${d.note ? `<p class="small">${esc(d.note)}</p>` : ''}</div>`
-    ].join(''),
+    `<p class="doc-meta">${esc(d.type)} · ${esc(d.language)} · ${esc(d.schoolYear ? `Schuljahr ${d.schoolYear}` : d.stand)}</p>${d.note ? `<p class="small">${esc(d.note)}</p>` : ''}</div>`,
     `<a class="doc-open" href="${esc(d.originalUrl)}" aria-label="${esc(d.title)} öffnen (${esc(d.type)}, externe Ressource)">${icon('download')}</a>`,
     `</li>`
   ].join('');
@@ -180,18 +164,14 @@ export function contactCard(c) {
   return [
     `<div class="contact-card">`,
     `<p class="eyebrow">${esc(c.role)}</p>`,
-    [
-      `<h3>${esc(c.name)}</h3>${c.phone ? `<a href="tel:${esc(c.phoneHref || c.phone.replaceAll(' ', ''))}">${icon('phone')}${esc(c.phone)}</a>` : ''}${c.email ? `<a href="mailto:${esc(c.email)}">${icon('mail')}${esc(c.email)}</a>` : ''}</div>`
-    ].join('')
+    `<h3>${esc(c.name)}</h3>${c.phone ? `<a href="tel:${esc(c.phoneHref || c.phone.replaceAll(' ', ''))}">${icon('phone')}${esc(c.phone)}</a>` : ''}${c.email ? `<a href="mailto:${esc(c.email)}">${icon('mail')}${esc(c.email)}</a>` : ''}</div>`
   ].join('');
 }
 export function newsCard(n, media) {
   return [
-    [
-      `<article class="news-card" data-category="${esc(n.category)}" data-year="${n.published.slice(0, 4)}" data-search="${esc((n.title + ' ' + n.summary).toLocaleLowerCase('de'))}">${n.imageId ? photo(n.imageId, media, {
+    `<article class="news-card" data-category="${esc(n.category)}" data-year="${n.published.slice(0, 4)}" data-search="${esc((n.title + ' ' + n.summary).toLocaleLowerCase('de'))}">${n.imageId ? photo(n.imageId, media, {
         className: 'news-photo'
-      }) : `<div class="news-art" aria-hidden="true">${icon(n.category === 'Natur & Umwelt' ? 'leaf' : n.category === 'Bewegung' ? 'sun' : 'spark')}</div>`}<div class="news-card-body">`
-    ].join(''),
+      }) : `<div class="news-art" aria-hidden="true">${icon(n.category === 'Natur & Umwelt' ? 'leaf' : n.category === 'Bewegung' ? 'sun' : 'spark')}</div>`}<div class="news-card-body">`,
     `<div class="news-meta">`,
     `<span>${esc(n.category)}</span>`,
     `<time datetime="${n.published}">${dateLabel(n.published)}</time>`,
@@ -207,14 +187,10 @@ export function newsCard(n, media) {
 export function quickGrid(items, {
   compact = false
 } = {}) {
-  return [
-    [
-      `<div class="quick-grid${compact ? ' compact' : ''}">${items.map(([t, u, i, desc], index) => [
+  return `<div class="quick-grid${compact ? ' compact' : ''}">${items.map(([t, u, i, desc], index) => [
         `<a href="${u}" class="quick-card tone-${index % 4}">`,
         `<span class="quick-icon">${icon(i)}</span>`,
         `<span>`,
         `<strong>${esc(t)}</strong>${desc ? `<small>${esc(desc)}</small>` : ''}</span>${icon('arrow', 'quick-arrow')}</a>`
-      ].join('')).join('')}</div>`
-    ].join('')
-  ].join('');
+      ].join('')).join('')}</div>`;
 }

@@ -40,22 +40,16 @@ export function createArticleRenderer({
       `</div>`,
       `</dl>`,
       `</header>`,
-      [
-        `<div class="container article-body">${n.imageId ? C.photo(n.imageId, media, {
+      `<div class="container article-body">${n.imageId ? C.photo(n.imageId, media, {
           className: 'article-photo'
-        }) : ''}<div class="prose">${n.paragraphs.map(p => `<p>${C.esc(p)}</p>`).join('')}${n.eventDate && n.eventNote ? `<p>${C.esc(n.eventNote)}</p>` : ''}<aside class="historical-note">`
-      ].join(''),
+        }) : ''}<div class="prose">${n.paragraphs.map(p => `<p>${C.esc(p)}</p>`).join('')}${n.eventDate && n.eventNote ? `<p>${C.esc(n.eventNote)}</p>` : ''}<aside class="historical-note">`,
       `<p>Dieser Beitrag dokumentiert einen damaligen Schulmoment. Genannte Klassen, Personen, Angebote und Planungen beziehen sich auf den historischen Bericht.</p>`,
-      [
-        `</aside>${C.docList(findDocs(n.documentIds))}${n.id === '1071867' ? C.links([
+      `</aside>${C.docList(findDocs(n.documentIds))}${n.id === '1071867' ? C.links([
           ['Projektwoche & Projektblätter', '/schulleben/projekte/'],
           ['Fotoalbum', '/schulleben/fotos/']
-        ]) : ''}${n.id === '1051514' ? `<div class="media-grid">${['B16', 'B17'].map(id => C.photo(id, media)).join('')}</div>` : ''}${n.id === '1038612' ? `<div class="media-grid">${['B19', 'B20'].map(id => C.photo(id, media)).join('')}</div>` : ''}${n.id === '1089264' ? '<p>Im Bestand ist ein SAT.1-Regionalvideo erkennbar. Die konkrete Video-Adresse ist nicht aufgelöst; deshalb wird keine Einbettung geladen.</p>' : ''}<details class="source-note">`
-      ].join(''),
+        ]) : ''}${n.id === '1051514' ? `<div class="media-grid">${['B16', 'B17'].map(id => C.photo(id, media)).join('')}</div>` : ''}${n.id === '1038612' ? `<div class="media-grid">${['B19', 'B20'].map(id => C.photo(id, media)).join('')}</div>` : ''}${n.id === '1089264' ? '<p>Im Bestand ist ein SAT.1-Regionalvideo erkennbar. Die konkrete Video-Adresse ist nicht aufgelöst; deshalb wird keine Einbettung geladen.</p>' : ''}<details class="source-note">`,
       `<summary>Quelle & redaktionelle Aufbereitung</summary>`,
-      [
-        `<p>Inhaltliche Zusammenfassung aus dem Briefing 12.10.2026. Das Ereignisdatum wurde nur übernommen, wenn es dort ausdrücklich dokumentiert ist. Die Schuljahreszuordnung folgt dem Veröffentlichungsdatum.</p>${C.a('Originalbeitrag öffnen ↗', n.sourceUrl)}</details>${C.buttonLink('Zurück zum Nachrichtenarchiv', '/schulleben/nachrichten/', 'secondary')}</div>`
-      ].join(''),
+      `<p>Inhaltliche Zusammenfassung aus dem Briefing 12.10.2026. Das Ereignisdatum wurde nur übernommen, wenn es dort ausdrücklich dokumentiert ist. Die Schuljahreszuordnung folgt dem Veröffentlichungsdatum.</p>${C.a('Originalbeitrag öffnen ↗', n.sourceUrl)}</details>${C.buttonLink('Zurück zum Nachrichtenarchiv', '/schulleben/nachrichten/', 'secondary')}</div>`,
       `</div>`,
       `<section class="container related-news">`,
       `<p class="eyebrow">Weiterlesen</p>`,
