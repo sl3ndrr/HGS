@@ -1,5 +1,7 @@
 # Heinrich-Grupe-Schule Rosdorf
 
+**Projektkontext:** Die Website unter https://sl3ndrr.github.io/HGS/ ist zunächst eine Konzeptvorstellung, kein freigegebener offizieller Schulauftritt. Origin `https://sl3ndrr.github.io`, Projektpfad `/HGS/`. Verbindliche Entscheidungen, Paketfolge AP01–AP11 und aktuelle Übergabe: [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md). Die nachfolgenden Bestandsangaben beschreiben die ursprüngliche Relaunch-Umsetzung; Projektpfad-Umstellung (AP03) und redaktionelle Konzeptkennzeichnung (AP07) folgen in eigenen Paketen. Konzept-Builds bleiben `noindex`; das ist kein Zugriffsschutz.
+
 Vollständige Relaunch-Umsetzung auf Grundlage des Briefings vom **12.10.2026**: **65 Inhaltsseiten plus Fehlerseite**, alle **33 Nachrichten**, **57 unveränderte Bildadressen** und **72 Dokumentverweise auf 70 Ressourcen**. Mobile Elternwege, mehrsprachige SchoolFox-Dokumente, Suche, Nachrichten- und Dokumentfilter sind integriert. **Keine Website wurde öffentlich bereitgestellt.**
 
 ## Starten
@@ -24,7 +26,8 @@ npm start
 ## Technik & Aufbau
 
 - `content/settings.json`: Stammdaten, Logo-Datei, exakte Original-Kartenadresse.
-- `content/pages.mjs`: redaktionelle Webtexte, Abschnitte, Querverbindungen und Dokumentzuordnungen.
+- `content/pages.mjs`: kompatibler zentraler Export; redaktionelle Texte, Abschnitte, Querverbindungen und Dokumentzuordnungen liegen nach Themen in `content/pages/`. Reihenfolge und IDs erhalten.
+- `content/schedule.mjs`: vorhandener Zeitplan mit unverändertem Quellenstand.
 - `content/people.json`, `classes.json`: Personen/Rollen und Klassen mit explizitem Quellenstand.
 - `content/news.json`: 33 Beiträge, stabile IDs/URLs, Veröffentlichungsdatum, gesondertes Ereignisdatum (oder `null`), Schuljahreszuordnung und historische Einordnung.
 - `content/documents.json`: zentrale Ressourcen; Thema, Sprache, Schuljahr/Stand, Originaladresse und sämtliche Quellseiten.
@@ -33,9 +36,11 @@ npm start
 - `content/editorial-review.json`: 15 im Briefing erfasste Konflikte. Weitere Integrationsaufgaben in [docs/REDAKTION.md](docs/REDAKTION.md).
 - `content/navigation.json`, `redirects.json`: Navigation und 189 dokumentierte Altrouten.
 - `src/components.mjs`: wiederverwendbare, HTML-escapende Komponenten.
+- `src/renderers/`: Seitengerüst, Abschnitte und Spezialseiten; Rendering ohne Dateioperationen.
 - `public/assets/`: CSS, progressive JavaScript-Ergänzungen und eigene dekorative SVG-Illustrationen.
 - `scripts/build.mjs`: statischer Generator mit Metadaten, Sitemap, Fehlerseite, Suchindex und Hostingdateien.
 - `docs/RELAUNCH-BRIEFING.md`: unveränderte vollständige Arbeitsgrundlage.
+- `docs/IMPLEMENTATION.md`: dauerhafte Entscheidungen, Paketstatus und Prüfevidenz für Folgepakete.
 
 Mehrseitiges, semantisches HTML mit echten Links hält Navigation, Inhalte und Downloads auch ohne JavaScript nutzbar. JavaScript ergänzt Suche, Filter, mobile Menüs und die bewusste Aktivierung externer Inhalte. Keine Client-Routing-Abhängigkeit, keine Systemduplikation für Mobilgeräte, kein Tracking und keine extern geladenen Schriften. Farben und CSS-Komponenten sind in [docs/DESIGN.md](docs/DESIGN.md) erklärt.
 
@@ -96,7 +101,7 @@ SITE_URL=https://www.heinrich-grupe-schule.de RELEASE_READY=1 npm run build
 
 Die Originaldomain ist standardmäßig das Canonical-Ziel; `SITE_URL` kann für das tatsächliche Ziel gesetzt werden. Die Sitemap wird ohne erfundenes `lastmod` erzeugt.
 
-`dist/_redirects` enthält pfadbasierte Regeln für kompatible statische Hosts. **Query-abhängige Altrouten** (Nachrichtenarchiv und Kontaktformular) benötigen bei rein statischem Hosting zusätzliche Hostregeln; das vollständige Mapping liegt in `content/redirects.json`. Der Node-Server setzt auch diese Fälle korrekt um. `_headers` enthält grundlegende Header; CSP und TLS müssen beim jeweiligen Host konfiguriert werden. Die Node-Auslieferung setzt zusätzlich eine restriktive Content Security Policy.
+`dist/_redirects` enthält pfadbasierte Regeln für kompatible statische Hosts. **Query-abhängige Altrouten** (Nachrichtenarchiv und Kontaktformular) benötigen bei rein statischem Hosting zusätzliche Hostregeln; das vollständige Mapping liegt in `content/redirects.json`. Der Node-Server setzt auch diese Fälle korrekt um. Echte externe HTTP-301 am ursprünglichen Host benötigen Kontrolle über diesen Ausgangshost und sind AP10; lokale Tests und Hostdateien belegen diese externe Umstellung nicht. `_headers` enthält grundlegende Header; CSP und TLS müssen beim jeweiligen Host konfiguriert werden. Die Node-Auslieferung setzt zusätzlich eine restriktive Content Security Policy.
 
 ## Prüfung & Screenshots
 
@@ -122,3 +127,4 @@ Die Screenshots stammen aus dem erfolgreich geprüften Build; dies sind keine De
 [Startseite mobil](docs/qa/browser/home-390-viewport.png) · [Ganztag mobil](docs/qa/browser/ganztag-390.png) · [Downloads mobil](docs/qa/browser/downloads-390.png) · [Kontakt mobil](docs/qa/browser/contact-390.png)
 
 Alle 24 Screenshots und der Prüfbericht sind in `docs/qa/browser/` dauerhaft versioniert.
+

@@ -25,7 +25,11 @@ const paths = {
   up: 'm6 15 6-6 6 6',
   spark: 'm12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7'
 };
-export const icon = (name, classes = '') => `<svg class="icon ${classes}" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="${paths[name] || paths.arrow}"/></svg>`;
+export const icon = (name, classes = '') => [
+  `<svg class="icon ${classes}" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">`,
+  `<path d="${paths[name] || paths.arrow}"/>`,
+  `</svg>`
+].join('');
 export const a = (title, url, classes = '') => `<a class="${classes}" href="${esc(url)}">${esc(title)}</a>`;
 export const buttonLink = (title, url, variant = 'primary') => `<a class="button ${variant}" href="${esc(url)}">${esc(title)}${icon('arrow')}</a>`;
 export const links = items => items?.length ? `<div class="text-links">${items.map(([t, u]) => `<a href="${esc(u)}">${esc(t)}${icon('arrow')}</a>`).join('')}</div>` : '';
@@ -38,17 +42,88 @@ export const dateLabel = d => new Intl.DateTimeFormat('de-DE', {
 }).format(new Date(`${d}T12:00:00Z`));
 export function header(settings, navigation, url) {
   const brand = settings.logoFile ? `<img src="${esc(settings.logoFile)}" width="239" height="104" alt="Heinrich-Grupe-Schule Rosdorf">` : `<span class="wordmark"><span>Heinrich-Grupe<span class="brand-dot">.</span></span><span>Schule Rosdorf</span></span>`;
-  return `<a class="skip-link" href="#inhalt">Zum Inhalt springen</a><header class="site-header" id="oben"><div class="header-inner"><a class="brand" href="/" aria-label="Heinrich-Grupe-Schule – Startseite">${brand}</a><div class="header-tools"><a href="/downloads/" class="utility">${icon('download')}<span>Downloads</span></a><a href="/suche/" class="search-link" aria-label="Website durchsuchen">${icon('search')}</a><button class="menu-toggle" aria-expanded="false" aria-controls="hauptnavigation">${icon('menu')}<span>Menü</span></button></div><nav id="hauptnavigation" class="main-nav" aria-label="Hauptnavigation">${navigation.map(n => `<details class="nav-group"${url.startsWith(n.url) ? ' data-active="true"' : ''}><summary>${esc(n.title)}<span class="chevron" aria-hidden="true"></span></summary><div class="nav-dropdown">${n.items.map(([t, u]) => `<a href="${u}"${url === u ? ' aria-current="page"' : ''}>${esc(t)}${icon('arrow')}</a>`).join('')}</div></details>`).join('')}<a class="nav-contact" href="/kontakt/"${url === '/kontakt/' ? ' aria-current="page"' : ''}>Kontakt${icon('arrow')}</a></nav></div></header>`;
+  return [
+    `<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>`,
+    `<header class="site-header" id="oben">`,
+    `<div class="header-inner">`,
+    `<a class="brand" href="/" aria-label="Heinrich-Grupe-Schule – Startseite">${brand}</a>`,
+    `<div class="header-tools">`,
+    `<a href="/downloads/" class="utility">${icon('download')}<span>Downloads</span>`,
+    `</a>`,
+    `<a href="/suche/" class="search-link" aria-label="Website durchsuchen">${icon('search')}</a>`,
+    `<button class="menu-toggle" aria-expanded="false" aria-controls="hauptnavigation">${icon('menu')}<span>Menü</span>`,
+    `</button>`,
+    `</div>`,
+    [
+      `<nav id="hauptnavigation" class="main-nav" aria-label="Hauptnavigation">${navigation.map(n => [
+        `<details class="nav-group"${url.startsWith(n.url) ? ' data-active="true"' : ''}>`,
+        `<summary>${esc(n.title)}<span class="chevron" aria-hidden="true">`,
+        `</span>`,
+        `</summary>`,
+        `<div class="nav-dropdown">${n.items.map(([t, u]) => `<a href="${u}"${url === u ? ' aria-current="page"' : ''}>${esc(t)}${icon('arrow')}</a>`).join('')}</div>`,
+        `</details>`
+      ].join('')).join('')}<a class="nav-contact" href="/kontakt/"${url === '/kontakt/' ? ' aria-current="page"' : ''}>Kontakt${icon('arrow')}</a>`
+    ].join(''),
+    `</nav>`,
+    `</div>`,
+    `</header>`
+  ].join('');
 }
 export function footer(s) {
-  return `<footer class="site-footer"><div class="container footer-top"><div><p class="eyebrow light">Heinrich-Grupe-Schule Rosdorf</p><p class="footer-motto">Bunt wie<br><em>das Leben.</em></p><span class="color-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div><div><h2>Besuchen Sie uns</h2><address>${esc(s.address)}<br>${esc(s.postalCode)} ${esc(s.place)}</address>${a('Kontakt & Anfahrt', '/kontakt/', 'footer-link')}</div><div><h2>In Verbindung bleiben</h2>${a(s.phone, `tel:${s.phoneHref}`, 'footer-link')}${a(s.officeEmail, `mailto:${s.officeEmail}`, 'footer-link')}${a('Krankmeldung über SchoolFox', '/eltern/krankmeldung/', 'footer-link')}</div></div><div class="container footer-bottom"><p>Grundschule · Schulkindergarten · Offener Ganztag</p><div>${a('Impressum', '/impressum/')}${a('Datenschutz', '/datenschutz/')}${a('Nach oben ↑', '#oben')}</div></div></footer><nav class="mobile-bar" aria-label="Schnellzugänge">${[['Krankmeldung', '/eltern/krankmeldung/', 'heart'], ['Zeiten', '/schulalltag/', 'clock'], ['Kontakt', '/kontakt/', 'phone']].map(([t, u, i]) => `<a href="${u}">${icon(i)}<span>${t}</span></a>`).join('')}<button class="bottom-menu">${icon('menu')}<span>Menü</span></button></nav>`;
+  return [
+    `<footer class="site-footer">`,
+    `<div class="container footer-top">`,
+    `<div>`,
+    `<p class="eyebrow light">Heinrich-Grupe-Schule Rosdorf</p>`,
+    `<p class="footer-motto">Bunt wie<br>`,
+    `<em>das Leben.</em>`,
+    `</p>`,
+    `<span class="color-dots" aria-hidden="true">`,
+    `<i>`,
+    `</i>`,
+    `<i>`,
+    `</i>`,
+    `<i>`,
+    `</i>`,
+    `<i>`,
+    `</i>`,
+    `</span>`,
+    `</div>`,
+    `<div>`,
+    `<h2>Besuchen Sie uns</h2>`,
+    `<address>${esc(s.address)}<br>${esc(s.postalCode)} ${esc(s.place)}</address>${a('Kontakt & Anfahrt', '/kontakt/', 'footer-link')}</div>`,
+    `<div>`,
+    [
+      `<h2>In Verbindung bleiben</h2>${a(s.phone, `tel:${s.phoneHref}`, 'footer-link')}${a(s.officeEmail, `mailto:${s.officeEmail}`, 'footer-link')}${a('Krankmeldung über SchoolFox', '/eltern/krankmeldung/', 'footer-link')}</div>`
+    ].join(''),
+    `</div>`,
+    `<div class="container footer-bottom">`,
+    `<p>Grundschule · Schulkindergarten · Offener Ganztag</p>`,
+    `<div>${a('Impressum', '/impressum/')}${a('Datenschutz', '/datenschutz/')}${a('Nach oben ↑', '#oben')}</div>`,
+    `</div>`,
+    `</footer>`,
+    [
+      `<nav class="mobile-bar" aria-label="Schnellzugänge">${[
+        ['Krankmeldung', '/eltern/krankmeldung/', 'heart'],
+        ['Zeiten', '/schulalltag/', 'clock'],
+        ['Kontakt', '/kontakt/', 'phone']
+      ].map(([t, u, i]) => `<a href="${u}">${icon(i)}<span>${t}</span></a>`).join('')}<button class="bottom-menu">${icon('menu')}<span>Menü</span>`
+    ].join(''),
+    `</button>`,
+    `</nav>`
+  ].join('');
 }
 export function breadcrumb(page, nav) {
   let parent = nav.find(n => page.url.startsWith(n.url));
   let entries = [['Startseite', '/']];
   if (parent && parent.url !== page.url) entries.push([parent.title, parent.url]);
   if (page.kind === 'news-detail') entries.push(['Nachrichten', '/schulleben/nachrichten/']);
-  return `<nav class="breadcrumbs" aria-label="Brotkrumennavigation"><ol>${entries.map(([t, u]) => `<li>${a(t, u)}<span aria-hidden="true">/</span></li>`).join('')}<li aria-current="page">${esc(page.navTitle || page.title)}</li></ol></nav>`;
+  return [
+    `<nav class="breadcrumbs" aria-label="Brotkrumennavigation">`,
+    `<ol>${entries.map(([t, u]) => `<li>${a(t, u)}<span aria-hidden="true">/</span></li>`).join('')}<li aria-current="page">${esc(page.navTitle || page.title)}</li>`,
+    `</ol>`,
+    `</nav>`
+  ].join('');
 }
 export function photo(id, media, {
   className = '',
@@ -57,24 +132,89 @@ export function photo(id, media, {
   const m = media.find(x => x.id === id);
   if (!m) return '';
   const source = m.localFile || m.originalUrl;
-  return `<figure class="media-figure ${className}" data-media-id="${esc(id)}"><div class="photo-frame${m.localFile ? ' local' : ''}"${m.localFile ? '' : ' data-external-photo="true"'}>${m.localFile ? `<img src="${esc(source)}" width="${m.width || 960}" height="${m.height || 640}"${m.variants?.length ? ` srcset="${m.variants.map(v => `${esc(v.url)} ${v.width}w`).join(", ")}" sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1050px) 45vw, 800px"` : ""} alt="${esc(m.alt)}" loading="${eager ? 'eager' : 'lazy'}" decoding="async">` : `<img data-src="${esc(source)}" width="960" height="640" alt="${esc(m.alt)}" hidden decoding="async"><div class="photo-placeholder"><span class="placeholder-art" aria-hidden="true">${icon('leaf')}</span><p>${esc(m.context)}</p><button type="button" class="photo-enable">Originalfoto laden ↗</button><span class="small">Externer Inhalt · nur nach Aktivierung</span></div>`}<div class="photo-error" hidden><p>Dieses Bild ist gerade nicht erreichbar.</p>${a('Originalressource öffnen ↗', m.originalUrl)}</div></div><figcaption>${esc(m.context)}</figcaption></figure>`;
+  return [
+    `<figure class="media-figure ${className}" data-media-id="${esc(id)}">`,
+    [
+      `<div class="photo-frame${m.localFile ? ' local' : ''}"${m.localFile ? '' : ' data-external-photo="true"'}>${m.localFile ? [
+        [
+          `<img src="${esc(source)}" width="${m.width || 960}" height="${m.height || 640}"${m.variants?.length ? ` srcset="${m.variants.map(v => `${esc(v.url)} ${v.width}w`).join(", ")}" sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1050px) 45vw, 800px"` : ""} alt="${esc(m.alt)}" loading="${eager ? 'eager' : 'lazy'}" decoding="async">`
+        ].join('')
+      ].join('') : [
+        `<img data-src="${esc(source)}" width="960" height="640" alt="${esc(m.alt)}" hidden decoding="async">`,
+        `<div class="photo-placeholder">`,
+        `<span class="placeholder-art" aria-hidden="true">${icon('leaf')}</span>`,
+        `<p>${esc(m.context)}</p>`,
+        `<button type="button" class="photo-enable">Originalfoto laden ↗</button>`,
+        `<span class="small">Externer Inhalt · nur nach Aktivierung</span>`,
+        `</div>`
+      ].join('')}<div class="photo-error" hidden>`
+    ].join(''),
+    `<p>Dieses Bild ist gerade nicht erreichbar.</p>${a('Originalressource öffnen ↗', m.originalUrl)}</div>`,
+    `</div>`,
+    `<figcaption>${esc(m.context)}</figcaption>`,
+    `</figure>`
+  ].join('');
 }
 export function docCard(d) {
-  return `<li class="document" data-category="${esc(d.category)}" data-language="${esc(d.language)}" data-search="${esc([d.title, d.category, d.language, d.schoolYear, d.stand].join(' ').toLocaleLowerCase('de'))}"><div class="doc-symbol" aria-hidden="true">${icon('file')}</div><div class="doc-body"><h3><a href="${esc(d.originalUrl)}">${esc(d.title)}<span class="sr-only"> (${esc(d.type)}, externe Ressource)</span></a></h3><p class="doc-meta">${esc(d.type)} · ${esc(d.language)} · ${esc(d.schoolYear ? `Schuljahr ${d.schoolYear}` : d.stand)}</p>${d.note ? `<p class="small">${esc(d.note)}</p>` : ''}</div><a class="doc-open" href="${esc(d.originalUrl)}" aria-label="${esc(d.title)} öffnen (${esc(d.type)}, externe Ressource)">${icon('download')}</a></li>`;
+  return [
+    [
+      `<li class="document" data-category="${esc(d.category)}" data-language="${esc(d.language)}" data-search="${esc([d.title, d.category, d.language, d.schoolYear, d.stand].join(' ').toLocaleLowerCase('de'))}">`
+    ].join(''),
+    `<div class="doc-symbol" aria-hidden="true">${icon('file')}</div>`,
+    `<div class="doc-body">`,
+    `<h3>`,
+    `<a href="${esc(d.originalUrl)}">${esc(d.title)}<span class="sr-only"> (${esc(d.type)}, externe Ressource)</span>`,
+    `</a>`,
+    `</h3>`,
+    [
+      `<p class="doc-meta">${esc(d.type)} · ${esc(d.language)} · ${esc(d.schoolYear ? `Schuljahr ${d.schoolYear}` : d.stand)}</p>${d.note ? `<p class="small">${esc(d.note)}</p>` : ''}</div>`
+    ].join(''),
+    `<a class="doc-open" href="${esc(d.originalUrl)}" aria-label="${esc(d.title)} öffnen (${esc(d.type)}, externe Ressource)">${icon('download')}</a>`,
+    `</li>`
+  ].join('');
 }
 export function docList(docs) {
   return docs?.length ? `<ul class="document-list">${docs.map(docCard).join('')}</ul>` : '';
 }
 export function contactCard(c) {
-  return `<div class="contact-card"><p class="eyebrow">${esc(c.role)}</p><h3>${esc(c.name)}</h3>${c.phone ? `<a href="tel:${esc(c.phoneHref || c.phone.replaceAll(' ', ''))}">${icon('phone')}${esc(c.phone)}</a>` : ''}${c.email ? `<a href="mailto:${esc(c.email)}">${icon('mail')}${esc(c.email)}</a>` : ''}</div>`;
+  return [
+    `<div class="contact-card">`,
+    `<p class="eyebrow">${esc(c.role)}</p>`,
+    [
+      `<h3>${esc(c.name)}</h3>${c.phone ? `<a href="tel:${esc(c.phoneHref || c.phone.replaceAll(' ', ''))}">${icon('phone')}${esc(c.phone)}</a>` : ''}${c.email ? `<a href="mailto:${esc(c.email)}">${icon('mail')}${esc(c.email)}</a>` : ''}</div>`
+    ].join('')
+  ].join('');
 }
 export function newsCard(n, media) {
-  return `<article class="news-card" data-category="${esc(n.category)}" data-year="${n.published.slice(0, 4)}" data-search="${esc((n.title + ' ' + n.summary).toLocaleLowerCase('de'))}">${n.imageId ? photo(n.imageId, media, {
-    className: 'news-photo'
-  }) : `<div class="news-art" aria-hidden="true">${icon(n.category === 'Natur & Umwelt' ? 'leaf' : n.category === 'Bewegung' ? 'sun' : 'spark')}</div>`}<div class="news-card-body"><div class="news-meta"><span>${esc(n.category)}</span><time datetime="${n.published}">${dateLabel(n.published)}</time></div><h2>${a(n.title, n.url)}</h2><p>${esc(n.summary)}</p><a class="read-more" href="${n.url}">Bericht lesen${icon('arrow')}<span class="sr-only">: ${esc(n.title)}</span></a></div></article>`;
+  return [
+    [
+      `<article class="news-card" data-category="${esc(n.category)}" data-year="${n.published.slice(0, 4)}" data-search="${esc((n.title + ' ' + n.summary).toLocaleLowerCase('de'))}">${n.imageId ? photo(n.imageId, media, {
+        className: 'news-photo'
+      }) : `<div class="news-art" aria-hidden="true">${icon(n.category === 'Natur & Umwelt' ? 'leaf' : n.category === 'Bewegung' ? 'sun' : 'spark')}</div>`}<div class="news-card-body">`
+    ].join(''),
+    `<div class="news-meta">`,
+    `<span>${esc(n.category)}</span>`,
+    `<time datetime="${n.published}">${dateLabel(n.published)}</time>`,
+    `</div>`,
+    `<h2>${a(n.title, n.url)}</h2>`,
+    `<p>${esc(n.summary)}</p>`,
+    `<a class="read-more" href="${n.url}">Bericht lesen${icon('arrow')}<span class="sr-only">: ${esc(n.title)}</span>`,
+    `</a>`,
+    `</div>`,
+    `</article>`
+  ].join('');
 }
 export function quickGrid(items, {
   compact = false
 } = {}) {
-  return `<div class="quick-grid${compact ? ' compact' : ''}">${items.map(([t, u, i, desc], index) => `<a href="${u}" class="quick-card tone-${index % 4}"><span class="quick-icon">${icon(i)}</span><span><strong>${esc(t)}</strong>${desc ? `<small>${esc(desc)}</small>` : ''}</span>${icon('arrow', 'quick-arrow')}</a>`).join('')}</div>`;
+  return [
+    [
+      `<div class="quick-grid${compact ? ' compact' : ''}">${items.map(([t, u, i, desc], index) => [
+        `<a href="${u}" class="quick-card tone-${index % 4}">`,
+        `<span class="quick-icon">${icon(i)}</span>`,
+        `<span>`,
+        `<strong>${esc(t)}</strong>${desc ? `<small>${esc(desc)}</small>` : ''}</span>${icon('arrow', 'quick-arrow')}</a>`
+      ].join('')).join('')}</div>`
+    ].join('')
+  ].join('');
 }

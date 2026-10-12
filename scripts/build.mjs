@@ -1,17 +1,14 @@
-import { readFile, writeFile, mkdir, rm, cp, access } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rm, cp } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { pages, quickLinks } from '../content/pages.mjs';
+import { createRenderers } from '../src/renderers/index.mjs';
 import * as C from '../src/components.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const read = async name => JSON.parse(await readFile(path.join(root, 'content', name + '.json'), 'utf8'));
 const [settings, nav, news, documents, media, people, classes] = await Promise.all(['settings', 'navigation', 'news', 'documents', 'media', 'people', 'classes'].map(read));
 const siteUrl = (process.env.SITE_URL || 'https://www.heinrich-grupe-schule.de').replace(/\/$/, '');
 const ready = process.env.RELEASE_READY === '1';
-const findDocs = ids => {
-  const urls = new Set();
-  return (ids || []).map(id => documents.find(d => d.referenceIds.includes(id))).filter(d => d && !urls.has(d.originalUrl) && urls.add(d.originalUrl));
-};
 await rm(path.join(root, 'dist'), {
   recursive: true,
   force: true
@@ -22,72 +19,6 @@ await mkdir(path.join(root, 'dist'), {
 await cp(path.join(root, 'public'), path.join(root, 'dist'), {
   recursive: true
 });
-const schedules = [['07:55–08:25', 'Mo: Erzählkreis · Di–Do: Lernzeit · Fr: Klassenrat'], ['08:30–09:10', 'Unterricht'], ['09:10–09:20', 'Frühstück'], ['09:20–09:40', 'Pause'], ['09:40–10:20', 'Unterricht'], ['10:25–11:05', 'Unterricht'], ['11:05–11:10', 'Snackpause'], ['11:10–11:25', 'Pause'], ['11:25–12:05', 'Unterricht'], ['12:10–12:50', 'Unterricht / verlässlicher Vormittag']];
-const schedule = () => `<div class="schedule"><table><caption>Vormittag · Quellenstand Schul-ABC 2025/26, Aktualität offen</caption><thead><tr><th scope="col">Zeit</th><th scope="col">Was findet statt?</th></tr></thead><tbody>${schedules.map(([t, a]) => `<tr><th scope="row">${t}</th><td>${C.esc(a)}</td></tr>`).join('')}</tbody></table></div><p class="small">Das ältere ABC nennt für den Schulkindergarten 08:30–12:05 Uhr und für Zeugnis-Ausgabetage Unterrichtsende 10:40 Uhr. Diese Angaben sind ebenfalls noch nicht aktuell bestätigt.</p>`;
-function section(s) {
-  return `<section id="${C.esc(s.id)}" class="content-section"><h2>${C.esc(s.title)}</h2>${(s.paragraphs || []).map(p => `<p>${C.esc(p)}</p>`).join('')}${s.note ? C.notice(s.note) : ''}${s.values ? `<div class="values">${s.values.map(([t, d], i) => `<div><span class="value-number">0${i + 1}</span><h3>${C.esc(t)}</h3><p>${C.esc(d)}</p></div>`).join('')}</div>` : ''}${s.facts ? `<dl class="facts">${s.facts.map(([t, d]) => `<div><dt>${C.esc(t)}</dt><dd>${C.esc(d)}</dd></div>`).join('')}</dl>` : ''}${s.steps ? `<ol class="steps">${s.steps.map(([t, d], i) => `<li><span aria-hidden="true">${i + 1}</span><div><h3>${C.esc(t)}</h3><p>${C.esc(d)}</p></div></li>`).join('')}</ol>` : ''}${s.schedule ? schedule() : ''}${s.contact ? C.contactCard(s.contact) : ''}${s.media ? `<div class="media-grid">${s.media.map(id => C.photo(id, media)).join('')}</div>` : ''}${s.documents ? C.docList(findDocs(s.documents)) : ''}${s.documentCategory ? C.docList(documents.filter(d => d.category === s.documentCategory)) : ''}${C.links(s.links)}${s.map ? `<div class="map-box" data-map-url="${C.esc(settings.mapUrl)}"><div class="map-consent"><span class="map-pin">${C.icon('pin')}</span><h3>Lange Str. 17 · Rosdorf</h3><p>Die Google-Karte lädt erst nach Ihrer Aktivierung. Dabei werden Daten an Google übermittelt; es gelten dessen Datenschutzbestimmungen. Die Textadresse bleibt ohne Karte nutzbar.</p><button class="button primary" id="load-map" type="button">Google-Karte laden${C.icon('arrow')}</button><a href="/datenschutz/#karte">Mehr zum Datenschutz</a></div><div class="map-loaded" hidden><div class="map-frame"></div><button type="button" class="button secondary" id="unload-map">Karte deaktivieren</button><p class="small">Bereits an Google übermittelte Daten werden durch das Deaktivieren nicht zurückgeholt.</p></div></div>` : ''}</section>`;
-}
-const filters = type => {
-  const categories = type === 'news' ? [...new Set(news.map(n => n.category))] : [...new Set(documents.map(d => d.category))];
-  return `<form class="filters" data-filter-form="${type}" role="search"><div class="filter-search"><label for="filter-search">${type === 'news' ? 'Nachrichten suchen' : 'Dokument suchen'}</label><div class="input-wrap">${C.icon('search')}<input type="search" id="filter-search" name="q" placeholder="${type === 'news' ? 'Titel oder Stichwort …' : 'z. B. Anmeldung, SchoolFox …'}" autocomplete="off"></div></div><div><label for="filter-category">Thema</label><select id="filter-category" name="thema"><option value="">Alle Themen</option>${categories.map(c => `<option value="${C.esc(c)}">${C.esc(c)}</option>`).join('')}</select></div><div><label for="filter-extra">${type === 'news' ? 'Jahr' : 'Sprache'}</label><select id="filter-extra" name="${type === 'news' ? 'jahr' : 'sprache'}"><option value="">${type === 'news' ? 'Alle Jahre' : 'Alle Sprachen'}</option>${(type === 'news' ? ['2026', '2025', '2024'] : [...new Set(documents.map(d => d.language))]).map(x => `<option value="${x}">${x}</option>`).join('')}</select></div><button class="filter-reset" type="reset">Zurücksetzen</button></form><p class="filter-count" role="status" aria-live="polite" aria-atomic="true">${type === 'news' ? news.length : documents.length} ${type === 'news' ? 'Beiträge' : 'Dokumente und Medienverweise'}</p><div class="filter-empty" hidden><h2>Keine passenden Ergebnisse</h2><p>Versuchen Sie ein anderes Stichwort oder setzen Sie die Filter zurück.</p></div><noscript><p class="notice">Die Filter benötigen JavaScript. Alle Einträge sind unten vollständig lesbar.</p></noscript>`;
-};
-function special(page) {
-  switch (page.kind) {
-    case 'team':
-      return `<p class="small">${C.esc(people.stand)}</p>${people.groups.map((g, i) => `<section class="content-section" id="team-${i}"><h2>${C.esc(g.title)}</h2><div class="people-grid">${g.people.map(p => `<article class="person-card">${p.imageId ? C.photo(p.imageId, media) : ''}<div><h3>${C.esc(p.name)}</h3>${p.role ? `<p>${C.esc(p.role)}</p>` : ''}${p.email ? C.a(p.email, `mailto:${p.email}`) : ''}${p.phone ? C.a(p.phone, `tel:${p.phone.replaceAll(' ', '')}`) : ''}</div></article>`).join('')}</div></section>`).join('')}`;
-    case 'classes':
-      return `<p class="small">${C.esc(classes.stand)}</p><div class="class-grid">${classes.classes.map((c, i) => `<article class="class-card tone-${i % 4}"><span class="class-id">${C.esc(c.class)}</span><h2>${C.esc(c.name)}</h2><p class="eyebrow">Klassenleitung</p><p>${c.teachers.map(C.esc).join('<br>')}</p></article>`).join('')}</div>`;
-    case 'parents':
-      return C.quickGrid(quickLinks);
-    case 'news':
-      return `${filters('news')}<div class="news-grid filter-items">${news.map(n => C.newsCard(n, media)).join('')}</div><p class="small">Archivstand: Briefing 12.10.2026. Veröffentlichungs- und Ereignisdatum stehen getrennt in den Beiträgen. Es werden keine neueren Meldungen behauptet.</p>`;
-    case 'downloads':
-      return `${filters('downloads')}<ul class="document-list filter-items">${documents.map(C.docCard).join('')}</ul><p class="small">70 unterschiedliche Ressourcen aus 72 dokumentierten Verweisen. Mehrfachverlinkungen wurden zusammengeführt. Alle Originaladressen und Quellseiten sind im Repository erhalten. „Stand nicht angegeben“ bedeutet, dass keine verlässliche Versionsangabe erfasst wurde.</p>`;
-    case 'children':
-      return `<div class="news-grid">${news.filter(n => ['1051514', '1038612', '1199013', '1089249', '1053139'].includes(n.id)).map(n => C.newsCard(n, media)).join('')}</div>`;
-    case 'schoollife':
-      return `<div class="news-grid">${news.slice(0, 3).map(n => C.newsCard(n, media)).join('')}</div>`;
-    case 'contact':
-      return `<div class="contact-intro"><div class="contact-heading">${C.icon('phone')}<p>Ein kurzer Weg zu uns.</p></div><div>${C.buttonLink('0551 7899469', `tel:${settings.phoneHref}`)}${C.buttonLink('E-Mail an das Sekretariat', `mailto:${settings.officeEmail}`, 'secondary')}</div></div>`;
-    case 'search':
-      return `<form class="site-search" action="/suche/" role="search"><label for="site-query">Suchbegriff</label><div class="search-input"><input name="q" id="site-query" type="search" placeholder="Was möchten Sie wissen?" autocomplete="off"><button class="button primary" type="submit">Suchen${C.icon('search')}</button></div></form><p id="search-status" role="status" aria-live="polite">Geben Sie ein Stichwort ein.</p><ul id="search-results" class="search-results"></ul><noscript><p>Die Volltextsuche benötigt JavaScript. Die Bereiche und alle Dokumente sind über diese Links erreichbar:</p>${C.quickGrid(quickLinks)}</noscript>`;
-    default:
-      return '';
-  }
-}
-function shell(page, main) {
-  const title = page.url === '/' ? `${settings.name} Rosdorf – Bunt wie das Leben` : `${page.navTitle || page.title} | ${settings.name} Rosdorf`;
-  return `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>${C.esc(title)}</title><meta name="description" content="${C.esc(page.intro)}"><meta name="robots" content="${ready && !page.legal && page.kind !== 'search' ? 'index,follow' : 'noindex,follow'}"><link rel="canonical" href="${siteUrl}${page.url}"><meta property="og:title" content="${C.esc(title)}"><meta property="og:description" content="${C.esc(page.intro)}"><meta property="og:type" content="${page.kind === 'news-detail' ? 'article' : 'website'}"><meta property="og:url" content="${siteUrl}${page.url}"><meta name="theme-color" content="#173f37"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/site.css"><script src="/assets/site.js" defer></script></head><body class="${page.url === '/' ? 'home' : `theme-${page.theme || 'green'}`}">${C.header(settings, nav, page.url)}${main}${C.footer(settings)}</body></html>`;
-}
-function layout(page) {
-  const wide = ['news', 'downloads', 'classes', 'search', 'schoollife', 'children'].includes(page.kind);
-  const sidebar = page.sections.length ? `<aside class="page-sidebar"><nav aria-label="Auf dieser Seite"><p class="eyebrow">Auf dieser Seite</p><ul>${page.sections.map(s => `<li><a href="#${s.id}">${C.esc(s.title)}</a></li>`).join('')}</ul></nav><div class="sidebar-help">${C.icon('chat')}<h2>Noch eine Frage?</h2><p>Wir helfen Ihnen gerne weiter.</p>${C.a('Kontakt aufnehmen', '/kontakt/', 'read-more')}</div></aside>` : '';
-  return shell(page, `<main id="inhalt" tabindex="-1"><div class="container">${C.breadcrumb(page, nav)}</div><div class="page-heading"><div class="container"><p class="eyebrow">${C.esc(page.eyebrow)}</p><h1>${C.esc(page.title)}</h1><p class="intro">${C.esc(page.intro)}</p><span class="heading-mark" aria-hidden="true">${C.icon(page.theme === 'green' ? 'leaf' : page.theme === 'yellow' ? 'sun' : page.theme === 'blue' ? 'chat' : 'spark')}</span></div></div><div class="container page-content${wide ? ' wide' : ''}">${!wide ? sidebar : ''}<div class="page-body">${C.notice(page.notice)}${['parents', 'contact', 'search'].includes(page.kind) ? special(page) : ''}${page.imageId ? C.photo(page.imageId, media, {
-    className: 'intro-photo'
-  }) : ''}${page.sections.map(section).join('')}${!['parents', 'contact', 'search'].includes(page.kind) ? special(page) : ''}${page.documents ? C.docList(findDocs(page.documents)) : ''}${page.sourceUrls?.length ? `<details class="source-note"><summary>Quellen & Informationsstand</summary><p>Webtexte auf Grundlage des Briefings vom 12.10.2026. Abweichende Schuljahre und ungeklärte Angaben sind an den betreffenden Stellen gekennzeichnet.</p><ul>${page.sourceUrls.map(u => `<li>${C.a('Originalseite ↗', u)}</li>`).join('')}</ul></details>` : ''}</div></div></main>`);
-}
-function homepage() {
-  const page = {
-    url: '/',
-    title: settings.name,
-    intro: 'Die Heinrich-Grupe-Schule Rosdorf: Grundschule mit Schulkindergarten, verlässlichem Vormittag und offenem Ganztag. Elterninformationen, Schulleben und Kontakt.'
-  };
-  return shell(page, `<main id="inhalt" tabindex="-1"><section class="hero container"><div class="hero-copy"><p class="eyebrow"><span class="tiny-flower" aria-hidden="true">✳</span> Grundschule in Rosdorf</p><h1>Hier wachsen<br>wir <em>zusammen.</em></h1><p>Jedes Kind ist einzigartig. Gemeinsam lernen, die Welt entdecken und über sich hinauswachsen – an der Heinrich-Grupe-Schule.</p><div class="hero-actions">${C.buttonLink('Unsere Schule kennenlernen', '/unsere-schule/')}${C.a('Neu an der Schule?', '/eltern/anmeldung/', 'read-more')}</div><div class="hero-note"><span class="color-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Bunt wie das Leben.</span></div></div><div class="hero-art"><img src="/assets/garden.svg" width="780" height="760" alt="Dekorative Illustration: unterschiedliche bunte Blumen wachsen gemeinsam." fetchpriority="high"><span class="art-sticker">Platz zum<br><em>Wachsen.</em></span><span class="art-label">Illustration · Bunt wie das Leben</span></div></section><section class="quick-section container" aria-labelledby="quick-title"><div class="section-top"><div><p class="eyebrow">Für den Schulalltag</p><h2 id="quick-title">Was brauchen Sie heute?</h2></div><p>Die wichtigsten Wege.<br>Ohne langes Suchen.</p></div>${C.quickGrid(quickLinks)}</section><div class="mobile-garden container" aria-hidden="true"><div class="hero-art"><img src="/assets/garden.svg" width="780" height="760" alt="" loading="lazy"><span class="art-sticker">Platz zum<br><em>Wachsen.</em></span><span class="art-label">Illustration · Bunt wie das Leben</span></div></div><section class="school-story"><div class="container story-grid"><div class="story-visual"><span class="story-circle">${C.icon('leaf')}</span><p>Eigene Wege.<br><em>Gemeinsame Wurzeln.</em></p><div class="story-tags"><span>Natur</span><span>Bewegung</span><span>Kreativität</span></div></div><div class="story-copy"><p class="eyebrow">Das macht uns aus</p><h2>Viele Persönlichkeiten.<br>Eine starke Gemeinschaft.</h2><p>Individuelle Entwicklung und Vielfalt stehen im Mittelpunkt unseres Leitbilds. Kinder übernehmen Verantwortung, gestalten mit und lernen mit allen Sinnen.</p><p>Mitten in Rosdorf verbinden wir Grundschule, Schulkindergarten und offenen Ganztag. Familien und Schule bleiben im Gespräch.</p>${C.buttonLink('Profil & Leitbild entdecken', '/unsere-schule/', 'secondary')}</div></div></section><section class="news-section container" aria-labelledby="news-title"><div class="section-top"><div><p class="eyebrow">Einblicke in unser Schulleben</p><h2 id="news-title">Das haben wir erlebt.</h2></div>${C.a('Alle 33 Berichte ansehen', '/schulleben/nachrichten/', 'read-more')}</div><div class="news-grid">${news.slice(0, 3).map(n => C.newsCard(n, media)).join('')}</div><p class="small">Datierte Rückblicke aus dem erfassten Archiv · Stand 12.10.2026</p></section><section class="welcome-section container"><div><p class="eyebrow">Ein guter Anfang</p><h2>Hallo, neue Schulfamilien!</h2><p>Von den ersten Unterlagen bis zum Schulalltag: Hier finden Sie Orientierung für den Start.</p>${C.buttonLink('Zur Schulanmeldung', '/eltern/anmeldung/')}</div><div class="welcome-links">${C.links([['Den Tagesablauf kennenlernen', '/schulalltag/'], ['Ganztag & Betreuung entdecken', '/schulalltag/ganztag/'], ['Alle Unterlagen herunterladen', '/downloads/']])}</div></section><section class="photo-section container"><div class="section-top"><div><p class="eyebrow">Die Schule in Bildern</p><h2>So bunt ist es bei uns.</h2></div>${C.a('Projekte entdecken', '/schulleben/projekte/', 'read-more')}</div><div class="media-grid">${['B02', 'B06', 'B07'].map(id => C.photo(id, media)).join('')}</div><p class="small">Originalmedien des Bestands. Externe Fotos laden nur nach Ihrer Aktivierung.</p></section><section class="contact-banner"><div class="container"><div><p class="eyebrow">Im Gespräch bleiben</p><h2>Eine Frage? Wir sind da.</h2></div>${C.buttonLink('Kontakt aufnehmen', '/kontakt/', 'light')}</div></section></main>`);
-}
-function article(n) {
-  const page = {
-    ...n,
-    kind: 'news-detail',
-    navTitle: n.title,
-    eyebrow: `Schulleben · ${n.category}`,
-    theme: 'green',
-    intro: n.summary,
-    sections: []
-  };
-  return shell(page, `<main id="inhalt" tabindex="-1"><div class="container">${C.breadcrumb(page, nav)}</div><header class="article-heading container"><p class="eyebrow">${C.esc(n.category)} · Historischer Bericht</p><h1>${C.esc(n.title)}</h1><dl class="article-dates"><div><dt>Veröffentlicht</dt><dd><time datetime="${n.published}">${C.dateLabel(n.published)}</time></dd></div><div><dt>Ereignisdatum</dt><dd>${n.eventDate ? `<time datetime="${n.eventDate}">${C.dateLabel(n.eventDate)}</time>` : n.eventNote ? C.esc(n.eventNote) : 'Im Briefing nicht eindeutig ausgewiesen'}</dd></div><div><dt>Schuljahr</dt><dd>${n.schoolYear}<small>Zuordnung nach Veröffentlichung</small></dd></div></dl></header><div class="container article-body">${n.imageId ? C.photo(n.imageId, media, {
-    className: 'article-photo'
-  }) : ''}<div class="prose">${n.paragraphs.map(p => `<p>${C.esc(p)}</p>`).join('')}${n.eventDate && n.eventNote ? `<p>${C.esc(n.eventNote)}</p>` : ''}<aside class="historical-note"><p>Dieser Beitrag dokumentiert einen damaligen Schulmoment. Genannte Klassen, Personen, Angebote und Planungen beziehen sich auf den historischen Bericht.</p></aside>${C.docList(findDocs(n.documentIds))}${n.id === '1071867' ? C.links([['Projektwoche & Projektblätter', '/schulleben/projekte/'], ['Fotoalbum', '/schulleben/fotos/']]) : ''}${n.id === '1051514' ? `<div class="media-grid">${['B16', 'B17'].map(id => C.photo(id, media)).join('')}</div>` : ''}${n.id === '1038612' ? `<div class="media-grid">${['B19', 'B20'].map(id => C.photo(id, media)).join('')}</div>` : ''}${n.id === '1089264' ? '<p>Im Bestand ist ein SAT.1-Regionalvideo erkennbar. Die konkrete Video-Adresse ist nicht aufgelöst; deshalb wird keine Einbettung geladen.</p>' : ''}<details class="source-note"><summary>Quelle & redaktionelle Aufbereitung</summary><p>Inhaltliche Zusammenfassung aus dem Briefing 12.10.2026. Das Ereignisdatum wurde nur übernommen, wenn es dort ausdrücklich dokumentiert ist. Die Schuljahreszuordnung folgt dem Veröffentlichungsdatum.</p>${C.a('Originalbeitrag öffnen ↗', n.sourceUrl)}</details>${C.buttonLink('Zurück zum Nachrichtenarchiv', '/schulleben/nachrichten/', 'secondary')}</div></div><section class="container related-news"><p class="eyebrow">Weiterlesen</p><h2>Mehr aus dem Schulleben.</h2><div class="news-grid">${news.filter(x => x.id !== n.id && x.category === n.category).slice(0, 2).map(x => C.newsCard(x, media)).join('')}</div></section></main>`);
-}
 const writePage = async (url, html) => {
   const filename = url === '/' ? 'index.html' : path.join(url.slice(1), 'index.html');
   await mkdir(path.dirname(path.join(root, 'dist', filename)), {
@@ -95,19 +26,27 @@ const writePage = async (url, html) => {
   });
   await writeFile(path.join(root, 'dist', filename), html);
 };
+const {
+  homepage,
+  layout,
+  article,
+  errorPage
+} = createRenderers({
+  settings,
+  nav,
+  news,
+  documents,
+  media,
+  people,
+  classes,
+  quickLinks,
+  siteUrl,
+  ready
+});
 await writePage('/', homepage());
 for (const p of pages) await writePage(p.url, layout(p));
 for (const n of news) await writePage(n.url, article(n));
-const error = {
-  url: '/404/',
-  title: 'Hier wächst noch nichts.',
-  navTitle: 'Seite nicht gefunden',
-  intro: 'Diese Seite ist nicht vorhanden. Über die Startseite oder die Suche finden Sie den passenden Weg.',
-  theme: 'yellow'
-};
-await writeFile(path.join(root, 'dist/404.html'), shell(error, `<main id="inhalt" tabindex="-1" class="container error-page"><p class="eyebrow">404 · Seite nicht gefunden</p><h1>Hier wächst<br>noch nichts.</h1><p>Der Link ist möglicherweise veraltet. Wir helfen Ihnen beim Weiterfinden.</p><div class="hero-actions">${C.buttonLink('Zur Startseite', '/')}${C.buttonLink('Website durchsuchen', '/suche/', 'secondary')}</div>${C.quickGrid(quickLinks, {
-  compact: true
-})}</main>`));
+await writeFile(path.join(root, 'dist/404.html'), errorPage());
 const searchIndex = [...pages.filter(p => !p.legal && p.kind !== 'search').map(p => ({
   title: p.navTitle || p.title,
   url: p.url,
