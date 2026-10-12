@@ -148,7 +148,9 @@ if (search) {
     results = document.querySelector('#search-results');
   input.value = new URLSearchParams(location.search).get('q') || '';
   let indexPromise;
-  const index = () => indexPromise ??= fetch('/assets/search-index.json').then(r => {
+  const index = () => indexPromise ??= fetch(new URL('assets/search-index.json', new URL(
+    document.querySelector('meta[name="site-base-path"]').content, location.origin
+  ))).then(r => {
     if (!r.ok) throw Error('Index nicht erreichbar');
     return r.json();
   });

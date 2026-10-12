@@ -9,6 +9,7 @@ if (!process.argv.includes('--production')) execFileSync(process.execPath, [path
   stdio: 'inherit'
 });
 const dist = path.join(root, 'dist');
+const { basePath } = JSON.parse(await readFile(path.join(dist, 'build-config.json'), 'utf8'));
 const redirects = JSON.parse(await readFile(path.join(dist, 'redirects.json'), 'utf8'));
 const normalize = s => {
   try {
@@ -58,7 +59,14 @@ const server = http.createServer(async (req, res) => {
       res.end();
       return;
     }
-    let file = path.resolve(dist, '.' + pathname);
+    if (basePath !== '/' && pathname === basePath.slice(0, -1)) {
+      res.writeHead(301, { Location: basePath + url.search });
+      res.end();
+      return;
+    }
+    const outsideProject = !pathname.startsWith(basePath);
+    const relativePath = outsideProject ? '/__outside_project__' : '/' + pathname.slice(basePath.length);
+    let file = path.resolve(dist, '.' + relativePath);
     if (!file.startsWith(dist + path.sep) && file !== dist) {
       res.writeHead(403);
       res.end();

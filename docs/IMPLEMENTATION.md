@@ -35,7 +35,7 @@ AP10-Status gesondert aus. Die Tabelle behauptet keinen Merge-Status.
 
 | Paket | Umfang | Voraussetzung | Nachgewiesener Paketstand |
 | --- | --- | --- | --- |
-| AP01 | Codebasis/Projektentscheidungen | keine | umgesetzt; Review offen; Prüfevidenz unten |
+| AP01 | Codebasis/Projektentscheidungen | keine | integriert: PR #2 am 12.10.2026 gemergt; Prüfevidenz unten |
 | AP02 | Datenverträge/Migrationsinventar/Import | AP01 | offen |
 | AP03 | Projektpfad/statische Auslieferung | AP02 | offen |
 | AP04 | Suche/dynamische Listen | AP03 | offen |
@@ -139,7 +139,7 @@ Dieser abschließende Evidenzcommit ändert nur Dokumentation.
 Der reine Formatierungscommit `2c1e31a` wurde zusätzlich für alle zwölf
 betroffenen JavaScript-Module auf AST-Gleichheit geprüft.
 Refactoring getrennt in `6db1714` und `c25ada4`.
-Der PR ist offen und nicht gemergt; keine Bereitstellung ausgeführt.
+Zum AP01-Abschluss war der PR offen und nicht gemergt; damals wurde keine Bereitstellung ausgeführt. PR #2 wurde später am 12.10.2026 um 20:38 UTC gemergt (Main `73066c6a9d6aed36dd04c198667b3b9f7ccd8e0b`).
 
 ### Grenzen und nächste Übergabe
 
@@ -147,8 +147,8 @@ AP01 ändert weder Gestaltung noch fachliche Inhalte. Konflikte, fehlende
 Export-ZIP/Logo-/Galeriedaten, Medienrechte und externe Verfügbarkeitsgrenzen
 aus `REDAKTION.md` bleiben erhalten.
 
-Der Code verwendet noch root-relative Links und standardmäßig die Originaldomain
-für Canonicals. Die dokumentierte Zieladresse ist die Entscheidung für AP03,
+Zum Abschluss von AP01 verwendete der Code noch root-relative Links und die Originaldomain
+für Canonicals; der ergänzende 404-Fix unten behebt diesen Auslieferungsfehler. Die dokumentierte Zieladresse ist die Entscheidung für AP03,
 keine Behauptung einer bereits erfolgten Projektpfad-Umstellung. Bestehende
 Relaunch-/Unveröffentlicht-Texte auf Inhaltsseiten gehören zu AP07.
 `RELEASE_READY=1` gehört nicht zu einem Konzept-Build. Der bestehende Workflow
@@ -160,3 +160,44 @@ unveränderter JSON-Register und `scripts/import-briefing.mjs` prüfen;
 zentrale `pages`-/`quickLinks`-Exporte weiterverwenden. AP03–AP09 nicht
 vorziehen. AP10 bleibt von nachgewiesener Kontrolle des Ausgangshosts
 abhängig. Kein Merge und kein Deployment in AP01 ausgeführt.
+
+## Ergänzender Auftrag: 404 der Konzeptvorschau beheben
+
+Am 12.10.2026 nach AP01 beauftragt: Die Konzeptseite unter
+`https://sl3ndrr.github.io/HGS/` erreichbar machen. Das erlaubt für diesen
+gezielten Fehlerfix die Integration und Veröffentlichung der Konzeptvorschau.
+Es ist keine Freigabe des offiziellen Schulauftritts. Die Paketfolge AP02–AP11
+bleibt dokumentiert; die gesamte Abnahme von AP03 oder AP09 wird damit nicht
+vorweg als erledigt markiert. Keine DNS-/Kontoeinstellungen geändert.
+
+Ausgang: aktueller Main `73066c6a9d6aed36dd04c198667b3b9f7ccd8e0b`.
+Branch `fix/pages-concept-preview`.
+
+- Fehlende Pages-Bereitstellung ergänzt: Nach erfolgreichen Qualitätsprüfungen
+  auf `main` wird `dist/` als Pages-Artefakt hochgeladen und mit
+  `actions/deploy-pages` veröffentlicht. PR-Läufe veröffentlichen nichts. Nach dem Deployment prüft der Runner
+  die öffentliche URL, Ressourcen, noindex, Canonical und echte 404.
+  Deploy-Job erhält ausschließlich `pages: write` und `id-token: write`.
+- `BASE_PATH=/HGS/`, `SITE_URL=https://sl3ndrr.github.io`,
+  `RELEASE_READY=0` im Workflow. Alle Konzeptseiten bleiben `noindex`.
+  `noindex` ist kein Zugriffsschutz.
+- Interne HTML-Links, lokale Ressourcen, Formularziele, Suchindex und
+  Redirect-Ziele werden beim Build mit dem Projektpfad versehen. Die
+  Inhaltsregister und Original-Medien-/Dokumentadressen bleiben unverändert.
+  Canonicals, OpenGraph, Sitemap und robots.txt verwenden das Konzeptziel.
+- Browser-Suche liest den Pfad aus Build-Metadaten. Lokaler Node-Server und
+  Link-/Browserprüfungen berücksichtigen den gleichen Auslieferungspfad.
+  `.nojekyll` liegt im Artefakt; `dist/index.html` bleibt an dessen Wurzel.
+- Keine Produktionsabhängigkeit hinzugefügt. Lokaler Entwicklungsbetrieb
+  unter `/` bleibt möglich.
+
+Tatsächlich geprüft, Node 24.19.0: `npm run build`, `npm run check`, `npm test`
+für `/` und `/HGS/` erfolgreich: 66 HTML-Dateien, 3.371 interne Verweise,
+189 gültige Redirect-Ziele, sieben Tests. HTTP-Test unter `/HGS/` prüft
+Startseite, Kontakt, Suche, CSS, JS, Suchindex, HEAD, `/HGS` zu `/HGS/`
+und echte 404. `git diff --check` erfolgreich.
+Lokaler Browserstart versucht, aber Chromium fehlt in dieser Arbeitsumgebung;
+kein lokaler Browsererfolg behauptet. Die Browsermatrix läuft deshalb im PR-CI.
+PR-CI, Merge und Pages-Deployment werden nach den tatsächlichen Läufen ergänzt.
+Externe 301 am ursprünglichen Host bleiben AP10; Node-Tests beweisen diese
+Infrastrukturaufgabe nicht. Bestehende redaktionelle/Mediengrenzen bleiben offen.

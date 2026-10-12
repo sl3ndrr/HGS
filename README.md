@@ -1,8 +1,8 @@
 # Heinrich-Grupe-Schule Rosdorf
 
-**Projektkontext:** Die Website unter https://sl3ndrr.github.io/HGS/ ist zunächst eine Konzeptvorstellung, kein freigegebener offizieller Schulauftritt. Origin `https://sl3ndrr.github.io`, Projektpfad `/HGS/`. Verbindliche Entscheidungen, Paketfolge AP01–AP11 und aktuelle Übergabe: [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md). Die nachfolgenden Bestandsangaben beschreiben die ursprüngliche Relaunch-Umsetzung; Projektpfad-Umstellung (AP03) und redaktionelle Konzeptkennzeichnung (AP07) folgen in eigenen Paketen. Konzept-Builds bleiben `noindex`; das ist kein Zugriffsschutz.
+**Projektkontext:** Die Website unter https://sl3ndrr.github.io/HGS/ ist zunächst eine Konzeptvorstellung, kein freigegebener offizieller Schulauftritt. Origin `https://sl3ndrr.github.io`, Projektpfad `/HGS/`. Verbindliche Entscheidungen, Paketfolge AP01–AP11 und aktuelle Übergabe: [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md). Die nachfolgenden Bestandsangaben beschreiben die ursprüngliche Relaunch-Umsetzung. Der ergänzende 404-Fix berücksichtigt den Projektpfad und veröffentlicht die Konzeptvorschau. Die vollständigen Folgepakete, insbesondere redaktionelle Konzeptkennzeichnung (AP07), bleiben gesondert. Konzept-Builds bleiben `noindex`; das ist kein Zugriffsschutz.
 
-Vollständige Relaunch-Umsetzung auf Grundlage des Briefings vom **12.10.2026**: **65 Inhaltsseiten plus Fehlerseite**, alle **33 Nachrichten**, **57 unveränderte Bildadressen** und **72 Dokumentverweise auf 70 Ressourcen**. Mobile Elternwege, mehrsprachige SchoolFox-Dokumente, Suche, Nachrichten- und Dokumentfilter sind integriert. **Keine Website wurde öffentlich bereitgestellt.**
+Vollständige Relaunch-Umsetzung auf Grundlage des Briefings vom **12.10.2026**: **65 Inhaltsseiten plus Fehlerseite**, alle **33 Nachrichten**, **57 unveränderte Bildadressen** und **72 Dokumentverweise auf 70 Ressourcen**. Mobile Elternwege, mehrsprachige SchoolFox-Dokumente, Suche, Nachrichten- und Dokumentfilter sind integriert. **Konzeptvorschau unter [sl3ndrr.github.io/HGS/](https://sl3ndrr.github.io/HGS/); kein freigegebener offizieller Schulauftritt.**
 
 ## Starten
 
@@ -96,16 +96,28 @@ Für ein späteres Kontaktformular werden Versanddienst und Secrets außerhalb d
 **Öffentliche Veröffentlichung nur nach ausdrücklicher Anweisung.** Standardmäßig sind Suchmaschinenindexierung und Crawling deaktiviert. Erst für eine freigegebene Veröffentlichung:
 
 ```sh
-SITE_URL=https://www.heinrich-grupe-schule.de RELEASE_READY=1 npm run build
+SITE_URL=https://www.heinrich-grupe-schule.de BASE_PATH=/ RELEASE_READY=1 npm run build
 ```
 
-Die Originaldomain ist standardmäßig das Canonical-Ziel; `SITE_URL` kann für das tatsächliche Ziel gesetzt werden. Die Sitemap wird ohne erfundenes `lastmod` erzeugt.
+Der Canonical-Origin ist standardmäßig `https://sl3ndrr.github.io`; `SITE_URL` setzt ausschließlich den Origin, `BASE_PATH` den Projektpfad. Der Pages-Workflow verwendet `/HGS/` und erzwingt Konzept-Builds mit `RELEASE_READY=0`. Die Sitemap wird ohne erfundenes `lastmod` erzeugt.
 
 `dist/_redirects` enthält pfadbasierte Regeln für kompatible statische Hosts. **Query-abhängige Altrouten** (Nachrichtenarchiv und Kontaktformular) benötigen bei rein statischem Hosting zusätzliche Hostregeln; das vollständige Mapping liegt in `content/redirects.json`. Der Node-Server setzt auch diese Fälle korrekt um. Echte externe HTTP-301 am ursprünglichen Host benötigen Kontrolle über diesen Ausgangshost und sind AP10; lokale Tests und Hostdateien belegen diese externe Umstellung nicht. `_headers` enthält grundlegende Header; CSP und TLS müssen beim jeweiligen Host konfiguriert werden. Die Node-Auslieferung setzt zusätzlich eine restriktive Content Security Policy.
 
+Für einen lokalen Build mit dem GitHub-Pages-Projektpfad:
+
+```sh
+BASE_PATH=/HGS/ SITE_URL=https://sl3ndrr.github.io RELEASE_READY=0 npm run build
+npm run check
+npm test
+npm start
+```
+
+Danach `http://localhost:4173/HGS/` öffnen. `npm run dev` ohne diese Variablen
+verwendet weiterhin `/`.
+
 ## Prüfung & Screenshots
 
-**Abschließender Chromium-Lauf erfolgreich:** 20 Ansichten und 16 Funktionsprüfungen. Fünf Node-Tests und 3.371 interne Verweise bestehen ebenfalls. Die tatsächlich ausgeführten Prüfungen sowie Grenzen stehen in [docs/QA.md](docs/QA.md). GitHub Actions führt Build, Inhalts-/Linkprüfung und Browserprüfung aus und legt Screenshots samt maschinenlesbarem Bericht als Artefakt `hgs-browser-quality` ab. Der Workflow enthält **keinen Bereitstellungsschritt**.
+**Abschließender Chromium-Lauf erfolgreich:** 20 Ansichten und 16 Funktionsprüfungen. Fünf Node-Tests und 3.371 interne Verweise bestehen ebenfalls. Die tatsächlich ausgeführten Prüfungen sowie Grenzen stehen in [docs/QA.md](docs/QA.md). GitHub Actions führt Build, Inhalts-/Linkprüfung und Browserprüfung aus und legt Screenshots samt maschinenlesbarem Bericht als Artefakt `hgs-browser-quality` ab. Der Workflow veröffentlicht nach erfolgreichen Prüfungen auf `main` die noindex-Konzeptvorschau auf GitHub Pages; PR-Läufe veröffentlichen nichts.
 
 Browserprüfung lokal optional (separate Testabhängigkeit, nicht für den Build erforderlich):
 
