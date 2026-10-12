@@ -198,6 +198,17 @@ Startseite, Kontakt, Suche, CSS, JS, Suchindex, HEAD, `/HGS` zu `/HGS/`
 und echte 404. `git diff --check` erfolgreich.
 Lokaler Browserstart versucht, aber Chromium fehlt in dieser Arbeitsumgebung;
 kein lokaler Browsererfolg behauptet. Die Browsermatrix läuft deshalb im PR-CI.
-PR-CI, Merge und Pages-Deployment werden nach den tatsächlichen Läufen ergänzt.
+[PR #3](https://github.com/sl3ndrr/HGS/pull/3) nach erfolgreichem PR-CI
+[38307771793](https://github.com/sl3ndrr/HGS/actions/runs/38307771793)
+gemergt, Main-Commit `71b41c64ef7c9da094bf988738c49330ba01a397`.
+Der Main-Lauf [38307950446](https://github.com/sl3ndrr/HGS/actions/runs/38307950446)
+hat Build, Linkprüfung, sieben Tests, die Browsermatrix unter `/HGS/`,
+Pages-Artefakt, Deployment und Live-HTTP-Prüfung erfolgreich abgeschlossen.
+Öffentlich bestätigt: `https://sl3ndrr.github.io/HGS/`, noindex und Canonical,
+CSS, JS, Suchindex, Kontakt, Suche mit HTTP 200 sowie echte 404.
+Dauerhafter Beleg: [qa/pages/verification.json](qa/pages/verification.json).
+Die Cloud-Browser-Navigation war mit `ERR_BLOCKED_BY_CLIENT` gesperrt;
+das ist eine Einschränkung dieser Arbeitsumgebung. Die Live-Verifikation
+erfolgte im GitHub-Runner, nicht durch eine behauptete lokale Browserprüfung.
 Externe 301 am ursprünglichen Host bleiben AP10; Node-Tests beweisen diese
 Infrastrukturaufgabe nicht. Bestehende redaktionelle/Mediengrenzen bleiben offen.
