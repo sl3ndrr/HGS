@@ -1,0 +1,45 @@
+{
+  "runUrl": "https://github.com/sl3ndrr/HGS/actions/runs/38282908095",
+  "runId": 38282908095,
+  "jobId": 114924254929,
+  "codeHead": "c25ada459f179e14f686578e41d1182031bbe516",
+  "result": "success",
+  "node": "22.23.3",
+  "screens": 20,
+  "functionChecks": 16,
+  "artifactId": 11762350788,
+  "artifactExpires": "2026-11-11",
+  "manualVisualInspection": [
+    "home-1440-viewport.png",
+    "home-390-viewport.png"
+  ],
+  "localBrowserResult": "Not executed beyond launch: Chromium executable missing",
+  "logEvidence": [
+    "2026-10-12T17:14:57.9012022Z node: v22.23.3",
+    "2026-10-12T17:14:58.6604297Z Build successful: 65 pages + 404; 33 news; 70 resources; 57 media; indexing disabled.",
+    "2026-10-12T17:14:58.9498940Z Integrity passed: 66 HTML files, 3371 internal references, 189 redirects, exact source registries.",
+    "2026-10-12T17:14:59.1585325Z # tests 5",
+    "2026-10-12T17:14:59.1586241Z # pass 5",
+    "2026-10-12T17:15:31.6397752Z PASS Skip link 320",
+    "2026-10-12T17:15:31.7380976Z PASS Mobile navigation 320",
+    "2026-10-12T17:15:35.3934787Z PASS Skip link 390",
+    "2026-10-12T17:15:35.4870278Z PASS Mobile navigation 390",
+    "2026-10-12T17:15:39.2858160Z PASS Skip link 768",
+    "2026-10-12T17:15:39.3698936Z PASS Mobile navigation 768",
+    "2026-10-12T17:15:43.4778483Z PASS Skip link 1440",
+    "2026-10-12T17:15:43.4951120Z PASS Desktop keyboard navigation",
+    "2026-10-12T17:15:43.6965228Z PASS Document filters",
+    "2026-10-12T17:15:43.7604397Z PASS News archive filters",
+    "2026-10-12T17:15:43.8497681Z PASS Search",
+    "2026-10-12T17:15:43.9652060Z PASS Contact alternative and map activation",
+    "2026-10-12T17:15:44.0753824Z PASS Unavailable original image",
+    "2026-10-12T17:15:44.0816840Z PASS Reduced motion",
+    "2026-10-12T17:15:44.1704428Z PASS No JavaScript",
+    "2026-10-12T17:15:44.2329747Z PASS Routing"
+  ],
+  "limitations": [
+    "Viewport emulation, no physical devices.",
+    "Google map response intercepted in test.",
+    "No WCAG conformance, PDF content or image rights clearance claimed."
+  ]
+}

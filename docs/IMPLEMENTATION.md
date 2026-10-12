@@ -62,7 +62,8 @@ Audit-Befunde ungeprüft zu übernehmen.
 Ausgang: am 12.10.2026 über GitHub abgefragter `main`,
 `9c9207ea2d846d755decfde0cc69853d1d4aa7f5`. Der aktuelle Branch zeigte zu
 Beginn tatsächlich auf diesen Commit; er wurde nicht als historische Basis
-fest vorgegeben. Branch: `audit/01-foundation`. AP01 hat keine Vorgänger.
+fest vorgegeben. Branch: `audit/01-foundation`, [PR #2](https://github.com/sl3ndrr/HGS/pull/2).
+AP01 hat keine Vorgänger.
 
 ### Änderungen und Pflegewege
 
@@ -109,7 +110,7 @@ fest vorgegeben. Branch: `audit/01-foundation`. AP01 hat keine Vorgänger.
 - `git diff --check` erfolgreich.
 - `node scripts/browser-qa.mjs` lokal ausgeführt, aber vor Browserprüfungen
   abgebrochen: Chromium-Executable fehlt. Kein lokaler Browsererfolg behauptet.
-  PR-CI-Ergebnis wird nach dem Lauf ergänzt.
+  Diese lokale Werkzeuglücke wurde durch den erfolgreichen PR-CI-Lauf geschlossen.
 
 Vergleich wiederholen: Ausgang und Paketbranch in zwei temporäre Checkouts
 legen, mit gleicher Node-Version und identischen `SITE_URL`-/`RELEASE_READY`-
@@ -118,6 +119,27 @@ Formatunterschiede bei CSS/JS. HTML nicht normalisieren: volle Bytegleichheit
 ist hier der stärkere Nachweis. Für CSS/JS wurde zusätzlich die Tokenfolge
 beziehungsweise der AST verglichen; der verwendete Parser ist ein Werkzeug
 der Arbeitsumgebung, keine zusätzliche Projektvoraussetzung.
+
+### CI-Beleg und visueller Abgleich
+
+[GitHub Actions 38282908095](https://github.com/sl3ndrr/HGS/actions/runs/38282908095)
+vom 12.10.2026 erfolgreich, geprüfter Code-Head
+`c25ada459f179e14f686578e41d1182031bbe516`.
+Node 22.23.3: Build, Inhalts-/Linkprüfung und fünf Tests erfolgreich.
+`node scripts/browser-qa.mjs` erfolgreich: 20 Ansichten der fünf Seitentypen
+bei 320, 390, 768 und 1440 Pixeln sowie 16 Funktionsprüfungen.
+Startseiten-Ausschnitte bei 1440 und 390 Pixeln zusätzlich visuell angesehen.
+Weitere Screenshots wurden hier nicht manuell als geprüft ausgegeben.
+Kein umfassender WCAG-, PDF-, Medienrechte- oder Freigabenachweis.
+
+Artefakt `hgs-browser-quality`, ID `11762350788`: 24 Screenshots und
+Browserbericht; Aufbewahrung bis 11.11.2026. Dauerhafter Lauf-/Lognachweis:
+[qa/ap01/ci-evidence.json](qa/ap01/ci-evidence.json).
+Dieser abschließende Evidenzcommit ändert nur Dokumentation.
+Der reine Formatierungscommit `2c1e31a` wurde zusätzlich für alle zwölf
+betroffenen JavaScript-Module auf AST-Gleichheit geprüft.
+Refactoring getrennt in `6db1714` und `c25ada4`.
+Der PR ist offen und nicht gemergt; keine Bereitstellung ausgeführt.
 
 ### Grenzen und nächste Übergabe
 
