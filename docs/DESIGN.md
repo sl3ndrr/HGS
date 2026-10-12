@@ -1,4 +1,4 @@
-# Gestaltung und UX
+# Gestaltung/UX
 
 ## Richtung
 
