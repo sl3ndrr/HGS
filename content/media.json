@@ -1,0 +1,572 @@
+[
+  {
+    "id": "B01",
+    "context": "Startseite / global: Kopfbild / Banner",
+    "source": null,
+    "originalUrl": "https://fotos.verwaltungsportal.de/menuAdministration/2/2/0/1/3/6/gross/slider2-1349x447.png",
+    "localFile": null,
+    "alt": "Startseite / global: Kopfbild / Banner",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B02",
+    "context": "Startseite: Graffiti-Motiv",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/2/2/5/0/0/IMG-20250515-WA0019.jpg?v=1775565296",
+    "localFile": null,
+    "alt": "Startseite: Graffiti-Motiv",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B03",
+    "context": "Unterrichtszeiten: Tagesstruktur-Grafik",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/4/8/8/3/2/5/Tagesstruktur.png?v=1734441084",
+    "localFile": null,
+    "alt": "Unterrichtszeiten: Tagesstruktur-Grafik",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B04",
+    "context": "Startseite: Wachstum/Blumen, Motiv 1",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/2/2/4/9/8/image.webp?v=1775565296",
+    "localFile": null,
+    "alt": "Startseite: Wachstum/Blumen, Motiv 1",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B05",
+    "context": "Startseite: Wachstum/Blumen, Motiv 2",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/2/2/4/9/9/image.webp?v=1775565296",
+    "localFile": null,
+    "alt": "Startseite: Wachstum/Blumen, Motiv 2",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B06",
+    "context": "Startseite: Mosaik",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/2/2/5/0/1/signal-2025-04-24-21-03-19-780.jpg?v=1775565296",
+    "localFile": null,
+    "alt": "Startseite: Mosaik",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B07",
+    "context": "Startseite: Turnhalle",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/2/2/5/0/2/signal-2025-04-25-09-25-38-440.jpg?v=1775565296",
+    "localFile": null,
+    "alt": "Startseite: Turnhalle",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B08",
+    "context": "Unsere Schule: Portrait Namensgeber Dr. Heinrich Grupe; GIF-Adresse trotz nicht unterstützter Vorschau ermittelt",
+    "source": null,
+    "originalUrl": "https://fotos.verwaltungsportal.de/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Dr._Heinrich_Grupe.gif",
+    "localFile": null,
+    "alt": "Unsere Schule: Portrait Namensgeber Dr. Heinrich Grupe; GIF-Adresse trotz nicht unterstützter Vorschau ermittelt",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B09",
+    "context": "Kollegium: Portrait Schulleiterin Esther Jacobsen",
+    "source": null,
+    "originalUrl": "https://fotos.verwaltungsportal.de/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Esther_Passbild.jpg",
+    "localFile": null,
+    "alt": "Kollegium: Portrait Schulleiterin Esther Jacobsen",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B10",
+    "context": "Kollegium: Portrait Konrektorin Julia Aramayo",
+    "source": null,
+    "originalUrl": "https://fotos.verwaltungsportal.de/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Julia_Passbild.jpg",
+    "localFile": null,
+    "alt": "Kollegium: Portrait Konrektorin Julia Aramayo",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B11",
+    "context": "Umbau: Baustellen-/Abrissfoto",
+    "source": null,
+    "originalUrl": "https://fotos.verwaltungsportal.de/seitengenerator/b84408a40072694b0d18b80a926ca076249919/IMG-20251203-WA0035.webp",
+    "localFile": null,
+    "alt": "Umbau: Baustellen-/Abrissfoto",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B12",
+    "context": "Förderverein: Vereinsbanner",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/7/8/5/4/6/8/Banner-HGS.webp?v=1774020444",
+    "localFile": null,
+    "alt": "Förderverein: Vereinsbanner",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B13",
+    "context": "SchoolFox: SchoolFox-Grafik",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/9/6/4/0/1/1/unnamed.png?v=1740490521",
+    "localFile": null,
+    "alt": "SchoolFox: SchoolFox-Grafik",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B14",
+    "context": "Zeugnisse: Grafik/Screenshot zu kompetenzorientierten Zeugnissen",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/6/4/2/7/4/Screenshot_2026-04-22_121029.webp?v=1777360416",
+    "localFile": null,
+    "alt": "Zeugnisse: Grafik/Screenshot zu kompetenzorientierten Zeugnissen",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B15",
+    "context": "Beratungsangebote: Portrait Kerstin Groß",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/8/3/8/1/5/3/signal-2024-12-18-19-41-06-997.jpg?v=1734595857",
+    "localFile": null,
+    "alt": "Beratungsangebote: Portrait Kerstin Groß",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B16",
+    "context": "Schülerbeiträge: Bibliotheksbericht, Bilder Buchwoche 2",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/0/4/2/6/4/7/Bilder_Buchwoche_2.jpg?v=1743663263",
+    "localFile": null,
+    "alt": "Schülerbeiträge: Bibliotheksbericht, Bilder Buchwoche 2",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B17",
+    "context": "Schülerbeiträge: Bibliotheksbericht, Bilder Buchwoche",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/0/4/2/6/4/8/Bilder_Buchwoche.jpg?v=1743663265",
+    "localFile": null,
+    "alt": "Schülerbeiträge: Bibliotheksbericht, Bilder Buchwoche",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B18",
+    "context": "Schülerbeiträge: Slime-AG, Kinder",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/9/7/8/3/8/0/signal-2025-02-26-18-58-06-861.jpg?v=1741090878",
+    "localFile": null,
+    "alt": "Schülerbeiträge: Slime-AG, Kinder",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B19",
+    "context": "Schülerbeiträge: Slime-AG, Bild 1",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/9/7/8/3/8/1/signal-2025-02-26-18-24-19-896-1.jpg?v=1741090879",
+    "localFile": null,
+    "alt": "Schülerbeiträge: Slime-AG, Bild 1",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B20",
+    "context": "Schülerbeiträge: Slime-AG, Bild 2",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/9/7/8/3/8/2/signal-2025-02-26-18-24-19-896.jpg?v=1741090879",
+    "localFile": null,
+    "alt": "Schülerbeiträge: Slime-AG, Bild 2",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B21",
+    "context": "Kooperationspartner: Logo Begabungsförderung Niedersachsen",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/7/6/4/1/6/0/Logo_Begabungsfoerderung_Niedersachsenklein.webp?v=1773233033",
+    "localFile": null,
+    "alt": "Kooperationspartner: Logo Begabungsförderung Niedersachsen",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B22",
+    "context": "Kooperationspartner: Logo Klima macht Schule",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/7/6/4/1/6/1/Klima_macht_Schule.webp?v=1773233033",
+    "localFile": null,
+    "alt": "Kooperationspartner: Logo Klima macht Schule",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B23",
+    "context": "Kooperationspartner: Grafik Wälderwärts",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/7/6/4/1/6/2/Screenshot_2.webp?v=1773233033",
+    "localFile": null,
+    "alt": "Kooperationspartner: Grafik Wälderwärts",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B24",
+    "context": "Kooperationspartner: Grafik RUZ Göttingen",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/7/6/4/1/6/4/Screenshot_3.webp?v=1773233034",
+    "localFile": null,
+    "alt": "Kooperationspartner: Grafik RUZ Göttingen",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B25",
+    "context": "Schulobst: Logo Schulobstprogramm",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/3/6/1/3/3/9/Schulobst_logo.webp?v=1757328315",
+    "localFile": null,
+    "alt": "Schulobst: Logo Schulobstprogramm",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B26",
+    "context": "Projektwoche: Graffiti-Projekt",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/1/2/4/8/7/0/IMG-20250515-WA0008.jpg?v=1747385441",
+    "localFile": null,
+    "alt": "Projektwoche: Graffiti-Projekt",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B27",
+    "context": "Projektwoche: StadtRadio-Projekt",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/1/2/4/8/7/2/signal-2025-04-24-15-36-50-642.jpg?v=1747385442",
+    "localFile": null,
+    "alt": "Projektwoche: StadtRadio-Projekt",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "B28",
+    "context": "Projektwoche: Waldwärts-Projekt",
+    "source": null,
+    "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/1/2/4/8/7/3/signal-2025-04-24-16-26-12-219.jpg?v=1747385442",
+    "localFile": null,
+    "alt": "Projektwoche: Waldwärts-Projekt",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N01",
+    "context": "Erfrischung an der HGS",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1256501/nachrichten/erfrischung-an-der-hgs.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/5/6/5/0/1/file_00000000066c720a8a01ed5d3d30f5d2.webp",
+    "localFile": null,
+    "alt": "Erfrischung an der HGS",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N02",
+    "context": "Heinrich-Grupe-Schule gewinnt das Junior League-Finale in Hannover",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1251211/nachrichten/heinrich-grupe-schule-gewinnt-das-junior-league-finale-in-hannover.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/5/1/2/1/1/HandballFinals.webp",
+    "localFile": null,
+    "alt": "Heinrich-Grupe-Schule gewinnt das Junior League-Finale in Hannover",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N03",
+    "context": "Heinrich-Grupe-Schule beim Göttinger Sparkassen-Volkslauf erfolgreich vertreten",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1243236/nachrichten/heinrich-grupe-schule-beim-g%C3%B6ttinger-sparkassen-volkslauf-erfolgreich-vertreten.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/4/3/2/3/6/20260531_132811_2.webp",
+    "localFile": null,
+    "alt": "Heinrich-Grupe-Schule beim Göttinger Sparkassen-Volkslauf erfolgreich vertreten",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N04",
+    "context": "Sportfest an der HGS",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1243223/nachrichten/sportfest-an-der-hgs.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/4/3/2/2/3/IMG-20260529-WA0059.webp",
+    "localFile": null,
+    "alt": "Sportfest an der HGS",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N05",
+    "context": "Osterfeier",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1213140/nachrichten/osterfeier.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/1/3/1/4/0/20260320_102230_3.webp",
+    "localFile": null,
+    "alt": "Osterfeier",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N06",
+    "context": "Waldtag der 2.Klassen",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1213138/nachrichten/waldtag-der-2.klassen.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/1/3/1/3/8/20260316_091821.webp",
+    "localFile": null,
+    "alt": "Waldtag der 2.Klassen",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N07",
+    "context": "Handballtag",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1207347/nachrichten/handballtag.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/0/7/3/4/7/IMG-20260305-WA0000.webp",
+    "localFile": null,
+    "alt": "Handballtag",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N08",
+    "context": "Handball-Grundschulliga- Turnier",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1199013/nachrichten/handball-grundschulliga-turnier.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/9/9/0/1/3/signal-2026-02-11-12-00-35-811.webp",
+    "localFile": null,
+    "alt": "Handball-Grundschulliga- Turnier",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N09",
+    "context": "Faschingsfeier 2026",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1198833/nachrichten/faschingsfeier-2026.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/9/8/8/3/3/IMG-20260213-WA0008.webp",
+    "localFile": null,
+    "alt": "Faschingsfeier 2026",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N10",
+    "context": "KUK Göttingen zu Besuch bei den 2.Klassen",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1150694/nachrichten/kuk-g%C3%B6ttingen-zu-besuch-bei-den-2.klassen.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/5/0/6/9/4/20251007_102348.webp",
+    "localFile": null,
+    "alt": "KUK Göttingen zu Besuch bei den 2.Klassen",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N11",
+    "context": "Teilnahme der Heinrich Gruppe Grundschule an der Junior League Handball",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1150696/nachrichten/teilnahme-der-heinrich-gruppe-grundschule-an-der-junior-league-handball.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/5/0/6/9/6/IMG-20251010-WA0011.webp",
+    "localFile": null,
+    "alt": "Teilnahme der Heinrich Gruppe Grundschule an der Junior League Handball",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N12",
+    "context": "Gesundes Frühstück",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1128550/nachrichten/gesundes-fr%C3%BChst%C3%BCck.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/2/8/5/5/0/20250918_085900.webp",
+    "localFile": null,
+    "alt": "Gesundes Frühstück",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N13",
+    "context": "Grundschulliga 2025: Heinrich-Grupe-Schule holt den Titel!",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1119674/nachrichten/grundschulliga-2025-heinrich-grupe-schule-holt-den-titel.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/1/9/6/7/4/DSC07483-Kopie.webp",
+    "localFile": null,
+    "alt": "Grundschulliga 2025: Heinrich-Grupe-Schule holt den Titel!",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N14",
+    "context": "Mit Herz und Helm – Wir bauen Zukunft",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1119667/nachrichten/mit-herz-und-helm--wir-bauen-zukunft.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/1/9/6/6/7/IMG-20250913-WA0080.webp",
+    "localFile": null,
+    "alt": "Mit Herz und Helm – Wir bauen Zukunft",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N15",
+    "context": "Nachweis Rettungsfähigkeit",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1113789/nachrichten/nachweis-rettungsf%C3%A4higkeit.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/1/3/7/8/9/IMG_5570.webp",
+    "localFile": null,
+    "alt": "Nachweis Rettungsfähigkeit",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N16",
+    "context": "Schulchor auf dem Sommerfest der Heinrich-Grupe Schule",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1089249/nachrichten/schulchor-auf-dem-sommerfest-der-heinrich-grupe-schule.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/8/9/2/4/9/20250629_123643.jpg",
+    "localFile": null,
+    "alt": "Schulchor auf dem Sommerfest der Heinrich-Grupe Schule",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N17",
+    "context": "Die HGS bei den Mini-Olympics",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1082475/nachrichten/die-hgs-bei-den-mini-olympics.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/8/2/4/7/5/IMG_4765.jpg",
+    "localFile": null,
+    "alt": "Die HGS bei den Mini-Olympics",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N18",
+    "context": "Projektwoche",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1071867/nachrichten/projektwoche.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/7/1/8/6/7/IMG-20250515-WA0011.jpg",
+    "localFile": null,
+    "alt": "Projektwoche",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N19",
+    "context": "Klimaschutz an der HGS: Auszeichnung für „Klima macht Schule“",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1071858/nachrichten/klimaschutz-an-der-hgs-auszeichnung-f%C3%BCr-klima-macht-schule.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/7/1/8/5/8/Pra%CC%88mie-HGS.jpg",
+    "localFile": null,
+    "alt": "Klimaschutz an der HGS: Auszeichnung für „Klima macht Schule“",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N20",
+    "context": "Hobby Horsing",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1058444/nachrichten/hobby-horsing.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/5/8/4/4/4/20250422_124348.jpg",
+    "localFile": null,
+    "alt": "Hobby Horsing",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N21",
+    "context": "Osterfeier unscharf",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1053782/nachrichten/osterfeier-der-1.kl%C3%A4ssler.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/5/3/7/8/2/Osterfeier_unscharf.jpg",
+    "localFile": null,
+    "alt": "Osterfeier unscharf",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N22",
+    "context": "Ball über die Schnur Turnier",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1053139/nachrichten/ball-%C3%BCber-die-schnur-turnier.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/5/3/1/3/9/signal-2025-04-07-13-43-35-111.jpg",
+    "localFile": null,
+    "alt": "Ball über die Schnur Turnier",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N23",
+    "context": "Ausflug der 1a und 1b zur Stadtbibliothek",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1051514/nachrichten/ausflug-der-1a-und-1b-zur-stadtbibliothek.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/5/1/5/1/4/Bilder_Buchwoche.jpg",
+    "localFile": null,
+    "alt": "Ausflug der 1a und 1b zur Stadtbibliothek",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N24",
+    "context": "Projektwoche",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1042075/nachrichten/projektwoche.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/4/2/0/7/5/Plakate_Projektwoche.png",
+    "localFile": null,
+    "alt": "Projektwoche",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N25",
+    "context": "Neue Leseecke",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1039697/nachrichten/neue-leseecke.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/3/9/6/9/7/Lesecke.jpg",
+    "localFile": null,
+    "alt": "Neue Leseecke",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N26",
+    "context": "Faschingsfeier",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1038690/nachrichten/faschingsfeier.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/3/8/6/9/0/signal-2025-03-04-13-59-30-659.jpg",
+    "localFile": null,
+    "alt": "Faschingsfeier",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N27",
+    "context": "Slime-AG stellt sich vor",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1038612/nachrichten/slime-ag-stellt-sich-vor.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/3/8/6/1/2/signal-2025-02-26-18-58-06-861.jpg",
+    "localFile": null,
+    "alt": "Slime-AG stellt sich vor",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N28",
+    "context": "Adventszeit",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1012969/nachrichten/adventszeit.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/1/2/9/6/9/signal-2024-12-20-13-54-56-829.jpg",
+    "localFile": null,
+    "alt": "Adventszeit",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  },
+  {
+    "id": "N29",
+    "context": "Ukulelen-AG übt fleißig",
+    "source": "https://www.heinrich-grupe-schule.de/m/news/1/1012964/nachrichten/ukulelen-ag-%C3%BCbt-flei%C3%9Fig.html",
+    "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/1/2/9/6/4/IMG_8776_002.jpg",
+    "localFile": null,
+    "alt": "Ukulelen-AG übt fleißig",
+    "rights": "Bestandsrechte und Einwilligungen vor Veröffentlichung bestätigen",
+    "status": "Originaladresse aus Briefing; direkte Abrufe in Arbeitsumgebung gesperrt"
+  }
+]

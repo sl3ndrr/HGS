@@ -1,0 +1,19 @@
+{
+  "stand": "HTML-Bestand laut Briefing 12.10.2026; Schuljahr nicht angegeben. Abweichungen zum Organigramm 2025/26 sind noch zu prüfen.",
+  "classes": [
+    {"class":"SKG","name":"Zeselklasse","teachers":["Frau Schmidt"]},
+    {"class":"1a","name":"Schildkrötenklasse","teachers":["Frau Disep","Frau Becker"]},
+    {"class":"1b","name":"Eichhörnchenklasse","teachers":["Frau Bode","Frau Erk"]},
+    {"class":"1c","name":"Eulenklasse","teachers":["Frau Rettberg","Frau Schlicker"]},
+    {"class":"2a","name":"Waschbärklasse","teachers":["Frau Groß","Frau Ebener"]},
+    {"class":"2b","name":"Bienenklasse","teachers":["Frau Gutenberg","Frau Hinz"]},
+    {"class":"2c","name":"Koalaklasse","teachers":["Frau Erk","Frau Kuster"]},
+    {"class":"3a","name":"Alpakaklasse","teachers":["Frau Aramayo","Frau Jacobsen"]},
+    {"class":"3b","name":"Fuchsklasse","teachers":["Frau Schlicker-Maerz","Frau Rettberg"]},
+    {"class":"3c","name":"Regenbogenklasse","teachers":["Frau Voss","Herr Weiss"]},
+    {"class":"4a","name":"Zebraklasse","teachers":["Frau Becker","Frau Disep"]},
+    {"class":"4b","name":"Otterklasse","teachers":["Frau Kuster","Frau Schmidt"]},
+    {"class":"4c","name":"Tigerklasse","teachers":["Frau Hinz","Frau Golze"]},
+    {"class":"4d","name":"Dschungelklasse","teachers":["Herr Weiss","Frau Voss"]}
+  ]
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "R01",
+    "topic": "Ganztags-Endzeiten",
+    "evidence": "HTML/Formular 2026/27: 14:30/15:30; ABC 2025/26: 14:15/15:15",
+    "action": "Neueren Stand priorisieren, Änderung fachlich bestätigen; Alt-PDF kennzeichnen",
+    "status": "offen"
+  },
+  {
+    "id": "R02",
+    "topic": "Ganztagsbindung",
+    "evidence": "HTML: ein Jahr; Formular: ein Halbjahr mit Verlängerung",
+    "action": "Vertragstext klären",
+    "status": "offen"
+  },
+  {
+    "id": "R03",
+    "topic": "Kündigungsfrist Ganztag",
+    "evidence": "Formular: 30.11.2026 und zusätzlich vier Wochen vor Halbjahresende",
+    "action": "Widerspruch nicht selbst auflösen",
+    "status": "offen"
+  },
+  {
+    "id": "R04",
+    "topic": "Essenspreis",
+    "evidence": "Formular 2026/27: 4,80 Euro; ABC: 4,60 Euro",
+    "action": "Schuljahresgültigkeit dokumentieren",
+    "status": "offen"
+  },
+  {
+    "id": "R05",
+    "topic": "Lieferantenort",
+    "evidence": "Web: Moringen; Formular: Hardegsen",
+    "action": "Anbieterangabe bestätigen",
+    "status": "offen"
+  },
+  {
+    "id": "R06",
+    "topic": "Beratungslehrkraft",
+    "evidence": "Abweichende Telefonnummern und E-Mails auf Beratungsseite, Mobbingseite, ABC und Schutzkonzept",
+    "action": "Eine bestätigte Kontaktquelle herstellen",
+    "status": "offen"
+  },
+  {
+    "id": "R07",
+    "topic": "Sekretariatsraum",
+    "evidence": "ABC: erster Stock; Baubrief: Aula während Umbau",
+    "action": "Aktuellen Standort und Zugangsweg bestätigen",
+    "status": "offen"
+  },
+  {
+    "id": "R08",
+    "topic": "Klassen / Personal",
+    "evidence": "Aktuelle HTML-Seiten weichen vom Organigramm 2025/26 ab",
+    "action": "Team/Klassen jährlich versionieren",
+    "status": "offen"
+  },
+  {
+    "id": "R09",
+    "topic": "Kompetenzzeugnisse",
+    "evidence": "Beschluss für 01.06.2026 angekündigt; Ergebnis fehlt",
+    "action": "Planung nicht zur bestätigten Einführung umdeuten",
+    "status": "offen"
+  },
+  {
+    "id": "R10",
+    "topic": "PDF „Satzung der Schule“",
+    "evidence": "Ziel ist Fördervereinssatzung",
+    "action": "Dokument korrekt benennen",
+    "status": "offen"
+  },
+  {
+    "id": "R11",
+    "topic": "Speiseplan Dezember",
+    "evidence": "Doppellabel 07.–11.12.; ein Link verweist auf Vorwoche",
+    "action": "Beschriftung und Ziel korrigieren",
+    "status": "offen"
+  },
+  {
+    "id": "R12",
+    "topic": "Projektwoche",
+    "evidence": "25 Projekte im Bericht, 26 Projektblätter; unterschiedliche Datumsangaben",
+    "action": "Historische Angaben mit Quelle erhalten und prüfen",
+    "status": "offen"
+  },
+  {
+    "id": "R13",
+    "topic": "Außerschulische Angebote",
+    "evidence": "Verlinkte Seite nicht abrufbar / mobile Variante 404",
+    "action": "Inhalt beim Betreiber nachfordern oder Menü bereinigen",
+    "status": "offen"
+  },
+  {
+    "id": "R14",
+    "topic": "Galerie",
+    "evidence": "Detailalbum vorhanden, Rubrikübersicht leer",
+    "action": "Zuordnung/Export klären",
+    "status": "offen"
+  },
+  {
+    "id": "R15",
+    "topic": "Bildfreigaben",
+    "evidence": "Dateien öffentlich sichtbar; daraus folgt keine neue Freigabe für jede Verwendung",
+    "action": "Bestehende Bildrechte und Einwilligungen vom Schulbetreiber bestätigen lassen; nicht als technisch geklärt markieren",
+    "status": "offen"
+  }
+]

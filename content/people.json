@@ -1,0 +1,13 @@
+{
+  "stand": "HTML-Bestand laut Briefing 12.10.2026; Schuljahr nicht angegeben, vor Veröffentlichung bestätigen",
+  "groups": [
+    {"title":"Schulleitung", "people":[{"name":"Esther Jacobsen","role":"Schulleiterin","imageId":"B09","email":"schulleitung@hgs-rosdorf.de"},{"name":"Julia Aramayo","role":"Konrektorin","imageId":"B10","email":"konrektor@hgs-rosdorf.de"}]},
+    {"title":"Lehrkräfte", "people":[{"name":"Viola Becker"},{"name":"Judith Bode"},{"name":"Maren Dege"},{"name":"Marie Disep"},{"name":"Kerstin Ebener"},{"name":"Barbara Erk"},{"name":"Kerstin Groß"},{"name":"Annika Grünewald","role":"Elternzeit laut Bestand"},{"name":"Amrei Gutenberg"},{"name":"Kerstin Hinz"},{"name":"Saskia Kuster"},{"name":"Catarina Lourenco da Costa Barlas","role":"Elternzeit laut Bestand"},{"name":"Jennifer Golze"},{"name":"Evelyn Rettberg"},{"name":"Diana Schlicker-Maerz"},{"name":"Anja Schmidt"},{"name":"Stephanie Stellmacher"},{"name":"Antonia Voss"},{"name":"Enrico Weiss"}]},
+    {"title":"Lehramtsanwärterin", "people":[{"name":"Luisa Schulte"}]},
+    {"title":"Pädagogische Mitarbeitende", "people":[{"name":"Angela Trost"},{"name":"Wioletta Lubowski"},{"name":"Margo Meister"},{"name":"Steffi Christoph"},{"name":"Guido Nobbe"},{"name":"Mirijam Bartmann"}]},
+    {"title":"Schulsozialarbeit", "people":[{"name":"Iris Laskowski","role":"Diplom-Sozialpädagogin","email":"iris.laskowski@schule-nds.de","phone":"0151 70871990"}]},
+    {"title":"Freiwilligendienst", "people":[{"name":"Alexandra"},{"name":"Anna"},{"name":"Lenja"}]},
+    {"title":"Sekretariat & Hausmeister", "people":[{"name":"Sabine Kikos","role":"Sekretariat","email":"sekretariat@hgs-rosdorf.de"},{"name":"Wolfgang Schwarz","role":"Hausmeister"}]},
+    {"title":"Mensa", "people":[{"name":"Steven Goderjahn"},{"name":"Hanim Onal"}]}
+  ]
+}

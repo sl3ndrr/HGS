@@ -1,0 +1,35 @@
+name: Build and browser quality
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Production build and migration checks
+        run: |
+          npm run build
+          npm run check
+          npm test
+      - name: Install optional browser test tooling
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.62.1
+          npx playwright install --with-deps chromium
+      - name: Responsive browser quality and screenshots
+        run: node scripts/browser-qa.mjs
+      - name: Preserve browser report and screenshots
+        uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: hgs-browser-quality
+          path: docs/qa/browser/
+          retention-days: 30

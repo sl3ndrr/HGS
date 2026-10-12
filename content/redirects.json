@@ -1,0 +1,947 @@
+[
+  {
+    "from": "/seite/708728/kollegium.html",
+    "to": "/unsere-schule/team/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708728/kollegium.html",
+    "to": "/unsere-schule/team/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708809/unsere-schule.html",
+    "to": "/unsere-schule/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708809/unsere-schule.html",
+    "to": "/unsere-schule/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/765392/schul-abc.html",
+    "to": "/eltern/schul-abc/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/765392/schul-abc.html",
+    "to": "/eltern/schul-abc/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708729/schulsozialarbeiterin.html",
+    "to": "/eltern/beratung/#sozialarbeit",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708729/schulsozialarbeiterin.html",
+    "to": "/eltern/beratung/#sozialarbeit",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708730/klassen.html",
+    "to": "/unsere-schule/klassen/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708730/klassen.html",
+    "to": "/unsere-schule/klassen/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708731/schulvorstand.html",
+    "to": "/unsere-schule/mitwirkung/#schulvorstand",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708731/schulvorstand.html",
+    "to": "/unsere-schule/mitwirkung/#schulvorstand",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708732/schulelternrat.html",
+    "to": "/unsere-schule/mitwirkung/#elternrat",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708732/schulelternrat.html",
+    "to": "/unsere-schule/mitwirkung/#elternrat",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708733/konferenzen.html",
+    "to": "/unsere-schule/mitwirkung/#konferenzen",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708733/konferenzen.html",
+    "to": "/unsere-schule/mitwirkung/#konferenzen",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708806/umbau.html",
+    "to": "/unsere-schule/entwicklung/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708806/umbau.html",
+    "to": "/unsere-schule/entwicklung/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708736/verlässliche-grundschule.html",
+    "to": "/schulalltag/#verlässlichkeit",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708736/verlässliche-grundschule.html",
+    "to": "/schulalltag/#verlässlichkeit",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708737/offene-ganztagsschule.html",
+    "to": "/schulalltag/ganztag/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708737/offene-ganztagsschule.html",
+    "to": "/schulalltag/ganztag/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708739/mittagessen.html",
+    "to": "/schulalltag/mittagessen/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708739/mittagessen.html",
+    "to": "/schulalltag/mittagessen/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708749/förderverein.html",
+    "to": "/mitmachen/foerderverein/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708749/förderverein.html",
+    "to": "/mitmachen/foerderverein/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708744/schoolfox.html",
+    "to": "/eltern/schoolfox/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708744/schoolfox.html",
+    "to": "/eltern/schoolfox/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708746/unterrichtszeiten.html",
+    "to": "/schulalltag/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708746/unterrichtszeiten.html",
+    "to": "/schulalltag/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708747/konzepte.html",
+    "to": "/eltern/konzepte/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708747/konzepte.html",
+    "to": "/eltern/konzepte/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/847750/krankheit-eines-kindes.html",
+    "to": "/eltern/krankmeldung/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/847750/krankheit-eines-kindes.html",
+    "to": "/eltern/krankmeldung/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708755/zeugnisse.html",
+    "to": "/eltern/zeugnisse/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708755/zeugnisse.html",
+    "to": "/eltern/zeugnisse/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708756/beratungsangebote.html",
+    "to": "/eltern/beratung/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708756/beratungsangebote.html",
+    "to": "/eltern/beratung/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/748797/angebote-außerschulischer-kooperationspartner.html",
+    "to": "/mitmachen/kooperationen/#angebote",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/748797/angebote-außerschulischer-kooperationspartner.html",
+    "to": "/mitmachen/kooperationen/#angebote",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/765298/schulanmeldung.html",
+    "to": "/eltern/anmeldung/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/765298/schulanmeldung.html",
+    "to": "/eltern/anmeldung/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/858078/mobbing-interventionsteam.html",
+    "to": "/eltern/beratung/#mobbing",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/858078/mobbing-interventionsteam.html",
+    "to": "/eltern/beratung/#mobbing",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708759/surftipps.html",
+    "to": "/schulleben/",
+    "reason": "Leerer Surftipps-Menüpunkt bereinigt; Schulleben als Einstieg"
+  },
+  {
+    "from": "/m/seite/708759/surftipps.html",
+    "to": "/schulleben/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/713223/schülerbeiträge.html",
+    "to": "/schulleben/kinderstimmen/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/713223/schülerbeiträge.html",
+    "to": "/schulleben/kinderstimmen/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/765366/kooperationspartner.html",
+    "to": "/mitmachen/kooperationen/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/765366/kooperationspartner.html",
+    "to": "/mitmachen/kooperationen/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/806610/schulobst.html",
+    "to": "/schulalltag/schulobst/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/806610/schulobst.html",
+    "to": "/schulalltag/schulobst/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/766080/projektwoche.html",
+    "to": "/schulleben/projekte/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/766080/projektwoche.html",
+    "to": "/schulleben/projekte/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708761/formulare.html",
+    "to": "/downloads/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708761/formulare.html",
+    "to": "/downloads/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708809/unsere-schule.html](https://www.heinrich-grupe-schule.de/seite/708809/unsere-schule.html",
+    "to": "/unsere-schule/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708809/unsere-schule.html](https://www.heinrich-grupe-schule.de/seite/708809/unsere-schule.html",
+    "to": "/unsere-schule/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/765392/schul-abc.html](https://www.heinrich-grupe-schule.de/seite/765392/schul-abc.html",
+    "to": "/eltern/schul-abc/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/765392/schul-abc.html](https://www.heinrich-grupe-schule.de/seite/765392/schul-abc.html",
+    "to": "/eltern/schul-abc/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708729/schulsozialarbeiterin.html](https://www.heinrich-grupe-schule.de/seite/708729/schulsozialarbeiterin.html",
+    "to": "/eltern/beratung/#sozialarbeit",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708729/schulsozialarbeiterin.html](https://www.heinrich-grupe-schule.de/seite/708729/schulsozialarbeiterin.html",
+    "to": "/eltern/beratung/#sozialarbeit",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708731/schulvorstand.html](https://www.heinrich-grupe-schule.de/seite/708731/schulvorstand.html",
+    "to": "/unsere-schule/mitwirkung/#schulvorstand",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708731/schulvorstand.html](https://www.heinrich-grupe-schule.de/seite/708731/schulvorstand.html",
+    "to": "/unsere-schule/mitwirkung/#schulvorstand",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708732/schulelternrat.html](https://www.heinrich-grupe-schule.de/seite/708732/schulelternrat.html",
+    "to": "/unsere-schule/mitwirkung/#elternrat",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708732/schulelternrat.html](https://www.heinrich-grupe-schule.de/seite/708732/schulelternrat.html",
+    "to": "/unsere-schule/mitwirkung/#elternrat",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708733/konferenzen.html](https://www.heinrich-grupe-schule.de/seite/708733/konferenzen.html",
+    "to": "/unsere-schule/mitwirkung/#konferenzen",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708733/konferenzen.html](https://www.heinrich-grupe-schule.de/seite/708733/konferenzen.html",
+    "to": "/unsere-schule/mitwirkung/#konferenzen",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708806/umbau.html](https://www.heinrich-grupe-schule.de/seite/708806/umbau.html",
+    "to": "/unsere-schule/entwicklung/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708806/umbau.html](https://www.heinrich-grupe-schule.de/seite/708806/umbau.html",
+    "to": "/unsere-schule/entwicklung/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708736/verlässliche-grundschule.html](https://www.heinrich-grupe-schule.de/seite/708736/verlässliche-grundschule.html",
+    "to": "/schulalltag/#verlässlichkeit",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708736/verlässliche-grundschule.html](https://www.heinrich-grupe-schule.de/seite/708736/verlässliche-grundschule.html",
+    "to": "/schulalltag/#verlässlichkeit",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708737/offene-ganztagsschule.html](https://www.heinrich-grupe-schule.de/seite/708737/offene-ganztagsschule.html",
+    "to": "/schulalltag/ganztag/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708737/offene-ganztagsschule.html](https://www.heinrich-grupe-schule.de/seite/708737/offene-ganztagsschule.html",
+    "to": "/schulalltag/ganztag/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708739/mittagessen.html](https://www.heinrich-grupe-schule.de/seite/708739/mittagessen.html",
+    "to": "/schulalltag/mittagessen/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708739/mittagessen.html](https://www.heinrich-grupe-schule.de/seite/708739/mittagessen.html",
+    "to": "/schulalltag/mittagessen/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708749/förderverein.html](https://www.heinrich-grupe-schule.de/seite/708749/förderverein.html",
+    "to": "/mitmachen/foerderverein/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708749/förderverein.html](https://www.heinrich-grupe-schule.de/seite/708749/förderverein.html",
+    "to": "/mitmachen/foerderverein/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708744/schoolfox.html](https://www.heinrich-grupe-schule.de/seite/708744/schoolfox.html",
+    "to": "/eltern/schoolfox/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708744/schoolfox.html](https://www.heinrich-grupe-schule.de/seite/708744/schoolfox.html",
+    "to": "/eltern/schoolfox/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708746/unterrichtszeiten.html](https://www.heinrich-grupe-schule.de/seite/708746/unterrichtszeiten.html",
+    "to": "/schulalltag/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708746/unterrichtszeiten.html](https://www.heinrich-grupe-schule.de/seite/708746/unterrichtszeiten.html",
+    "to": "/schulalltag/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708747/konzepte.html](https://www.heinrich-grupe-schule.de/seite/708747/konzepte.html",
+    "to": "/eltern/konzepte/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708747/konzepte.html](https://www.heinrich-grupe-schule.de/seite/708747/konzepte.html",
+    "to": "/eltern/konzepte/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/847750/krankheit-eines-kindes.html](https://www.heinrich-grupe-schule.de/seite/847750/krankheit-eines-kindes.html",
+    "to": "/eltern/krankmeldung/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/847750/krankheit-eines-kindes.html](https://www.heinrich-grupe-schule.de/seite/847750/krankheit-eines-kindes.html",
+    "to": "/eltern/krankmeldung/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708755/zeugnisse.html](https://www.heinrich-grupe-schule.de/seite/708755/zeugnisse.html",
+    "to": "/eltern/zeugnisse/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708755/zeugnisse.html](https://www.heinrich-grupe-schule.de/seite/708755/zeugnisse.html",
+    "to": "/eltern/zeugnisse/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708756/beratungsangebote.html](https://www.heinrich-grupe-schule.de/seite/708756/beratungsangebote.html",
+    "to": "/eltern/beratung/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708756/beratungsangebote.html](https://www.heinrich-grupe-schule.de/seite/708756/beratungsangebote.html",
+    "to": "/eltern/beratung/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/748797/angebote-außerschulischer-kooperationspartner.html](https://www.heinrich-grupe-schule.de/seite/748797/angebote-außerschulischer-kooperationspartner.html",
+    "to": "/mitmachen/kooperationen/#angebote",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/748797/angebote-außerschulischer-kooperationspartner.html](https://www.heinrich-grupe-schule.de/seite/748797/angebote-außerschulischer-kooperationspartner.html",
+    "to": "/mitmachen/kooperationen/#angebote",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/765298/schulanmeldung.html](https://www.heinrich-grupe-schule.de/seite/765298/schulanmeldung.html",
+    "to": "/eltern/anmeldung/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/765298/schulanmeldung.html](https://www.heinrich-grupe-schule.de/seite/765298/schulanmeldung.html",
+    "to": "/eltern/anmeldung/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/858078/mobbing-interventionsteam.html](https://www.heinrich-grupe-schule.de/seite/858078/mobbing-interventionsteam.html",
+    "to": "/eltern/beratung/#mobbing",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/858078/mobbing-interventionsteam.html](https://www.heinrich-grupe-schule.de/seite/858078/mobbing-interventionsteam.html",
+    "to": "/eltern/beratung/#mobbing",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708759/surftipps.html](https://www.heinrich-grupe-schule.de/seite/708759/surftipps.html",
+    "to": "/schulleben/",
+    "reason": "Leerer Surftipps-Menüpunkt bereinigt; Schulleben als Einstieg"
+  },
+  {
+    "from": "/m/seite/708759/surftipps.html](https://www.heinrich-grupe-schule.de/seite/708759/surftipps.html",
+    "to": "/schulleben/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/713223/schülerbeiträge.html](https://www.heinrich-grupe-schule.de/seite/713223/schülerbeiträge.html",
+    "to": "/schulleben/kinderstimmen/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/713223/schülerbeiträge.html](https://www.heinrich-grupe-schule.de/seite/713223/schülerbeiträge.html",
+    "to": "/schulleben/kinderstimmen/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/765366/kooperationspartner.html](https://www.heinrich-grupe-schule.de/seite/765366/kooperationspartner.html",
+    "to": "/mitmachen/kooperationen/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/765366/kooperationspartner.html](https://www.heinrich-grupe-schule.de/seite/765366/kooperationspartner.html",
+    "to": "/mitmachen/kooperationen/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/806610/schulobst.html](https://www.heinrich-grupe-schule.de/seite/806610/schulobst.html",
+    "to": "/schulalltag/schulobst/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/806610/schulobst.html](https://www.heinrich-grupe-schule.de/seite/806610/schulobst.html",
+    "to": "/schulalltag/schulobst/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/766080/projektwoche.html](https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+    "to": "/schulleben/projekte/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/766080/projektwoche.html](https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+    "to": "/schulleben/projekte/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708761/formulare.html](https://www.heinrich-grupe-schule.de/seite/708761/formulare.html",
+    "to": "/downloads/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708761/formulare.html](https://www.heinrich-grupe-schule.de/seite/708761/formulare.html",
+    "to": "/downloads/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/seite/708749/f%C3%B6rderverein.html",
+    "to": "/mitmachen/foerderverein/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/seite/708749/f%C3%B6rderverein.html",
+    "to": "/mitmachen/foerderverein/",
+    "reason": "Mobile Altansicht zusammengeführt"
+  },
+  {
+    "from": "/news/1/1256501/nachrichten/erfrischung-an-der-hgs.html",
+    "to": "/schulleben/nachrichten/1256501/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1256501/nachrichten/erfrischung-an-der-hgs.html",
+    "to": "/schulleben/nachrichten/1256501/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1251211/nachrichten/heinrich-grupe-schule-gewinnt-das-junior-league-finale-in-hannover.html",
+    "to": "/schulleben/nachrichten/1251211/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1251211/nachrichten/heinrich-grupe-schule-gewinnt-das-junior-league-finale-in-hannover.html",
+    "to": "/schulleben/nachrichten/1251211/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1243236/nachrichten/heinrich-grupe-schule-beim-g%C3%B6ttinger-sparkassen-volkslauf-erfolgreich-vertreten.html",
+    "to": "/schulleben/nachrichten/1243236/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1243236/nachrichten/heinrich-grupe-schule-beim-g%C3%B6ttinger-sparkassen-volkslauf-erfolgreich-vertreten.html",
+    "to": "/schulleben/nachrichten/1243236/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1243223/nachrichten/sportfest-an-der-hgs.html",
+    "to": "/schulleben/nachrichten/1243223/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1243223/nachrichten/sportfest-an-der-hgs.html",
+    "to": "/schulleben/nachrichten/1243223/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1228388/nachrichten/klima-macht-schule.html",
+    "to": "/schulleben/nachrichten/1228388/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1228388/nachrichten/klima-macht-schule.html",
+    "to": "/schulleben/nachrichten/1228388/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1213140/nachrichten/osterfeier.html",
+    "to": "/schulleben/nachrichten/1213140/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1213140/nachrichten/osterfeier.html",
+    "to": "/schulleben/nachrichten/1213140/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1213138/nachrichten/waldtag-der-2.klassen.html",
+    "to": "/schulleben/nachrichten/1213138/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1213138/nachrichten/waldtag-der-2.klassen.html",
+    "to": "/schulleben/nachrichten/1213138/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1207347/nachrichten/handballtag.html",
+    "to": "/schulleben/nachrichten/1207347/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1207347/nachrichten/handballtag.html",
+    "to": "/schulleben/nachrichten/1207347/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1199013/nachrichten/handball-grundschulliga-turnier.html",
+    "to": "/schulleben/nachrichten/1199013/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1199013/nachrichten/handball-grundschulliga-turnier.html",
+    "to": "/schulleben/nachrichten/1199013/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1198833/nachrichten/faschingsfeier-2026.html",
+    "to": "/schulleben/nachrichten/1198833/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1198833/nachrichten/faschingsfeier-2026.html",
+    "to": "/schulleben/nachrichten/1198833/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1150694/nachrichten/kuk-g%C3%B6ttingen-zu-besuch-bei-den-2.klassen.html",
+    "to": "/schulleben/nachrichten/1150694/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1150694/nachrichten/kuk-g%C3%B6ttingen-zu-besuch-bei-den-2.klassen.html",
+    "to": "/schulleben/nachrichten/1150694/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1150696/nachrichten/teilnahme-der-heinrich-gruppe-grundschule-an-der-junior-league-handball.html",
+    "to": "/schulleben/nachrichten/1150696/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1150696/nachrichten/teilnahme-der-heinrich-gruppe-grundschule-an-der-junior-league-handball.html",
+    "to": "/schulleben/nachrichten/1150696/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1128550/nachrichten/gesundes-fr%C3%BChst%C3%BCck.html",
+    "to": "/schulleben/nachrichten/1128550/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1128550/nachrichten/gesundes-fr%C3%BChst%C3%BCck.html",
+    "to": "/schulleben/nachrichten/1128550/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1119674/nachrichten/grundschulliga-2025-heinrich-grupe-schule-holt-den-titel.html",
+    "to": "/schulleben/nachrichten/1119674/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1119674/nachrichten/grundschulliga-2025-heinrich-grupe-schule-holt-den-titel.html",
+    "to": "/schulleben/nachrichten/1119674/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1119667/nachrichten/mit-herz-und-helm--wir-bauen-zukunft.html",
+    "to": "/schulleben/nachrichten/1119667/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1119667/nachrichten/mit-herz-und-helm--wir-bauen-zukunft.html",
+    "to": "/schulleben/nachrichten/1119667/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1113789/nachrichten/nachweis-rettungsf%C3%A4higkeit.html",
+    "to": "/schulleben/nachrichten/1113789/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1113789/nachrichten/nachweis-rettungsf%C3%A4higkeit.html",
+    "to": "/schulleben/nachrichten/1113789/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1089279/nachrichten/abschlussfest-der-4.klassen.html",
+    "to": "/schulleben/nachrichten/1089279/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1089279/nachrichten/abschlussfest-der-4.klassen.html",
+    "to": "/schulleben/nachrichten/1089279/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1089264/nachrichten/sportabzeichentour-im-jahnstadion-und-wir-waren-dabei.html",
+    "to": "/schulleben/nachrichten/1089264/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1089264/nachrichten/sportabzeichentour-im-jahnstadion-und-wir-waren-dabei.html",
+    "to": "/schulleben/nachrichten/1089264/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1089249/nachrichten/schulchor-auf-dem-sommerfest-der-heinrich-grupe-schule.html",
+    "to": "/schulleben/nachrichten/1089249/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1089249/nachrichten/schulchor-auf-dem-sommerfest-der-heinrich-grupe-schule.html",
+    "to": "/schulleben/nachrichten/1089249/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1082475/nachrichten/die-hgs-bei-den-mini-olympics.html",
+    "to": "/schulleben/nachrichten/1082475/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1082475/nachrichten/die-hgs-bei-den-mini-olympics.html",
+    "to": "/schulleben/nachrichten/1082475/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1071867/nachrichten/projektwoche.html",
+    "to": "/schulleben/nachrichten/1071867/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1071867/nachrichten/projektwoche.html",
+    "to": "/schulleben/nachrichten/1071867/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1071858/nachrichten/klimaschutz-an-der-hgs-auszeichnung-f%C3%BCr-klima-macht-schule.html",
+    "to": "/schulleben/nachrichten/1071858/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1071858/nachrichten/klimaschutz-an-der-hgs-auszeichnung-f%C3%BCr-klima-macht-schule.html",
+    "to": "/schulleben/nachrichten/1071858/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1058444/nachrichten/hobby-horsing.html",
+    "to": "/schulleben/nachrichten/1058444/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1058444/nachrichten/hobby-horsing.html",
+    "to": "/schulleben/nachrichten/1058444/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1053782/nachrichten/osterfeier-der-1.kl%C3%A4ssler.html",
+    "to": "/schulleben/nachrichten/1053782/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1053782/nachrichten/osterfeier-der-1.kl%C3%A4ssler.html",
+    "to": "/schulleben/nachrichten/1053782/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1053139/nachrichten/ball-%C3%BCber-die-schnur-turnier.html",
+    "to": "/schulleben/nachrichten/1053139/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1053139/nachrichten/ball-%C3%BCber-die-schnur-turnier.html",
+    "to": "/schulleben/nachrichten/1053139/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1051514/nachrichten/ausflug-der-1a-und-1b-zur-stadtbibliothek.html",
+    "to": "/schulleben/nachrichten/1051514/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1051514/nachrichten/ausflug-der-1a-und-1b-zur-stadtbibliothek.html",
+    "to": "/schulleben/nachrichten/1051514/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1042075/nachrichten/projektwoche.html",
+    "to": "/schulleben/nachrichten/1042075/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1042075/nachrichten/projektwoche.html",
+    "to": "/schulleben/nachrichten/1042075/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1039697/nachrichten/neue-leseecke.html",
+    "to": "/schulleben/nachrichten/1039697/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1039697/nachrichten/neue-leseecke.html",
+    "to": "/schulleben/nachrichten/1039697/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1038659/nachrichten/elternbrief-bauma%C3%9Fnahmen.html",
+    "to": "/schulleben/nachrichten/1038659/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1038659/nachrichten/elternbrief-bauma%C3%9Fnahmen.html",
+    "to": "/schulleben/nachrichten/1038659/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1038690/nachrichten/faschingsfeier.html",
+    "to": "/schulleben/nachrichten/1038690/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1038690/nachrichten/faschingsfeier.html",
+    "to": "/schulleben/nachrichten/1038690/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1038612/nachrichten/slime-ag-stellt-sich-vor.html",
+    "to": "/schulleben/nachrichten/1038612/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1038612/nachrichten/slime-ag-stellt-sich-vor.html",
+    "to": "/schulleben/nachrichten/1038612/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1012969/nachrichten/adventszeit.html",
+    "to": "/schulleben/nachrichten/1012969/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1012969/nachrichten/adventszeit.html",
+    "to": "/schulleben/nachrichten/1012969/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/news/1/1012964/nachrichten/ukulelen-ag-%C3%BCbt-flei%C3%9Fig.html",
+    "to": "/schulleben/nachrichten/1012964/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/m/news/1/1012964/nachrichten/ukulelen-ag-%C3%BCbt-flei%C3%9Fig.html",
+    "to": "/schulleben/nachrichten/1012964/",
+    "reason": "Inhalt migriert"
+  },
+  {
+    "from": "/index.php",
+    "to": "/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/m/",
+    "to": "/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/news/index.php?rubrik=1",
+    "to": "/schulleben/nachrichten/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/news/index.php?archiv=1&rubrik=1",
+    "to": "/schulleben/nachrichten/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/news/1",
+    "to": "/schulleben/nachrichten/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/veranstaltungen/index.php",
+    "to": "/schulleben/termine/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/formulare/index.php?form_id=10032229",
+    "to": "/kontakt/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/impressum/index.php",
+    "to": "/impressum/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/datenschutz/index.php",
+    "to": "/datenschutz/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/?modus=drucken",
+    "to": "/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/fotos/2/214451/sonstige/projektwoche-2025/",
+    "to": "/schulleben/fotos/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/fotos/2/album/projektwoche/",
+    "to": "/schulleben/fotos/",
+    "reason": "Bestandsfunktion neu zugeordnet"
+  },
+  {
+    "from": "/contact/index/link/",
+    "to": "/kontakt/",
+    "reason": "Alter Linkversand entfällt; URL kann direkt geteilt werden"
+  }
+]
