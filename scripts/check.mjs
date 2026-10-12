@@ -5,8 +5,14 @@ import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
 const root = fileURLToPath(new URL('../', import.meta.url)),
   dist = path.join(root, 'dist');
+const { basePath, concept } = JSON.parse(await readFile(path.join(dist, 'build-config.json'), 'utf8'));
+const unscoped = pathname => {
+  assert(pathname.startsWith(basePath), `Path escapes project: ${pathname}`);
+  return '/' + pathname.slice(basePath.length);
+};
 const read = async n => JSON.parse(await readFile(path.join(root, 'content', n + '.json'), 'utf8'));
-const [news, media, refs, docs, redirects] = await Promise.all(['news', 'media', 'document-references', 'documents', 'redirects'].map(read));
+const [news, media, refs, docs] = await Promise.all(['news', 'media', 'document-references', 'documents'].map(read));
+const redirects = JSON.parse(await readFile(path.join(dist, 'redirects.json'), 'utf8'));
 assert.equal(news.length, 33);
 assert.equal(media.length, 57);
 assert.equal(refs.length, 72);
@@ -34,12 +40,14 @@ for (const [file, text] of html) {
   assert.equal((text.match(/<h1[ >]/g) || []).length, 1, `${file}: missing/duplicate h1`);
   assert(text.includes('<html lang="de">'));
   assert(text.includes('<title>'));
+  if (concept) assert(text.includes('<meta name="robots" content="noindex,follow">'));
+  assert(text.includes(`<meta name="site-base-path" content="${basePath}">`));
   for (const m of text.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const target = decodeEntities(m[1]);
     if (!target.startsWith('/') && !target.startsWith('#')) continue;
     links++;
-    const url = new URL(target, 'http://local/' + path.relative(dist, file).replace(/index\.html$/, ''));
-    let pathname = decodeURIComponent(url.pathname);
+    const url = new URL(target, 'http://local' + basePath + path.relative(dist, file).replace(/index\.html$/, ''));
+    let pathname = unscoped(decodeURIComponent(url.pathname));
     let dest = pathname === '/404/' ? path.join(dist, '404.html') : path.join(dist, pathname.endsWith('/') ? pathname + 'index.html' : pathname);
     if (target.startsWith('#')) dest = file;
     let content;
@@ -56,7 +64,7 @@ for (const [file, text] of html) {
 }
 for (const r of redirects) {
   const target = new URL(r.to, 'http://local');
-  const file = path.join(dist, target.pathname, 'index.html');
+  const file = path.join(dist, unscoped(decodeURIComponent(target.pathname)), 'index.html');
   assert(html.has(file), `Redirect target missing ${r.to}`);
   if (target.hash) assert(html.get(file).includes(`id="${decodeURIComponent(target.hash.slice(1))}"`));
 }

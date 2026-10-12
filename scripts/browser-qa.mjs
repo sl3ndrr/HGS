@@ -1,11 +1,12 @@
 // Reproducible browser tests. CI runs in its own disposable runner, never against production.
 import { chromium } from 'playwright';
 import { spawn } from 'node:child_process';
-import { writeFile, mkdir } from 'node:fs/promises';
+import { writeFile, mkdir, readFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import { setTimeout as delay } from 'node:timers/promises';
+const { basePath } = JSON.parse(await readFile('dist/build-config.json', 'utf8'));
 const port = 4187,
-  base = `http://127.0.0.1:${port}`,
+  base = `http://127.0.0.1:${port}${basePath === '/' ? '' : basePath.slice(0, -1)}`,
   output = 'docs/qa/browser';
 await mkdir(output, {
   recursive: true
@@ -237,17 +238,17 @@ try {
     maxRedirects: 0
   });
   assert.equal(old.status(), 301);
-  assert.equal(old.headers().location, '/eltern/schoolfox/');
+  assert.equal(old.headers().location, basePath + 'eltern/schoolfox/');
   const unicode = await context.request.get(base + '/seite/708736/verl%C3%A4ssliche-grundschule.html', {
     maxRedirects: 0
   });
   assert.equal(unicode.status(), 301);
-  assert.equal(unicode.headers().location, '/schulalltag/#verl%C3%A4sslichkeit');
+  assert.equal(unicode.headers().location, basePath + 'schulalltag/#verl%C3%A4sslichkeit');
   const archive = await context.request.get(base + '/news/index.php?rubrik=1&archiv=1', {
     maxRedirects: 0
   });
   assert.equal(archive.status(), 301);
-  assert.equal(archive.headers().location, '/schulleben/nachrichten/');
+  assert.equal(archive.headers().location, basePath + 'schulleben/nachrichten/');
   const missing = await page.goto(base + '/does-not-exist/');
   assert.equal(missing.status(), 404);
   assert.match(await page.locator('h1').innerText(), /Hier wächst/);

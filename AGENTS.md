@@ -6,5 +6,5 @@ Read docs/RELAUNCH-BRIEFING.md before changing school facts. Keep original media
 
 Keep content in content/ and shared rendering in src/. Node 22+, no production package dependencies. Run npm run build, npm run check and npm test after substantive changes. Run browser-qa.mjs with optional Playwright when layout or client interaction changes.
 
-No secrets in Git. No public website deployment without the user's explicit instruction. The repository workflow builds and tests; it does not deploy. Keep actual QA evidence separate from proposed checks and never claim WCAG conformance or image clearance without verification.
+No secrets in Git. No public website deployment without the user's explicit instruction. The repository workflow builds and tests. Main pushes and manual main runs deploy the noindex concept to GitHub Pages after successful quality checks; PR runs never deploy. Keep actual QA evidence separate from proposed checks and never claim WCAG conformance or image clearance without verification.
 

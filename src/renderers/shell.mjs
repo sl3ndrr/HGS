@@ -1,19 +1,22 @@
 import * as C from '../components.mjs';
+import { scopeHtml } from '../hosting.mjs';
 export function createShellRenderer({
   settings,
   nav,
   siteUrl,
-  ready
+  ready,
+  basePath = '/'
 }) {
   function shell(page, main) {
     const title = page.url === '/' ? `${settings.name} Rosdorf – Bunt wie das Leben` : `${page.navTitle || page.title} | ${settings.name} Rosdorf`;
-    return [
+    return scopeHtml([
       `<!doctype html>`,
       `<html lang="de">`,
       `<head>`,
       `<meta charset="utf-8">`,
       `<meta name="viewport" content="width=device-width,initial-scale=1">`,
       `<meta name="color-scheme" content="light">`,
+      `<meta name="site-base-path" content="${C.esc(basePath)}">`,
       `<title>${C.esc(title)}</title>`,
       `<meta name="description" content="${C.esc(page.intro)}">`,
       `<meta name="robots" content="${ready && !page.legal && page.kind !== 'search' ? 'index,follow' : 'noindex,follow'}">`,
@@ -30,7 +33,7 @@ export function createShellRenderer({
       `</head>`,
       `<body class="${page.url === '/' ? 'home' : `theme-${page.theme || 'green'}`}">${C.header(settings, nav, page.url)}${main}${C.footer(settings)}</body>`,
       `</html>`
-    ].join('');
+    ].join(''), basePath);
   }
   return shell;
 }
