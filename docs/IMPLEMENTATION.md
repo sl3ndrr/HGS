@@ -175,7 +175,8 @@ Branch `fix/pages-concept-preview`.
 
 - Fehlende Pages-Bereitstellung ergänzt: Nach erfolgreichen Qualitätsprüfungen
   auf `main` wird `dist/` als Pages-Artefakt hochgeladen und mit
-  `actions/deploy-pages` veröffentlicht. PR-Läufe veröffentlichen nichts.
+  `actions/deploy-pages` veröffentlicht. PR-Läufe veröffentlichen nichts. Nach dem Deployment prüft der Runner
+  die öffentliche URL, Ressourcen, noindex, Canonical und echte 404.
   Deploy-Job erhält ausschließlich `pages: write` und `id-token: write`.
 - `BASE_PATH=/HGS/`, `SITE_URL=https://sl3ndrr.github.io`,
   `RELEASE_READY=0` im Workflow. Alle Konzeptseiten bleiben `noindex`.
