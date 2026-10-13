@@ -81,6 +81,8 @@ test('Re-import preserves local mappings, variants, reviews, source supplements 
   assert.deepEqual(after.media, beforeData['media.json']);
   assert.deepEqual(after.news.slice(0, -1), beforeData['news.json']);
   assert.equal(after.news.at(-1).id, '9999999');
+  assert.equal(after.news.at(-1).schoolYear, null);
+  assert.equal(after.news.at(-1).schoolYearBasis, null);
   for (const [key, filename] of [['documents', 'documents.json'], ['conflicts', 'editorial-review.json']]) assert.deepEqual(after[key], beforeData[filename]);
 });
 test('A write failure after the first replacement rolls back every file byte-for-byte', async t => {

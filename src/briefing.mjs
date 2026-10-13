@@ -43,8 +43,6 @@ export function parseBriefing(text) {
       id = l.url.match(/\/news\/1\/(\d+)\//)[1];
     const image = media.find(m => m.source?.includes(`/news/1/${id}/`));
     const category = /handball|sport|volkslauf|olympics|ball über|hobby|rettungs/i.test(l.title) ? 'Bewegung' : /klima|wald/i.test(l.title) ? 'Natur & Umwelt' : /baumaßnahmen|herz und helm/i.test(l.title) ? 'Schulentwicklung' : /chor|slime|ukulelen|bibliothek|leseecke/i.test(l.title) ? 'Kinderstimmen' : 'Gemeinschaft';
-    const year = Number(published.slice(0, 4)),
-      start = Number(published.slice(5, 7)) >= 8 ? year : year - 1;
     return {
       id,
       title: l.title,
@@ -53,8 +51,10 @@ export function parseBriefing(text) {
       published,
       eventDate: events[id] || null,
       eventNote: id === '1071867' ? 'Rückblick: 22.–24.04.2025, Schulfest 25.04.2025; abweichende Ankündigung 23.–25.04.2025.' : id === '1042075' ? 'Ankündigung: 23.–25.04.2025; der spätere Rückblick nennt andere Tage.' : null,
-      schoolYear: `${start}/${String(start + 1).slice(-2)}`,
-      schoolYearBasis: 'aus Veröffentlichungsdatum zugeordnet; Ereignis kann abweichen',
+      // Publication alone does not establish the event's school year. Existing
+      // editorial/historical assignments survive in the merge by stable ID.
+      schoolYear: null,
+      schoolYearBasis: null,
       category,
       summary: r[2],
       paragraphs: [r[2]],

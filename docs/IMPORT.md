@@ -57,6 +57,10 @@ Dokument-ID/Original-URL/Originalquelle/Originaltitel, Konflikt-ID/Thema/Evidenz
 Historische Identitätswerte müssen weiterhin dem Inventar entsprechen.
 Der Import parst keine lokalen Zuordnungen aus Namensähnlichkeiten und
 setzt keine Freigabe-/Reviewdaten zurück.
+Neu importierte Nachrichten erhalten ohne belegten Schuljahresbezug
+`schoolYear: null` und `schoolYearBasis: null`. Aus dem Veröffentlichungsdatum
+wird kein neuer Schuljahreswert geraten. Vorhandene historische/redaktionelle
+Zuordnungen bleiben beim Zusammenführen erhalten.
 
 Ein unveränderter Reimport ist ein No-op: keine Neuformatierung der Bestands-
 dateien und keine Transaktion. Eine Quellenänderung kann im Diff erscheinen,
