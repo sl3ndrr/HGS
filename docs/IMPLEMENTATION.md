@@ -36,7 +36,7 @@ AP10-Status gesondert aus. Die Tabelle behauptet keinen Merge-Status.
 | Paket | Umfang | Voraussetzung | Nachgewiesener Paketstand |
 | --- | --- | --- | --- |
 | AP01 | Codebasis/Projektentscheidungen | keine | integriert: PR #2 am 12.10.2026 gemergt; Prüfevidenz unten |
-| AP02 | Datenverträge/Migrationsinventar/Import | AP01 | offen |
+| AP02 | Datenverträge/Migrationsinventar/Import | AP01 | implementiert auf eigenem Branch; lokale Prüfevidenz unten, PR-CI folgt; nicht gemergt |
 | AP03 | Projektpfad/statische Auslieferung | AP02 | offen |
 | AP04 | Suche/dynamische Listen | AP03 | offen |
 | AP05 | Barrierefreiheit/Interaktionen | AP04 | offen |
@@ -212,3 +212,107 @@ das ist eine Einschränkung dieser Arbeitsumgebung. Die Live-Verifikation
 erfolgte im GitHub-Runner, nicht durch eine behauptete lokale Browserprüfung.
 Externe 301 am ursprünglichen Host bleiben AP10; Node-Tests beweisen diese
 Infrastrukturaufgabe nicht. Bestehende redaktionelle/Mediengrenzen bleiben offen.
+
+## AP02: Datenverträge, Migrationsinventar und sicherer Import
+
+Ausgang: am 13.10.2026 über GitHub abgefragter aktueller `main`,
+`74d443b78bcbb49c638d080f90c1f8e34598edb6`. AP01 ist nachweislich als
+PR #2 gemergt (`73066c6a9d6aed36dd04c198667b3b9f7ccd8e0b`); der ergänzende
+Pages-/Projektpfad-Fix ist ebenfalls integriert. Branch:
+`audit/02-content-integrity`. Reviewbarer PR wird unten nach Erstellung verlinkt.
+Kein Merge und kein Deployment durch AP02.
+
+### Änderungen
+
+- Eingefrorenes `docs/migration-inventory.json`: IDs und bytegenaue
+  Original-/Quellenadressen der 33 Nachrichten, 57 Medien und 72 Verweise
+  auf 70 Ressourcen, Nachrichten-Veröffentlichung und Ressourcen-Zuordnungen.
+  Briefing und aktueller Bestand stimmen dabei überein. Keine neuen Sollwerte
+  geraten; D24/D33 und D32/D70 sind echte Mehrfachverweise, D16/D68 getrennte
+  Satzungsressourcen. Historische Inventardaten werden beim Import nie geschrieben.
+- `src/validate-content.mjs`, `content-data.mjs`, `migration.mjs` prüfen vor dem
+  Build Seiten, News, Dokumente/Referenzen, Medien, Navigation, Klassen/Personen,
+  Redirects und redaktionelle Konflikte. Keine festen Live-Mengen mehr.
+  Eindeutige Identitäten/Pfade/Anker, Kalenderdaten, bekannte Typen,
+  auflösbare Referenzen, sichere Schemen und lokale Pfade. Absichtliche
+  Unicode-/kodierte Redirect-Aliasse mit gleichem Ziel bleiben erhalten;
+  widersprüchliche Ziele werden abgewiesen. Renderer überspringen unbekannte
+  Medien-/Dokument-IDs nicht mehr still. Check prüft zusätzlich HTML-ID-Duplikate.
+- Optionale Prüf-/Gültigkeits-/Schuljahres-/Herkunftsangaben unterstützen
+  unbekannt/null. Originalquelle, redaktionelle Ergänzung, technische
+  Erreichbarkeit und Rechtehinweise sind getrennt dokumentiert. Keine neuen
+  vermuteten Metadaten oder Freigaben eingetragen.
+- 36 vorhandene Personen erhalten stabile P01–P36; Namen, Rollen, Reihenfolge
+  und sonstige Fakten tief gegen main verglichen und unverändert. Keine neue
+  Person, keine vermutete Namensgleichheit. Optionale Klassen-`teacherIds`
+  bleiben unbefüllt; vorhandene Klassenbeschriftungen sind erhalten.
+- Reiner Briefing-Parser und separater Importplan: vollständige Validierung,
+  JSON-Review-Diff, eigener Quelldiff, Dry-Run als Standard, Anwendung mit
+  `--write`. Erhalt aller lokalen/redaktionellen Nicht-Identitätsfelder nach
+  stabilen IDs, zusätzlicher Einträge und Reihenfolge. Erfolgreich geprüfte
+  Ergebnisse werden mit vorbereiteten Backups/Journal/Renames ersetzt;
+  Fehler rollen vollständig zurück, erkannte Unterbrechungen blockieren
+  Build/Check bis zur expliziten Wiederherstellung. Kein Medienabruf.
+- Pflegewege: [DATA-CONTRACTS.md](DATA-CONTRACTS.md), [IMPORT.md](IMPORT.md),
+  README und QUELLEN aktualisiert. Keine Produktionsabhängigkeit hinzugefügt.
+
+### Tatsächlich ausgeführte Prüfungen
+
+Lokal Node `v24.19.0`, Beleg [qa/ap02/local-evidence.json](qa/ap02/local-evidence.json):
+
+- `npm run build`, `npm run check`, `npm test` auf der Ausgangsversion
+  erfolgreich (sieben Tests) und auf AP02 für `/` sowie `/HGS/` erfolgreich:
+  65 Inhaltsseiten plus 404, 66 HTML-Dateien, 3.371 interne Verweise,
+  189 gültige Redirect-Ziele, **24 bestandene Tests**.
+- Gezielt `node --test tests/content-contracts.test.mjs tests/migration.test.mjs
+  tests/import.test.mjs`: **21 Tests bestanden**. Zusatzbeitrag in isoliertem
+  Checkout besteht den echten Build/Check (34 News, 67 HTML-Dateien).
+  Entfernter Altbestand/geänderte Originaladressen scheitern; unzulässige
+  Daten, unbekannte Dokument-/Medien-IDs und unsichere Pfade scheitern mit
+  Objektbezug auch im tatsächlichen Build. Vorheriger `dist/` bleibt erhalten.
+- Importfehler vor dem Schreiben: alle Bestandsdateien bytegleich.
+  Schreibfehler nach dem ersten Ersetzen: vollständiges Byte-Rollback.
+  Erzwungener Rollbackfehler: Zwischenstand wird blockiert; Wiederherstellung
+  nach Prozessende stellt die Bytes wieder her. Kein Überschreiben eines
+  zwischen Review und Anwendung geänderten Bestands. Wiederimport und echter
+  Import eines Zusatzdatensatzes erhalten lokale Pfade, Varianten,
+  Review-/Rechte-/Erreichbarkeitsdaten, Ergänzungen und Reihenfolge.
+- `npm run import:briefing -- --dry-run`: null Änderungen, null Schreibvorgänge.
+  Testdaten liegen nur in Speicher/temporären isolierten Verzeichnissen;
+  veröffentlichte Contentdateien auf Bytegleichheit geprüft und zusätzlich
+  nach synthetischen IDs/Markern durchsucht: keine Testmeldungen/Testpersonen.
+- Vorher-/Nachher-Builds für `/` und `/HGS/`: alle Ausgabepfade und sämtliche
+  Dateien bytegleich. Keine Änderung der UI, Suchindex-Ausgabe oder Metadaten.
+  `git diff --check` erfolgreich.
+- Direkter Git-Clone versucht, HTTP 403 (Umgebungs-URL gesperrt). Checkout
+  über GitHub-Anbindung auf den exakten main-SHA; alle 61 materialisierten
+  Textdateien haben die Original-Git-Blob-SHAs. Remote-Basisbaum erhält
+  vorhandene Binärdateien/Screenshots unverändert.
+- `node scripts/browser-qa.mjs` lokal ausgeführt, vor Browserstart gescheitert:
+  Playwright-Paket fehlt (`ERR_MODULE_NOT_FOUND`). Kein lokaler Browsererfolg
+  behauptet. Bestehender PR-CI installiert das optionale Werkzeug und führt
+  die Browsermatrix aus; sein Ergebnis wird separat ergänzt.
+
+### Grenzen und Übergabe an AP03/AP04
+
+Keine aktuellen Schulangaben, neuen Personen, Termine, Rechtefreigaben oder
+Originaladressen erfunden. Quellenbestand, Zusammenfassungen und Konflikte
+bleiben erhalten. Technische Validierung ist keine fachliche Identitäts-,
+Rechte-, PDF-Inhalts- oder Erreichbarkeitsprüfung. Export-ZIP/Logo/Galerie und
+redaktionelle Bestätigungen aus REDAKTION bleiben offen.
+
+Mehrdatei-Renames sind keine globale atomare Dateisystemtransaktion. Bei
+Prozess-/Datenträgerproblemen verweigert der Journalmarker die Nutzung eines
+erkannten Zwischenstands; nach Ende des Importprozesses `--recover` verwenden.
+Gleichzeitige externe Handbearbeitung während des kurzen Ersetzens vermeiden;
+kein Strom-/Datenträgerausfall garantiert abgedeckt. Beschädigte Journale oder
+nicht verfügbare Backups erfordern Behebung des Dateisystemproblems und Prüfung.
+
+AP03 startet nach Integration von AP02 vom dann aktuellen main. Den bestehenden
+`/HGS/`-Fix und noindex-Konzeptmodus erhalten; Datenvalidierung vor allen
+Build-Schreibvorgängen belassen. AP04 übernimmt dynamische Mengen-/Jahreslisten
+und die UI-Darstellung unbekannter Schuljahre; zulässige Ergänzungen dürfen
+nicht wieder durch feste Live-Mengen abgewiesen werden. Das Inventar unverändert
+lassen. Neue Personenreferenzen nur bei bestätigter Identität ergänzen.
+Externe echte HTTP-301 am ursprünglichen Host bleiben AP10 und benötigen
+nachgewiesene Kontrolle dieses Hosts. Keine DNS-/Kontoeinstellungen verändert.

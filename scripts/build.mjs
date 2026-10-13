@@ -5,9 +5,11 @@ import { pages, quickLinks } from '../content/pages.mjs';
 import { createRenderers } from '../src/renderers/index.mjs';
 import * as C from '../src/components.mjs';
 import { normalizeBasePath, sitePath } from '../src/hosting.mjs';
+import { loadContent, loadInventory } from '../src/content-data.mjs';
+import { validateContent } from '../src/validate-content.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
-const read = async name => JSON.parse(await readFile(path.join(root, 'content', name + '.json'), 'utf8'));
-const [settings, nav, news, documents, media, people, classes] = await Promise.all(['settings', 'navigation', 'news', 'documents', 'media', 'people', 'classes'].map(read));
+const data = validateContent(await loadContent(), { inventory: await loadInventory() });
+const { settings, nav, news, documents, media, people, classes } = data;
 const basePath = normalizeBasePath(process.env.BASE_PATH || '/');
 const origin = new URL(process.env.SITE_URL || 'https://sl3ndrr.github.io');
 if (!['https:', 'http:'].includes(origin.protocol) || origin.pathname !== '/' || origin.search || origin.hash || origin.username || origin.password) {
@@ -74,7 +76,7 @@ await writeFile(path.join(root, 'dist/assets/search-index.json'), JSON.stringify
 const paths = ['/', ...pages.filter(p => p.kind !== 'search').map(p => p.url), ...news.map(n => n.url)];
 await writeFile(path.join(root, 'dist/sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${paths.map(p => `<url><loc>${C.esc(siteUrl + p)}</loc></url>`).join('')}</urlset>`);
 await writeFile(path.join(root, 'dist/robots.txt'), `User-agent: *\n${ready ? 'Allow: /' : 'Disallow: /'}\nSitemap: ${siteUrl}/sitemap.xml\n`);
-const redirects = JSON.parse(await readFile(path.join(root, 'content/redirects.json'), 'utf8'))
+const redirects = data.redirects
   .map(r => ({ ...r, from: sitePath(r.from, basePath), to: sitePath(r.to, basePath) }));
 await writeFile(path.join(root, 'dist/redirects.json'), JSON.stringify(redirects, null, 2));
 await writeFile(path.join(root, 'dist/_redirects'), redirects.filter(r => !r.from.includes('?')).map(r => `${r.from} ${r.to} 301`).join('\n') + '\n');

@@ -10,7 +10,11 @@ import { renderErrorPage } from './error.mjs';
 export function createRenderers(context) {
   const findDocs = ids => {
     const urls = new Set();
-    return (ids || []).map(id => context.documents.find(d => d.referenceIds.includes(id))).filter(d => d && !urls.has(d.originalUrl) && urls.add(d.originalUrl));
+    return (ids || []).map(id => {
+      const document = context.documents.find(d => d.referenceIds.includes(id));
+      if (!document) throw Error(`findDocs[${id}]: unbekannte Dokumentreferenz-ID`);
+      return document;
+    }).filter(d => !urls.has(d.originalUrl) && urls.add(d.originalUrl));
   };
   const shell = createShellRenderer(context);
   const section = createSectionRenderer({

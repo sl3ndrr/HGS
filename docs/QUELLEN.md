@@ -14,7 +14,7 @@ Die erwähnte ZIP lag im bereitgestellten Arbeitsbereich nicht vor. Deshalb wurd
 
 ## Exakte Register
 
-Der nachvollziehbare Import `scripts/import-briefing.mjs` extrahiert unverändert:
+Das eingefrorene [Migrationsinventar](migration-inventory.json) sichert die folgenden ursprünglichen IDs und Originalwerte. Build/Check prüfen deren vollständiges Vorhandensein unabhängig von zusätzlichen gültigen Live-Einträgen. Der sichere Import `scripts/import-briefing.mjs` parst, validiert und zeigt zuerst einen Review-Diff; Anwendung erfolgt ausdrücklich mit `--write`, lokale Ergänzungen bleiben erhalten ([Anleitung](IMPORT.md)). Der historische Abgleich gegen das unveränderte Briefing umfasst:
 
 - 57 Bildadressen in `content/media.json`, einschließlich doppelter Schrägstriche, URL-Kodierung und Versionsparameter.
 - 33 Archivbeiträge in `content/news.json`; Publikation und belegtes Ereignisdatum sind getrennt.

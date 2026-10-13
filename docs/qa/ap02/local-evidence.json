@@ -1,0 +1,98 @@
+{
+  "package": "AP02",
+  "baseCommit": "74d443b78bcbb49c638d080f90c1f8e34598edb6",
+  "branch": "audit/02-content-integrity",
+  "runtime": "Node v24.19.0",
+  "materialization": {
+    "method": "GitHub connector pinned to main SHA; direct git clone blocked with HTTP 403",
+    "textFiles": 61,
+    "allGitBlobHashesMatch": true,
+    "originalBinaryFilesRetainedInRemoteBaseTree": true
+  },
+  "inventory": {
+    "briefingSha256": "527c3c8cd2897b04ab4a14d5f22a63dbe9f0ede9038bf0ef5a717f8aac7707eb",
+    "news": 33,
+    "media": 57,
+    "references": 72,
+    "resources": 70,
+    "sourceAndCurrentIdentityMismatchCount": 0
+  },
+  "checks": [
+    {
+      "command": "npm run build && npm run check && npm test",
+      "basePath": "/",
+      "result": "passed",
+      "htmlFiles": 66,
+      "internalReferences": 3371,
+      "redirects": 189,
+      "tests": 24
+    },
+    {
+      "command": "BASE_PATH=/HGS/ SITE_URL=https://sl3ndrr.github.io RELEASE_READY=0 npm run build; npm run check; npm test",
+      "basePath": "/HGS/",
+      "result": "passed",
+      "htmlFiles": 66,
+      "internalReferences": 3371,
+      "redirects": 189,
+      "tests": 24
+    },
+    {
+      "command": "npm run import:briefing -- --dry-run",
+      "result": "passed",
+      "changedObjects": 0,
+      "writes": 0
+    },
+    {
+      "command": "node --test tests/content-contracts.test.mjs tests/migration.test.mjs tests/import.test.mjs",
+      "result": "passed",
+      "targetedTests": 21
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    },
+    {
+      "command": "diff -qr baseline/dist dist",
+      "result": "passed",
+      "scopes": [
+        "/",
+        "/HGS/"
+      ],
+      "filesPerScope": 78,
+      "allFilesByteIdentical": true
+    },
+    {
+      "command": "node scripts/browser-qa.mjs",
+      "result": "blocked",
+      "reason": "ERR_MODULE_NOT_FOUND: local Playwright package unavailable; PR CI installs optional tooling"
+    }
+  ],
+  "regressions": [
+    "extra synthetic news passes actual build/check in isolated copy (67 HTML files, 34 news)",
+    "removed historical IDs and changed original addresses rejected",
+    "invalid calendar dates, missing document/media IDs and unsafe paths fail actual build with object context; preceding dist retained",
+    "failed parse/validation leaves every content file byte-identical",
+    "mid-replacement write failure restores every content file byte-for-byte",
+    "re-import preserves media mappings/variants/review/rights/availability, editorial text/extensions/order and added records",
+    "failed rollback blocks readers; explicit recovery restores bytes",
+    "concurrent changes before replacement not overwritten",
+    "no synthetic test records in published content",
+    "failed commit-marker write with failed rollback is recovered as pending, not misclassified as completed"
+  ],
+  "existingPeople": {
+    "count": 36,
+    "addedIdentities": 0,
+    "onlyStableIdsAdded": true,
+    "factsAndOrderUnchanged": true,
+    "classTeacherIdentityMappingsAdded": false
+  },
+  "limitations": [
+    "Local browser tooling unavailable; CI evidence is recorded separately when executed",
+    "No external media/document availability or rights validation",
+    "Multi-file replacement uses a journal and recovery; not a global filesystem transaction or storage-failure guarantee",
+    "UI count/year handling remains AP04",
+    "External original-host HTTP 301 remains AP10"
+  ],
+  "mergePerformed": false,
+  "deploymentPerformed": false
+}
