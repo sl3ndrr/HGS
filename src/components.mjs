@@ -124,7 +124,7 @@ export function photo(id, media, {
   eager = false
 } = {}) {
   const m = media.find(x => x.id === id);
-  if (!m) return '';
+  if (!m) throw Error(`photo[${id}]: unbekannte Medien-ID`);
   const source = m.localFile || m.originalUrl;
   return [
     `<figure class="media-figure ${className}" data-media-id="${esc(id)}">`,

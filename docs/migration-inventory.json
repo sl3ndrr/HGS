@@ -1,0 +1,1394 @@
+{
+  "version": 1,
+  "source": "docs/RELAUNCH-BRIEFING.md",
+  "sourceSha256": "527c3c8cd2897b04ab4a14d5f22a63dbe9f0ede9038bf0ef5a717f8aac7707eb",
+  "baselineCommit": "74d443b78bcbb49c638d080f90c1f8e34598edb6",
+  "counts": {
+    "news": 33,
+    "media": 57,
+    "refs": 72,
+    "documents": 70
+  },
+  "news": [
+    {
+      "id": "1256501",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1256501/nachrichten/erfrischung-an-der-hgs.html",
+      "published": "2026-06-28"
+    },
+    {
+      "id": "1251211",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1251211/nachrichten/heinrich-grupe-schule-gewinnt-das-junior-league-finale-in-hannover.html",
+      "published": "2026-06-16"
+    },
+    {
+      "id": "1243236",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1243236/nachrichten/heinrich-grupe-schule-beim-g%C3%B6ttinger-sparkassen-volkslauf-erfolgreich-vertreten.html",
+      "published": "2026-06-03"
+    },
+    {
+      "id": "1243223",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1243223/nachrichten/sportfest-an-der-hgs.html",
+      "published": "2026-06-03"
+    },
+    {
+      "id": "1228388",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1228388/nachrichten/klima-macht-schule.html",
+      "published": "2026-04-28"
+    },
+    {
+      "id": "1213140",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1213140/nachrichten/osterfeier.html",
+      "published": "2026-03-20"
+    },
+    {
+      "id": "1213138",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1213138/nachrichten/waldtag-der-2.klassen.html",
+      "published": "2026-03-20"
+    },
+    {
+      "id": "1207347",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1207347/nachrichten/handballtag.html",
+      "published": "2026-03-09"
+    },
+    {
+      "id": "1199013",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1199013/nachrichten/handball-grundschulliga-turnier.html",
+      "published": "2026-02-16"
+    },
+    {
+      "id": "1198833",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1198833/nachrichten/faschingsfeier-2026.html",
+      "published": "2026-02-16"
+    },
+    {
+      "id": "1150694",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1150694/nachrichten/kuk-g%C3%B6ttingen-zu-besuch-bei-den-2.klassen.html",
+      "published": "2025-10-14"
+    },
+    {
+      "id": "1150696",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1150696/nachrichten/teilnahme-der-heinrich-gruppe-grundschule-an-der-junior-league-handball.html",
+      "published": "2025-10-10"
+    },
+    {
+      "id": "1128550",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1128550/nachrichten/gesundes-fr%C3%BChst%C3%BCck.html",
+      "published": "2025-09-26"
+    },
+    {
+      "id": "1119674",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1119674/nachrichten/grundschulliga-2025-heinrich-grupe-schule-holt-den-titel.html",
+      "published": "2025-09-15"
+    },
+    {
+      "id": "1119667",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1119667/nachrichten/mit-herz-und-helm--wir-bauen-zukunft.html",
+      "published": "2025-09-15"
+    },
+    {
+      "id": "1113789",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1113789/nachrichten/nachweis-rettungsf%C3%A4higkeit.html",
+      "published": "2025-09-01"
+    },
+    {
+      "id": "1089279",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1089279/nachrichten/abschlussfest-der-4.klassen.html",
+      "published": "2025-07-03"
+    },
+    {
+      "id": "1089264",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1089264/nachrichten/sportabzeichentour-im-jahnstadion-und-wir-waren-dabei.html",
+      "published": "2025-07-03"
+    },
+    {
+      "id": "1089249",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1089249/nachrichten/schulchor-auf-dem-sommerfest-der-heinrich-grupe-schule.html",
+      "published": "2025-07-03"
+    },
+    {
+      "id": "1082475",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1082475/nachrichten/die-hgs-bei-den-mini-olympics.html",
+      "published": "2025-06-16"
+    },
+    {
+      "id": "1071867",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1071867/nachrichten/projektwoche.html",
+      "published": "2025-05-16"
+    },
+    {
+      "id": "1071858",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1071858/nachrichten/klimaschutz-an-der-hgs-auszeichnung-f%C3%BCr-klima-macht-schule.html",
+      "published": "2025-05-16"
+    },
+    {
+      "id": "1058444",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1058444/nachrichten/hobby-horsing.html",
+      "published": "2025-04-22"
+    },
+    {
+      "id": "1053782",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1053782/nachrichten/osterfeier-der-1.kl%C3%A4ssler.html",
+      "published": "2025-04-08"
+    },
+    {
+      "id": "1053139",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1053139/nachrichten/ball-%C3%BCber-die-schnur-turnier.html",
+      "published": "2025-04-07"
+    },
+    {
+      "id": "1051514",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1051514/nachrichten/ausflug-der-1a-und-1b-zur-stadtbibliothek.html",
+      "published": "2025-04-03"
+    },
+    {
+      "id": "1042075",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1042075/nachrichten/projektwoche.html",
+      "published": "2025-03-12"
+    },
+    {
+      "id": "1039697",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1039697/nachrichten/neue-leseecke.html",
+      "published": "2025-03-06"
+    },
+    {
+      "id": "1038659",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1038659/nachrichten/elternbrief-bauma%C3%9Fnahmen.html",
+      "published": "2025-03-04"
+    },
+    {
+      "id": "1038690",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1038690/nachrichten/faschingsfeier.html",
+      "published": "2025-03-04"
+    },
+    {
+      "id": "1038612",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1038612/nachrichten/slime-ag-stellt-sich-vor.html",
+      "published": "2025-03-04"
+    },
+    {
+      "id": "1012969",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1012969/nachrichten/adventszeit.html",
+      "published": "2024-12-17"
+    },
+    {
+      "id": "1012964",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1012964/nachrichten/ukulelen-ag-%C3%BCbt-flei%C3%9Fig.html",
+      "published": "2024-12-17"
+    }
+  ],
+  "media": [
+    {
+      "id": "B01",
+      "originalUrl": "https://fotos.verwaltungsportal.de/menuAdministration/2/2/0/1/3/6/gross/slider2-1349x447.png",
+      "source": null
+    },
+    {
+      "id": "B02",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/2/2/5/0/0/IMG-20250515-WA0019.jpg?v=1775565296",
+      "source": null
+    },
+    {
+      "id": "B03",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/4/8/8/3/2/5/Tagesstruktur.png?v=1734441084",
+      "source": null
+    },
+    {
+      "id": "B04",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/2/2/4/9/8/image.webp?v=1775565296",
+      "source": null
+    },
+    {
+      "id": "B05",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/2/2/4/9/9/image.webp?v=1775565296",
+      "source": null
+    },
+    {
+      "id": "B06",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/2/2/5/0/1/signal-2025-04-24-21-03-19-780.jpg?v=1775565296",
+      "source": null
+    },
+    {
+      "id": "B07",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/2/2/5/0/2/signal-2025-04-25-09-25-38-440.jpg?v=1775565296",
+      "source": null
+    },
+    {
+      "id": "B08",
+      "originalUrl": "https://fotos.verwaltungsportal.de/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Dr._Heinrich_Grupe.gif",
+      "source": null
+    },
+    {
+      "id": "B09",
+      "originalUrl": "https://fotos.verwaltungsportal.de/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Esther_Passbild.jpg",
+      "source": null
+    },
+    {
+      "id": "B10",
+      "originalUrl": "https://fotos.verwaltungsportal.de/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Julia_Passbild.jpg",
+      "source": null
+    },
+    {
+      "id": "B11",
+      "originalUrl": "https://fotos.verwaltungsportal.de/seitengenerator/b84408a40072694b0d18b80a926ca076249919/IMG-20251203-WA0035.webp",
+      "source": null
+    },
+    {
+      "id": "B12",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/7/8/5/4/6/8/Banner-HGS.webp?v=1774020444",
+      "source": null
+    },
+    {
+      "id": "B13",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/9/6/4/0/1/1/unnamed.png?v=1740490521",
+      "source": null
+    },
+    {
+      "id": "B14",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/8/6/4/2/7/4/Screenshot_2026-04-22_121029.webp?v=1777360416",
+      "source": null
+    },
+    {
+      "id": "B15",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/8/3/8/1/5/3/signal-2024-12-18-19-41-06-997.jpg?v=1734595857",
+      "source": null
+    },
+    {
+      "id": "B16",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/0/4/2/6/4/7/Bilder_Buchwoche_2.jpg?v=1743663263",
+      "source": null
+    },
+    {
+      "id": "B17",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/0/4/2/6/4/8/Bilder_Buchwoche.jpg?v=1743663265",
+      "source": null
+    },
+    {
+      "id": "B18",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/9/7/8/3/8/0/signal-2025-02-26-18-58-06-861.jpg?v=1741090878",
+      "source": null
+    },
+    {
+      "id": "B19",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/9/7/8/3/8/1/signal-2025-02-26-18-24-19-896-1.jpg?v=1741090879",
+      "source": null
+    },
+    {
+      "id": "B20",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/2/9/7/8/3/8/2/signal-2025-02-26-18-24-19-896.jpg?v=1741090879",
+      "source": null
+    },
+    {
+      "id": "B21",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/7/6/4/1/6/0/Logo_Begabungsfoerderung_Niedersachsenklein.webp?v=1773233033",
+      "source": null
+    },
+    {
+      "id": "B22",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/7/6/4/1/6/1/Klima_macht_Schule.webp?v=1773233033",
+      "source": null
+    },
+    {
+      "id": "B23",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/7/6/4/1/6/2/Screenshot_2.webp?v=1773233033",
+      "source": null
+    },
+    {
+      "id": "B24",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/7/6/4/1/6/4/Screenshot_3.webp?v=1773233034",
+      "source": null
+    },
+    {
+      "id": "B25",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/3/6/1/3/3/9/Schulobst_logo.webp?v=1757328315",
+      "source": null
+    },
+    {
+      "id": "B26",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/1/2/4/8/7/0/IMG-20250515-WA0008.jpg?v=1747385441",
+      "source": null
+    },
+    {
+      "id": "B27",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/1/2/4/8/7/2/signal-2025-04-24-15-36-50-642.jpg?v=1747385442",
+      "source": null
+    },
+    {
+      "id": "B28",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien//mypage/3/1/2/4/8/7/3/signal-2025-04-24-16-26-12-219.jpg?v=1747385442",
+      "source": null
+    },
+    {
+      "id": "N01",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/5/6/5/0/1/file_00000000066c720a8a01ed5d3d30f5d2.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1256501/nachrichten/erfrischung-an-der-hgs.html"
+    },
+    {
+      "id": "N02",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/5/1/2/1/1/HandballFinals.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1251211/nachrichten/heinrich-grupe-schule-gewinnt-das-junior-league-finale-in-hannover.html"
+    },
+    {
+      "id": "N03",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/4/3/2/3/6/20260531_132811_2.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1243236/nachrichten/heinrich-grupe-schule-beim-g%C3%B6ttinger-sparkassen-volkslauf-erfolgreich-vertreten.html"
+    },
+    {
+      "id": "N04",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/4/3/2/2/3/IMG-20260529-WA0059.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1243223/nachrichten/sportfest-an-der-hgs.html"
+    },
+    {
+      "id": "N05",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/1/3/1/4/0/20260320_102230_3.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1213140/nachrichten/osterfeier.html"
+    },
+    {
+      "id": "N06",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/1/3/1/3/8/20260316_091821.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1213138/nachrichten/waldtag-der-2.klassen.html"
+    },
+    {
+      "id": "N07",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/2/0/7/3/4/7/IMG-20260305-WA0000.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1207347/nachrichten/handballtag.html"
+    },
+    {
+      "id": "N08",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/9/9/0/1/3/signal-2026-02-11-12-00-35-811.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1199013/nachrichten/handball-grundschulliga-turnier.html"
+    },
+    {
+      "id": "N09",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/9/8/8/3/3/IMG-20260213-WA0008.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1198833/nachrichten/faschingsfeier-2026.html"
+    },
+    {
+      "id": "N10",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/5/0/6/9/4/20251007_102348.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1150694/nachrichten/kuk-g%C3%B6ttingen-zu-besuch-bei-den-2.klassen.html"
+    },
+    {
+      "id": "N11",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/5/0/6/9/6/IMG-20251010-WA0011.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1150696/nachrichten/teilnahme-der-heinrich-gruppe-grundschule-an-der-junior-league-handball.html"
+    },
+    {
+      "id": "N12",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/2/8/5/5/0/20250918_085900.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1128550/nachrichten/gesundes-fr%C3%BChst%C3%BCck.html"
+    },
+    {
+      "id": "N13",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/1/9/6/7/4/DSC07483-Kopie.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1119674/nachrichten/grundschulliga-2025-heinrich-grupe-schule-holt-den-titel.html"
+    },
+    {
+      "id": "N14",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/1/9/6/6/7/IMG-20250913-WA0080.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1119667/nachrichten/mit-herz-und-helm--wir-bauen-zukunft.html"
+    },
+    {
+      "id": "N15",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/1/1/3/7/8/9/IMG_5570.webp",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1113789/nachrichten/nachweis-rettungsf%C3%A4higkeit.html"
+    },
+    {
+      "id": "N16",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/8/9/2/4/9/20250629_123643.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1089249/nachrichten/schulchor-auf-dem-sommerfest-der-heinrich-grupe-schule.html"
+    },
+    {
+      "id": "N17",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/8/2/4/7/5/IMG_4765.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1082475/nachrichten/die-hgs-bei-den-mini-olympics.html"
+    },
+    {
+      "id": "N18",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/7/1/8/6/7/IMG-20250515-WA0011.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1071867/nachrichten/projektwoche.html"
+    },
+    {
+      "id": "N19",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/7/1/8/5/8/Pra%CC%88mie-HGS.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1071858/nachrichten/klimaschutz-an-der-hgs-auszeichnung-f%C3%BCr-klima-macht-schule.html"
+    },
+    {
+      "id": "N20",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/5/8/4/4/4/20250422_124348.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1058444/nachrichten/hobby-horsing.html"
+    },
+    {
+      "id": "N21",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/5/3/7/8/2/Osterfeier_unscharf.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1053782/nachrichten/osterfeier-der-1.kl%C3%A4ssler.html"
+    },
+    {
+      "id": "N22",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/5/3/1/3/9/signal-2025-04-07-13-43-35-111.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1053139/nachrichten/ball-%C3%BCber-die-schnur-turnier.html"
+    },
+    {
+      "id": "N23",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/5/1/5/1/4/Bilder_Buchwoche.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1051514/nachrichten/ausflug-der-1a-und-1b-zur-stadtbibliothek.html"
+    },
+    {
+      "id": "N24",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/4/2/0/7/5/Plakate_Projektwoche.png",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1042075/nachrichten/projektwoche.html"
+    },
+    {
+      "id": "N25",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/3/9/6/9/7/Lesecke.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1039697/nachrichten/neue-leseecke.html"
+    },
+    {
+      "id": "N26",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/3/8/6/9/0/signal-2025-03-04-13-59-30-659.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1038690/nachrichten/faschingsfeier.html"
+    },
+    {
+      "id": "N27",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/3/8/6/1/2/signal-2025-02-26-18-58-06-861.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1038612/nachrichten/slime-ag-stellt-sich-vor.html"
+    },
+    {
+      "id": "N28",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/1/2/9/6/9/signal-2024-12-20-13-54-56-829.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1012969/nachrichten/adventszeit.html"
+    },
+    {
+      "id": "N29",
+      "originalUrl": "https://fotos.verwaltungsportal.de/news/1/0/1/2/9/6/4/IMG_8776_002.jpg",
+      "source": "https://www.heinrich-grupe-schule.de/m/news/1/1012964/nachrichten/ukulelen-ag-%C3%BCbt-flei%C3%9Fig.html"
+    }
+  ],
+  "refs": [
+    {
+      "id": "D01",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Leitbild.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/",
+      "originalTitle": "Leitbild"
+    },
+    {
+      "id": "D02",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Wichtige_Infos_2025_26.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/765392/schul-abc.html",
+      "originalTitle": "Wichtige Infos 2025/26"
+    },
+    {
+      "id": "D03",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Organigramm_25-26.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708733/konferenzen.html",
+      "originalTitle": "Organigramm 25-26"
+    },
+    {
+      "id": "D04",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Konferenzkalender_26-27.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708733/konferenzen.html",
+      "originalTitle": "Konferenzkalender 26-27"
+    },
+    {
+      "id": "D05",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Anmeldung.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708737/offene-ganztagsschule.html",
+      "originalTitle": "Anmeldung Ganztag"
+    },
+    {
+      "id": "D06",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/05-09.10.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708739/mittagessen.html",
+      "originalTitle": "05-09.10"
+    },
+    {
+      "id": "D07",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/26-30.10.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708739/mittagessen.html",
+      "originalTitle": "26-30.10"
+    },
+    {
+      "id": "D08",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/02.11-06.11.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708739/mittagessen.html",
+      "originalTitle": "02.11-06.11"
+    },
+    {
+      "id": "D09",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/16.11-20.11.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708739/mittagessen.html",
+      "originalTitle": "16.11-20.11"
+    },
+    {
+      "id": "D10",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/23.11-27.11.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708739/mittagessen.html",
+      "originalTitle": "23.11-27.11"
+    },
+    {
+      "id": "D11",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/30.11-04.12.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708739/mittagessen.html",
+      "originalTitle": "30.11-04.12"
+    },
+    {
+      "id": "D12",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/07.12-11.12.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708739/mittagessen.html",
+      "originalTitle": "07.12-11.12"
+    },
+    {
+      "id": "D13",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/14.12-18.12.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708739/mittagessen.html",
+      "originalTitle": "14.12-18.12"
+    },
+    {
+      "id": "D14",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/21.12-22.12.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708739/mittagessen.html",
+      "originalTitle": "21.12-22.12"
+    },
+    {
+      "id": "D15",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Formular_Beitritt_Foerderverein.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708749/f%C3%B6rderverein.html",
+      "originalTitle": "Beitrittserklärung Förderverein HGS"
+    },
+    {
+      "id": "D16",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/FV-HGS-Satzung_1.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708749/f%C3%B6rderverein.html",
+      "originalTitle": "FV-HGS-Satzung"
+    },
+    {
+      "id": "D17",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Wilkommensbrief_Deutsch.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708744/schoolfox.html",
+      "originalTitle": "Deutsch"
+    },
+    {
+      "id": "D18",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Willkommensbrief_Arabisch.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708744/schoolfox.html",
+      "originalTitle": "Arabisch"
+    },
+    {
+      "id": "D19",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Willkommensbrief_Englisch.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708744/schoolfox.html",
+      "originalTitle": "Englisch"
+    },
+    {
+      "id": "D20",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Willkommensbrief_Russisch.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708744/schoolfox.html",
+      "originalTitle": "Russisch"
+    },
+    {
+      "id": "D21",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Wilkommensbrief_Serbisch.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708744/schoolfox.html",
+      "originalTitle": "Serbisch"
+    },
+    {
+      "id": "D22",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Willkommensbrief_Tuerkisch.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708744/schoolfox.html",
+      "originalTitle": "Türkisch"
+    },
+    {
+      "id": "D23",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Handbuch_SchoolFox_Eltern.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708744/schoolfox.html",
+      "originalTitle": "Handbuch Schoolfox"
+    },
+    {
+      "id": "D24",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Erziehungs-_und_Schutzkonzept.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708747/konzepte.html",
+      "originalTitle": "Download als PDF"
+    },
+    {
+      "id": "D25",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Vertretungskonzept.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708747/konzepte.html",
+      "originalTitle": "Download als PDF"
+    },
+    {
+      "id": "D26",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Elternbrief_Einfuehrung.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708755/zeugnisse.html",
+      "originalTitle": "Elternbrief Einführung"
+    },
+    {
+      "id": "D27",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Praesentation_Kompetenzorientierte_Zeugnisse.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708755/zeugnisse.html",
+      "originalTitle": "Präsentation Kompetenzorientierte Zeugnisse"
+    },
+    {
+      "id": "D28",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/3Test_Musterman_18.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708755/zeugnisse.html",
+      "originalTitle": "Beispielzeugnis Klasse 3+4"
+    },
+    {
+      "id": "D29",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/1Test_Musterman_1.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708755/zeugnisse.html",
+      "originalTitle": "Beispielzeugnis Klasse 1+2"
+    },
+    {
+      "id": "D30",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Anmeldebogen_neu.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/765298/schulanmeldung.html",
+      "originalTitle": "Anmeldebogen"
+    },
+    {
+      "id": "D31",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Merkblaetter_Einverstaendniserklaerungen.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/765298/schulanmeldung.html",
+      "originalTitle": "Merkblätter-Einverständniserklärung"
+    },
+    {
+      "id": "D32",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/belehrungsbogen_eltern_deutsch.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/765298/schulanmeldung.html",
+      "originalTitle": "Infektionsschutzgesetz"
+    },
+    {
+      "id": "D33",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Erziehungs-_und_Schutzkonzept.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/765298/schulanmeldung.html",
+      "originalTitle": "Erziehungs- und Schutzkonzept"
+    },
+    {
+      "id": "D34",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Beschwerdekonzept_hgs.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/765298/schulanmeldung.html",
+      "originalTitle": "Beschwerdekonzept_hgs"
+    },
+    {
+      "id": "D35",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Waffenverbot_1.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/765298/schulanmeldung.html",
+      "originalTitle": "Waffenverbot"
+    },
+    {
+      "id": "D36",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Elternhinweis_Datenschutz.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/765298/schulanmeldung.html",
+      "originalTitle": "Datenschutz"
+    },
+    {
+      "id": "D37",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Tabelle_Datenschutz.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/765298/schulanmeldung.html",
+      "originalTitle": "Tabelle Datenschutz"
+    },
+    {
+      "id": "D38",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Infos_ueber_das_MIT.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/858078/mobbing-interventionsteam.html",
+      "originalTitle": "hier"
+    },
+    {
+      "id": "D39",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/KOV_GOe2_Konzept_2025.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/765366/kooperationspartner.html",
+      "originalTitle": "Konzept des Kooperationsverbundes Begabungsförderung"
+    },
+    {
+      "id": "D40",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/2024-05-02_Einleger_Schulbuecher-webversion_29052024_015206.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/765366/kooperationspartner.html",
+      "originalTitle": "Bücherförderung Landkreis"
+    },
+    {
+      "id": "D41",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Schulobstkalender_2026-27_LOTTA_KAROTTA.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/806610/schulobst.html",
+      "originalTitle": "Schulobstkalender 2026-27  LOTTA KAROTTA"
+    },
+    {
+      "id": "D42",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Auf_den_Spuren_Goettingens.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Auf den Spuren Göttingens"
+    },
+    {
+      "id": "D43",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Auf_den_Spuren_der_Ureinwohners_Amerikas.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Auf den Spuren der Ureinwohners Amerikas"
+    },
+    {
+      "id": "D44",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Buntes_aus_der_Kueche.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Buntes aus der Küche"
+    },
+    {
+      "id": "D45",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Cafe_HGS.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Cafe HGS"
+    },
+    {
+      "id": "D46",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Cheerleading.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Cheerleading"
+    },
+    {
+      "id": "D47",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Cajons.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Cajons"
+    },
+    {
+      "id": "D48",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Clown-Projekt.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Clown-Projekt"
+    },
+    {
+      "id": "D49",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Experimente_mit_Strom.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Experimente mit Strom"
+    },
+    {
+      "id": "D50",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Experimente_mit_Wasser.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Experimente mit Wasser"
+    },
+    {
+      "id": "D51",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Graffiti.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Graffiti"
+    },
+    {
+      "id": "D52",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Let_s_play_the_ball.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Let´s play the ball"
+    },
+    {
+      "id": "D53",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Mosaik.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Mosaik"
+    },
+    {
+      "id": "D54",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Musical.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Musical"
+    },
+    {
+      "id": "D55",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Naehmaschine.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Nähmaschine"
+    },
+    {
+      "id": "D56",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Werken_mal_anders.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Werken mal anders"
+    },
+    {
+      "id": "D57",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Weben.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Weben"
+    },
+    {
+      "id": "D58",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Waldwaerts.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Waldwärts#"
+    },
+    {
+      "id": "D59",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Upcycling.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Upcycling"
+    },
+    {
+      "id": "D60",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Unterwasserwelt.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Unterwasserwelt"
+    },
+    {
+      "id": "D61",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Theaterprojekt.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Theaterprojekt"
+    },
+    {
+      "id": "D62",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Tanzspass_fuer_Kids.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Tanzspass_fuer_Kids.pdf"
+    },
+    {
+      "id": "D63",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Stadtradio.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Stadtradio.pdf"
+    },
+    {
+      "id": "D64",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Schwimmen.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Schwimmen.pdf"
+    },
+    {
+      "id": "D65",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Schoene_Insektenwelt.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Schoene_Insektenwelt.pdf"
+    },
+    {
+      "id": "D66",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Rueckschlagspiele.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Rueckschlagspiele.pdf"
+    },
+    {
+      "id": "D67",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Papierwerkstatt.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/766080/projektwoche.html",
+      "originalTitle": "Papierwerkstatt.pdf"
+    },
+    {
+      "id": "D68",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/FV-HGS-Satzung.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708761/formulare.html",
+      "originalTitle": "Satzung der Schule"
+    },
+    {
+      "id": "D69",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Information_zu_Kopfl_usen.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708761/formulare.html",
+      "originalTitle": "Information zu Kopfläusen"
+    },
+    {
+      "id": "D70",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/belehrungsbogen_eltern_deutsch.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/seite/708761/formulare.html",
+      "originalTitle": "Infektionsschutzgesetz"
+    },
+    {
+      "id": "D71",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien/news/1/0/3/8/6/5/9/elternbrief_zum_umbau_der_heinrich.pdf",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1038659/nachrichten/elternbrief-bauma%C3%9Fnahmen.html",
+      "originalTitle": "Elternbrief (pdf)"
+    },
+    {
+      "id": "D72",
+      "originalUrl": "https://www.stadtradio-goettingen.de./beitraege/umwelt_und_verkehr/klimaschutz_im_klassenzimmer_vier_jahre_klima_macht_schule_in_rosdorf/",
+      "sourceUrl": "https://www.heinrich-grupe-schule.de/news/1/1228388/nachrichten/klima-macht-schule.html",
+      "originalTitle": "Klima macht Schule im Stadtradio"
+    }
+  ],
+  "documents": [
+    {
+      "id": "D01",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Leitbild.pdf",
+      "referenceIds": [
+        "D01"
+      ]
+    },
+    {
+      "id": "D02",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Wichtige_Infos_2025_26.pdf",
+      "referenceIds": [
+        "D02"
+      ]
+    },
+    {
+      "id": "D03",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Organigramm_25-26.pdf",
+      "referenceIds": [
+        "D03"
+      ]
+    },
+    {
+      "id": "D04",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Konferenzkalender_26-27.pdf",
+      "referenceIds": [
+        "D04"
+      ]
+    },
+    {
+      "id": "D05",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Anmeldung.pdf",
+      "referenceIds": [
+        "D05"
+      ]
+    },
+    {
+      "id": "D06",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/05-09.10.pdf",
+      "referenceIds": [
+        "D06"
+      ]
+    },
+    {
+      "id": "D07",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/26-30.10.pdf",
+      "referenceIds": [
+        "D07"
+      ]
+    },
+    {
+      "id": "D08",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/02.11-06.11.pdf",
+      "referenceIds": [
+        "D08"
+      ]
+    },
+    {
+      "id": "D09",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/16.11-20.11.pdf",
+      "referenceIds": [
+        "D09"
+      ]
+    },
+    {
+      "id": "D10",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/23.11-27.11.pdf",
+      "referenceIds": [
+        "D10"
+      ]
+    },
+    {
+      "id": "D11",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/30.11-04.12.pdf",
+      "referenceIds": [
+        "D11"
+      ]
+    },
+    {
+      "id": "D12",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/07.12-11.12.pdf",
+      "referenceIds": [
+        "D12"
+      ]
+    },
+    {
+      "id": "D13",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/14.12-18.12.pdf",
+      "referenceIds": [
+        "D13"
+      ]
+    },
+    {
+      "id": "D14",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/21.12-22.12.pdf",
+      "referenceIds": [
+        "D14"
+      ]
+    },
+    {
+      "id": "D15",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Formular_Beitritt_Foerderverein.pdf",
+      "referenceIds": [
+        "D15"
+      ]
+    },
+    {
+      "id": "D16",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/FV-HGS-Satzung_1.pdf",
+      "referenceIds": [
+        "D16"
+      ]
+    },
+    {
+      "id": "D17",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Wilkommensbrief_Deutsch.pdf",
+      "referenceIds": [
+        "D17"
+      ]
+    },
+    {
+      "id": "D18",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Willkommensbrief_Arabisch.pdf",
+      "referenceIds": [
+        "D18"
+      ]
+    },
+    {
+      "id": "D19",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Willkommensbrief_Englisch.pdf",
+      "referenceIds": [
+        "D19"
+      ]
+    },
+    {
+      "id": "D20",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Willkommensbrief_Russisch.pdf",
+      "referenceIds": [
+        "D20"
+      ]
+    },
+    {
+      "id": "D21",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Wilkommensbrief_Serbisch.pdf",
+      "referenceIds": [
+        "D21"
+      ]
+    },
+    {
+      "id": "D22",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Willkommensbrief_Tuerkisch.pdf",
+      "referenceIds": [
+        "D22"
+      ]
+    },
+    {
+      "id": "D23",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Handbuch_SchoolFox_Eltern.pdf",
+      "referenceIds": [
+        "D23"
+      ]
+    },
+    {
+      "id": "D24",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Erziehungs-_und_Schutzkonzept.pdf",
+      "referenceIds": [
+        "D24",
+        "D33"
+      ]
+    },
+    {
+      "id": "D25",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Vertretungskonzept.pdf",
+      "referenceIds": [
+        "D25"
+      ]
+    },
+    {
+      "id": "D26",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Elternbrief_Einfuehrung.pdf",
+      "referenceIds": [
+        "D26"
+      ]
+    },
+    {
+      "id": "D27",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Praesentation_Kompetenzorientierte_Zeugnisse.pdf",
+      "referenceIds": [
+        "D27"
+      ]
+    },
+    {
+      "id": "D28",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/3Test_Musterman_18.pdf",
+      "referenceIds": [
+        "D28"
+      ]
+    },
+    {
+      "id": "D29",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/1Test_Musterman_1.pdf",
+      "referenceIds": [
+        "D29"
+      ]
+    },
+    {
+      "id": "D30",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Anmeldebogen_neu.pdf",
+      "referenceIds": [
+        "D30"
+      ]
+    },
+    {
+      "id": "D31",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Merkblaetter_Einverstaendniserklaerungen.pdf",
+      "referenceIds": [
+        "D31"
+      ]
+    },
+    {
+      "id": "D32",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/belehrungsbogen_eltern_deutsch.pdf",
+      "referenceIds": [
+        "D32",
+        "D70"
+      ]
+    },
+    {
+      "id": "D34",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Beschwerdekonzept_hgs.pdf",
+      "referenceIds": [
+        "D34"
+      ]
+    },
+    {
+      "id": "D35",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Waffenverbot_1.pdf",
+      "referenceIds": [
+        "D35"
+      ]
+    },
+    {
+      "id": "D36",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Elternhinweis_Datenschutz.pdf",
+      "referenceIds": [
+        "D36"
+      ]
+    },
+    {
+      "id": "D37",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Tabelle_Datenschutz.pdf",
+      "referenceIds": [
+        "D37"
+      ]
+    },
+    {
+      "id": "D38",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Infos_ueber_das_MIT.pdf",
+      "referenceIds": [
+        "D38"
+      ]
+    },
+    {
+      "id": "D39",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/KOV_GOe2_Konzept_2025.pdf",
+      "referenceIds": [
+        "D39"
+      ]
+    },
+    {
+      "id": "D40",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/2024-05-02_Einleger_Schulbuecher-webversion_29052024_015206.pdf",
+      "referenceIds": [
+        "D40"
+      ]
+    },
+    {
+      "id": "D41",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Schulobstkalender_2026-27_LOTTA_KAROTTA.pdf",
+      "referenceIds": [
+        "D41"
+      ]
+    },
+    {
+      "id": "D42",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Auf_den_Spuren_Goettingens.pdf",
+      "referenceIds": [
+        "D42"
+      ]
+    },
+    {
+      "id": "D43",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Auf_den_Spuren_der_Ureinwohners_Amerikas.pdf",
+      "referenceIds": [
+        "D43"
+      ]
+    },
+    {
+      "id": "D44",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Buntes_aus_der_Kueche.pdf",
+      "referenceIds": [
+        "D44"
+      ]
+    },
+    {
+      "id": "D45",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Cafe_HGS.pdf",
+      "referenceIds": [
+        "D45"
+      ]
+    },
+    {
+      "id": "D46",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Cheerleading.pdf",
+      "referenceIds": [
+        "D46"
+      ]
+    },
+    {
+      "id": "D47",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Cajons.pdf",
+      "referenceIds": [
+        "D47"
+      ]
+    },
+    {
+      "id": "D48",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Clown-Projekt.pdf",
+      "referenceIds": [
+        "D48"
+      ]
+    },
+    {
+      "id": "D49",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Experimente_mit_Strom.pdf",
+      "referenceIds": [
+        "D49"
+      ]
+    },
+    {
+      "id": "D50",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Experimente_mit_Wasser.pdf",
+      "referenceIds": [
+        "D50"
+      ]
+    },
+    {
+      "id": "D51",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Graffiti.pdf",
+      "referenceIds": [
+        "D51"
+      ]
+    },
+    {
+      "id": "D52",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Let_s_play_the_ball.pdf",
+      "referenceIds": [
+        "D52"
+      ]
+    },
+    {
+      "id": "D53",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Mosaik.pdf",
+      "referenceIds": [
+        "D53"
+      ]
+    },
+    {
+      "id": "D54",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Musical.pdf",
+      "referenceIds": [
+        "D54"
+      ]
+    },
+    {
+      "id": "D55",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Naehmaschine.pdf",
+      "referenceIds": [
+        "D55"
+      ]
+    },
+    {
+      "id": "D56",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Werken_mal_anders.pdf",
+      "referenceIds": [
+        "D56"
+      ]
+    },
+    {
+      "id": "D57",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Weben.pdf",
+      "referenceIds": [
+        "D57"
+      ]
+    },
+    {
+      "id": "D58",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Waldwaerts.pdf",
+      "referenceIds": [
+        "D58"
+      ]
+    },
+    {
+      "id": "D59",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Upcycling.pdf",
+      "referenceIds": [
+        "D59"
+      ]
+    },
+    {
+      "id": "D60",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Unterwasserwelt.pdf",
+      "referenceIds": [
+        "D60"
+      ]
+    },
+    {
+      "id": "D61",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Theaterprojekt.pdf",
+      "referenceIds": [
+        "D61"
+      ]
+    },
+    {
+      "id": "D62",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Tanzspass_fuer_Kids.pdf",
+      "referenceIds": [
+        "D62"
+      ]
+    },
+    {
+      "id": "D63",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Stadtradio.pdf",
+      "referenceIds": [
+        "D63"
+      ]
+    },
+    {
+      "id": "D64",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Schwimmen.pdf",
+      "referenceIds": [
+        "D64"
+      ]
+    },
+    {
+      "id": "D65",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Schoene_Insektenwelt.pdf",
+      "referenceIds": [
+        "D65"
+      ]
+    },
+    {
+      "id": "D66",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Rueckschlagspiele.pdf",
+      "referenceIds": [
+        "D66"
+      ]
+    },
+    {
+      "id": "D67",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Papierwerkstatt.pdf",
+      "referenceIds": [
+        "D67"
+      ]
+    },
+    {
+      "id": "D68",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/FV-HGS-Satzung.pdf",
+      "referenceIds": [
+        "D68"
+      ]
+    },
+    {
+      "id": "D69",
+      "originalUrl": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/b84408a40072694b0d18b80a926ca076249919/Information_zu_Kopfl_usen.pdf",
+      "referenceIds": [
+        "D69"
+      ]
+    },
+    {
+      "id": "D71",
+      "originalUrl": "https://daten.verwaltungsportal.de/dateien/news/1/0/3/8/6/5/9/elternbrief_zum_umbau_der_heinrich.pdf",
+      "referenceIds": [
+        "D71"
+      ]
+    },
+    {
+      "id": "D72",
+      "originalUrl": "https://www.stadtradio-goettingen.de./beitraege/umwelt_und_verkehr/klimaschutz_im_klassenzimmer_vier_jahre_klima_macht_schule_in_rosdorf/",
+      "referenceIds": [
+        "D72"
+      ]
+    }
+  ]
+}

@@ -29,10 +29,10 @@ npm start
 - `content/pages.mjs`: kompatibler zentraler Export; redaktionelle Texte, Abschnitte, Querverbindungen und Dokumentzuordnungen liegen nach Themen in `content/pages/`. Reihenfolge und IDs erhalten.
 - `content/schedule.mjs`: vorhandener Zeitplan mit unverändertem Quellenstand.
 - `content/people.json`, `classes.json`: Personen/Rollen und Klassen mit explizitem Quellenstand.
-- `content/news.json`: 33 Beiträge, stabile IDs/URLs, Veröffentlichungsdatum, gesondertes Ereignisdatum (oder `null`), Schuljahreszuordnung und historische Einordnung.
+- `content/news.json`: erweiterbares Nachrichtenregister (33 historische Beiträge), stabile IDs/URLs, Veröffentlichungsdatum, gesondertes Ereignisdatum (oder `null`), Schuljahreszuordnung und historische Einordnung.
 - `content/documents.json`: zentrale Ressourcen; Thema, Sprache, Schuljahr/Stand, Originaladresse und sämtliche Quellseiten.
 - `content/document-references.json`: alle 72 ursprünglichen Verweise, auch bei zusammengeführten Dokumenten.
-- `content/media.json`: alle 57 Originaladressen, Kontext, Alttext und optional lokale Datei/Varianten.
+- `content/media.json`: erweiterbares Medienregister mit den 57 historischen Originaladressen, Kontext, Alttext und optional lokale Datei/Varianten.
 - `content/editorial-review.json`: 15 im Briefing erfasste Konflikte. Weitere Integrationsaufgaben in [docs/REDAKTION.md](docs/REDAKTION.md).
 - `content/navigation.json`, `redirects.json`: Navigation und 189 dokumentierte Altrouten.
 - `src/components.mjs`: wiederverwendbare, HTML-escapende Komponenten.
@@ -41,6 +41,8 @@ npm start
 - `scripts/build.mjs`: statischer Generator mit Metadaten, Sitemap, Fehlerseite, Suchindex und Hostingdateien.
 - `docs/RELAUNCH-BRIEFING.md`: unveränderte vollständige Arbeitsgrundlage.
 - `docs/IMPLEMENTATION.md`: dauerhafte Entscheidungen, Paketstatus und Prüfevidenz für Folgepakete.
+- `docs/migration-inventory.json`: unveränderliches historisches Inventar, unabhängig von der Live-Menge.
+- `docs/DATA-CONTRACTS.md`, `docs/IMPORT.md`: ausführbare Datenverträge und sicherer Import-/Review-/Rollback-Pflegeweg.
 
 Mehrseitiges, semantisches HTML mit echten Links hält Navigation, Inhalte und Downloads auch ohne JavaScript nutzbar. JavaScript ergänzt Suche, Filter, mobile Menüs und die bewusste Aktivierung externer Inhalte. Keine Client-Routing-Abhängigkeit, keine Systemduplikation für Mobilgeräte, kein Tracking und keine extern geladenen Schriften. Farben und CSS-Komponenten sind in [docs/DESIGN.md](docs/DESIGN.md) erklärt.
 
@@ -54,7 +56,7 @@ Mehrseitiges, semantisches HTML mit echten Links hält Navigation, Inhalte und D
 
 Die Archivtexte sind wesentliche, sprachlich aufbereitete Zusammenfassungen aus dem Briefing, keine behauptete wortgetreue Volltextmigration. Originalbeiträge bleiben an jedem Artikel erreichbar. Alte Zeitangaben, fehlende Termine und die nicht belegte Zeugnisentscheidung wurden nicht in neue Fakten umgedeutet.
 
-`npm run import:briefing` regeneriert die importierten Register aus dem archivierten Briefing und **überschreibt redaktionelle Änderungen an diesen Registern**. Für laufende Pflege die JSON-Dateien direkt ändern. Die selbst verfassten Webtexte werden dadurch nicht überschrieben.
+`npm run import:briefing` zeigt standardmäßig einen **Dry-Run mit Review-Diff**. `--write` wendet nur vollständig validierte Ergebnisse an. Vorhandene lokale Medienzuordnungen, Varianten, Reviewdaten und redaktionelle Ergänzungen bleiben nach stabilen IDs erhalten. Originalquellenänderungen werden gesondert angezeigt; historische Originalwerte dürfen nicht verändert werden. Anleitung einschließlich Wiederherstellung: [docs/IMPORT.md](docs/IMPORT.md). Für laufende redaktionelle Pflege weiterhin die Contentdateien direkt bearbeiten und [Datenverträge](docs/DATA-CONTRACTS.md) beachten. Unbekannte Prüf-/Gültigkeits- und Schuljahresangaben dürfen fehlen oder `null` sein; nicht raten.
 
 ## Bilder, Logo und fehlende ZIP
 

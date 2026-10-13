@@ -3,6 +3,8 @@ import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
+import { loadContent, loadInventory } from '../src/content-data.mjs';
+import { validateContent } from '../src/validate-content.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url)),
   dist = path.join(root, 'dist');
 const { basePath, concept } = JSON.parse(await readFile(path.join(dist, 'build-config.json'), 'utf8'));
@@ -10,20 +12,8 @@ const unscoped = pathname => {
   assert(pathname.startsWith(basePath), `Path escapes project: ${pathname}`);
   return '/' + pathname.slice(basePath.length);
 };
-const read = async n => JSON.parse(await readFile(path.join(root, 'content', n + '.json'), 'utf8'));
-const [news, media, refs, docs] = await Promise.all(['news', 'media', 'document-references', 'documents'].map(read));
+validateContent(await loadContent(), { inventory: await loadInventory() });
 const redirects = JSON.parse(await readFile(path.join(dist, 'redirects.json'), 'utf8'));
-assert.equal(news.length, 33);
-assert.equal(media.length, 57);
-assert.equal(refs.length, 72);
-assert.equal(docs.length, 70);
-const brief = await readFile(path.join(root, 'docs/RELAUNCH-BRIEFING.md'), 'utf8');
-for (const m of [...media, ...refs]) assert(brief.includes(m.originalUrl), `Original URL modified: ${m.id}`);
-for (const n of news) {
-  assert(brief.includes(n.sourceUrl));
-  assert.match(n.published, /^\d{4}-\d{2}-\d{2}$/);
-  assert(n.eventDate === null || /^\d{4}-\d{2}-\d{2}$/.test(n.eventDate));
-}
 const html = new Map();
 async function walk(dir) {
   for (const item of await readdir(dir, {
@@ -42,6 +32,8 @@ for (const [file, text] of html) {
   assert(text.includes('<title>'));
   if (concept) assert(text.includes('<meta name="robots" content="noindex,follow">'));
   assert(text.includes(`<meta name="site-base-path" content="${basePath}">`));
+  const ids = [...text.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
+  assert.equal(new Set(ids).size, ids.length, `${file}: duplicate HTML id`);
   for (const m of text.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const target = decodeEntities(m[1]);
     if (!target.startsWith('/') && !target.startsWith('#')) continue;
