@@ -36,7 +36,7 @@ AP10-Status gesondert aus. Die Tabelle behauptet keinen Merge-Status.
 | Paket | Umfang | Voraussetzung | Nachgewiesener Paketstand |
 | --- | --- | --- | --- |
 | AP01 | Codebasis/Projektentscheidungen | keine | integriert: PR #2 am 12.10.2026 gemergt; Prüfevidenz unten |
-| AP02 | Datenverträge/Migrationsinventar/Import | AP01 | implementiert auf eigenem Branch; lokale Prüfevidenz unten, PR-CI folgt; nicht gemergt |
+| AP02 | Datenverträge/Migrationsinventar/Import | AP01 | PR #4 offen: implementiert, lokale Checks und PR-CI erfolgreich; nicht gemergt |
 | AP03 | Projektpfad/statische Auslieferung | AP02 | offen |
 | AP04 | Suche/dynamische Listen | AP03 | offen |
 | AP05 | Barrierefreiheit/Interaktionen | AP04 | offen |
@@ -219,7 +219,7 @@ Ausgang: am 13.10.2026 über GitHub abgefragter aktueller `main`,
 `74d443b78bcbb49c638d080f90c1f8e34598edb6`. AP01 ist nachweislich als
 PR #2 gemergt (`73066c6a9d6aed36dd04c198667b3b9f7ccd8e0b`); der ergänzende
 Pages-/Projektpfad-Fix ist ebenfalls integriert. Branch:
-`audit/02-content-integrity`. Reviewbarer PR wird unten nach Erstellung verlinkt.
+`audit/02-content-integrity`, [PR #4](https://github.com/sl3ndrr/HGS/pull/4).
 Kein Merge und kein Deployment durch AP02.
 
 ### Änderungen
@@ -292,6 +292,23 @@ Lokal Node `v24.19.0`, Beleg [qa/ap02/local-evidence.json](qa/ap02/local-evidenc
   Playwright-Paket fehlt (`ERR_MODULE_NOT_FOUND`). Kein lokaler Browsererfolg
   behauptet. Bestehender PR-CI installiert das optionale Werkzeug und führt
   die Browsermatrix aus; sein Ergebnis wird separat ergänzt.
+
+### Nachgewiesener PR-CI-Lauf
+
+[GitHub Actions 38358937793](https://github.com/sl3ndrr/HGS/actions/runs/38358937793)
+am 13.10.2026 vollständig erfolgreich. Geprüfter Code-Head
+`382c646c3df55be9d912901cbeaa3d0d1f764e71`, Node 22.23.3,
+Projektpfad `/HGS/`, `RELEASE_READY=0`: Build, Check, **24 Tests** und
+Chromium-Browsermatrix mit **20 Ansichten / 16 Funktionsprüfungen** bestanden.
+Das ist CI-Evidenz, kein behaupteter lokaler Browserlauf. Keine manuelle
+Sichtung neuer Screenshots behauptet; AP02 verändert die UI-Ausgabe nicht.
+
+Artefakt `hgs-browser-quality`, ID `11793454163`, enthält 24 Screenshots
+und den Bericht; Aufbewahrung bis 12.11.2026. Dauerhafte Lauf-/Schritt-/Log-
+Evidenz: [qa/ap02/ci-evidence.json](qa/ap02/ci-evidence.json).
+Pages-Upload und Deployment wurden im PR-Lauf ausdrücklich übersprungen.
+Der abschließende Evidenzcommit ändert nur Dokumentation; der Code-Head ist
+oben eindeutig genannt. PR #4 bleibt offen und ungemergt.
 
 ### Grenzen und Übergabe an AP03/AP04
 
