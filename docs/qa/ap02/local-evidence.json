@@ -77,7 +77,8 @@
     "failed rollback blocks readers; explicit recovery restores bytes",
     "concurrent changes before replacement not overwritten",
     "no synthetic test records in published content",
-    "failed commit-marker write with failed rollback is recovered as pending, not misclassified as completed"
+    "failed commit-marker write with failed rollback is recovered as pending, not misclassified as completed",
+    "newly imported news keep schoolYear/schoolYearBasis null; existing historical/editorial assignments preserved"
   ],
   "existingPeople": {
     "count": 36,
@@ -94,5 +95,6 @@
     "External original-host HTTP 301 remains AP10"
   ],
   "mergePerformed": false,
-  "deploymentPerformed": false
+  "deploymentPerformed": false,
+  "validatedCodeHead": "8b84678fbfc5a9b03f76fc14f207729a6df65bf8"
 }

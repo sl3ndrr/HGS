@@ -241,7 +241,10 @@ Kein Merge und kein Deployment durch AP02.
 - Optionale Prüf-/Gültigkeits-/Schuljahres-/Herkunftsangaben unterstützen
   unbekannt/null. Originalquelle, redaktionelle Ergänzung, technische
   Erreichbarkeit und Rechtehinweise sind getrennt dokumentiert. Keine neuen
-  vermuteten Metadaten oder Freigaben eingetragen.
+  vermuteten Metadaten oder Freigaben eingetragen. Neu importierte Nachrichten
+  erhalten ohne belegten Bezug `schoolYear: null` und `schoolYearBasis: null`;
+  aus dem Veröffentlichungsdatum wird kein neues Schuljahr abgeleitet.
+  Vorhandene historische/redaktionelle Zuordnungen bleiben erhalten.
 - 36 vorhandene Personen erhalten stabile P01–P36; Namen, Rollen, Reihenfolge
   und sonstige Fakten tief gegen main verglichen und unverändert. Keine neue
   Person, keine vermutete Namensgleichheit. Optionale Klassen-`teacherIds`
@@ -295,15 +298,15 @@ Lokal Node `v24.19.0`, Beleg [qa/ap02/local-evidence.json](qa/ap02/local-evidenc
 
 ### Nachgewiesener PR-CI-Lauf
 
-[GitHub Actions 38358937793](https://github.com/sl3ndrr/HGS/actions/runs/38358937793)
+[GitHub Actions 38360392552](https://github.com/sl3ndrr/HGS/actions/runs/38360392552)
 am 13.10.2026 vollständig erfolgreich. Geprüfter Code-Head
-`382c646c3df55be9d912901cbeaa3d0d1f764e71`, Node 22.23.3,
+`8b84678fbfc5a9b03f76fc14f207729a6df65bf8`, Node 22.23.3,
 Projektpfad `/HGS/`, `RELEASE_READY=0`: Build, Check, **24 Tests** und
 Chromium-Browsermatrix mit **20 Ansichten / 16 Funktionsprüfungen** bestanden.
 Das ist CI-Evidenz, kein behaupteter lokaler Browserlauf. Keine manuelle
 Sichtung neuer Screenshots behauptet; AP02 verändert die UI-Ausgabe nicht.
 
-Artefakt `hgs-browser-quality`, ID `11793454163`, enthält 24 Screenshots
+Artefakt `hgs-browser-quality`, ID `11794995542`, enthält 24 Screenshots
 und den Bericht; Aufbewahrung bis 12.11.2026. Dauerhafte Lauf-/Schritt-/Log-
 Evidenz: [qa/ap02/ci-evidence.json](qa/ap02/ci-evidence.json).
 Pages-Upload und Deployment wurden im PR-Lauf ausdrücklich übersprungen.
