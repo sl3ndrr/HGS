@@ -140,3 +140,8 @@ Die Screenshots stammen aus dem erfolgreich geprüften Build; dies sind keine De
 
 Alle 24 Screenshots und der Prüfbericht sind in `docs/qa/browser/` dauerhaft versioniert.
 
+## Mitwirkende
+
+[<img src="https://avatars.githubusercontent.com/u/267193182?s=64&v=4" width="32" height="32" alt="Codex-Profilbild">](https://github.com/codex)
+
+[Codex](https://github.com/codex) hat zu diesem Projekt beigetragen.
